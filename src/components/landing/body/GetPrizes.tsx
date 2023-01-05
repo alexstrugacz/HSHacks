@@ -1,5 +1,5 @@
 import React from "react"
-import buildprojects from "../../../assets/images/buildprojects.png"
+import getprizes from "../../../assets/images/getprizes.png"
 
 
 const GetPrizes: React.FC<{}> = () => {
@@ -7,11 +7,11 @@ const GetPrizes: React.FC<{}> = () => {
         <div className="h-[303px] bg-[#D9D9D9] w-screen">
             <div className="flex">
                 <div className="mt-8 ml-24 mr-[15vh]">
-                    <img className="object-fit" src={buildprojects}></img>
+                    <img className="object-fit" src={getprizes}></img>
                 </div>
                 <div className="ml-[15vh] pt-16">
-                    <h2 className="font-Poppins font-bold  text-3xl">🔨 Build <a className="text-transparent bg-clip-text bg-gradient-to-r from-[#CF424D] to-[#FB7B3C]">Projects</a></h2>
-                    <p className="font-Poppins pt-6 text-lg w-4/5 leading-relaxed">Go solo or join a group of 3-5 to build awesome websites, apps, and more!</p>
+                    <h2 className="font-Poppins font-bold  text-3xl">🎁 Get <a className="text-transparent bg-clip-text bg-gradient-to-r from-[#CF424D] to-[#FB7B3C]">prizes & swag</a></h2>
+                    <p className="font-Poppins pt-6 text-lg w-4/5 leading-relaxed">Top 3 projects will receive cool tech prizes, and all participants will receive Windy City Hacks swag! </p>
                 </div>
 
             </div>

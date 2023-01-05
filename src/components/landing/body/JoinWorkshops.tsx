@@ -1,5 +1,5 @@
 import React from "react"
-import buildprojects from "../../../assets/images/buildprojects.png"
+import joinworkshops from "../../../assets/images/joinworkshops.png"
 
 
 const JoinWorkshops: React.FC<{}> = () => {
@@ -8,11 +8,11 @@ const JoinWorkshops: React.FC<{}> = () => {
             <div className="flex">
 
                 <div className="ml-[15vh] pt-16">
-                    <h2 className="font-Poppins font-bold  text-3xl">🔨 Build <a className="text-transparent bg-clip-text bg-gradient-to-r from-[#CF424D] to-[#FB7B3C]">Projects</a></h2>
-                    <p className="font-Poppins pt-6 text-lg w-4/5 leading-relaxed">Go solo or join a group of 3-5 to build awesome websites, apps, and more!</p>
+                    <h2 className="font-Poppins font-bold  text-3xl">🧑‍💻 Join <a className="text-transparent bg-clip-text bg-gradient-to-r from-[#CF424D] to-[#FB7B3C]">workshops</a></h2>
+                    <p className="font-Poppins pt-6 text-lg w-4/5 leading-relaxed">Attend live workshops to learn new skills in web, game development, AI, and more! No experience needed.</p>
                 </div>
                 <div className="mt-8 ml-24 mr-[15vh]">
-                    <img className="object-fit" src={buildprojects}></img>
+                    <img className="object-fit" src={joinworkshops}></img>
                 </div>
             </div>
         </div >
