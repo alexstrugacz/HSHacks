@@ -1,13 +1,17 @@
 import React from "react"
 import chicago from "../../../assets/images/chicago.png"
 import RegisterButton from "../../../global/RegisterButton";
+import logolight from "../../../assets/logolight"
 
 
 const Header: React.FC<{}> = () => {
     return (
         <div>
             <img alt="chicago skyline" className="w-full brightness-[0.3] h-screen object-cover" src={chicago}></img>
-            <a href="/" className="absolute p-2 top-0 ml-[15vh] mt-[10vh] bg-neutral-300 rounded text-black font-Poppins font-bold">Placeholder Logo</a>
+            <div>
+
+                <a href="/" className="absolute p-2 top-0 ml-[10vh] mt-[5vh] text-black font-Poppins font-bold">{logolight}</a>
+            </div>
             <p className="absolute top-0 font-bold right-0 mt-[10vh] mr-[15vh] p-2 text-[#B0C2DC] w-48 h-8">Organized by the <a href="https://herseyhack.club" className="text-orange-400 font-normal hover:underline hover:font-bold transition-all">Hersey Hack Club</a></p>
             <div className="absolute top-0 mt-[27vh] ml-[15vh]">
                 <h1 className="text-white font-bold text-7xl">InnovateChicago</h1>

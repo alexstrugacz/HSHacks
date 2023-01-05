@@ -12,7 +12,7 @@ const JoinWorkshops: React.FC<{}> = () => {
                     <p className="font-Poppins pt-6 text-lg w-4/5 leading-relaxed">Attend live workshops to learn new skills in web, game development, AI, and more! No experience needed.</p>
                 </div>
                 <div className="mt-8 ml-24 mr-[15vh]">
-                    <img className="object-fit" src={joinworkshops}></img>
+                    <img className="scale-120 mt-6" src={joinworkshops}></img>
                 </div>
             </div>
         </div >
