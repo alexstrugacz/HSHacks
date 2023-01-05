@@ -6,8 +6,8 @@ const GetPrizes: React.FC<{}> = () => {
     return (
         <div className="h-[303px] bg-[#D9D9D9] w-screen">
             <div className="flex">
-                <div className="mt-8 ml-24 mr-[15vh]">
-                    <img className="ml-[5vh] object-fit scale-110 mt-5" src={getprizes}></img>
+                <div className="mt-8 ml-[10vh] mr-[15vh]">
+                    <img className="ml-[10vh] object-fit scale-[1.2] mt-5" src={getprizes}></img>
                 </div>
                 <div className="ml-[20vh] pt-16 mt-3">
                     <h2 className="font-Poppins font-bold  text-3xl">🎁 Get <a className="text-transparent bg-clip-text bg-gradient-to-r from-[#CF424D] to-[#FB7B3C]">prizes & swag</a></h2>
