@@ -4,7 +4,7 @@ import havelotsoffun from "../../../assets/images/havelotsoffun.png"
 
 const HaveLotsOfFun: React.FC<{}> = () => {
     return (
-        <div className="h-[303px] bg-[#D9D9D9] w-screen">
+        <div className="md:h-[303px] h-full md:bg-[#D9D9D9] bg-[#E0E0E0] w-screen">
             <div className="flex">
                 <div className="mt-11 ml-[16vh] ">
                     <img className="object-fill scale-110" src={havelotsoffun}></img>

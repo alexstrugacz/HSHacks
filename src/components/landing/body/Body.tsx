@@ -9,7 +9,7 @@ import MeetTheTeam from "./MeetTheTeam";
 
 const Body: React.FC<{}> = () => {
     return (
-        <div>
+        <div className="overflow-hidden">
             <Description />
             <BuildProjects />
             <GetPrizes />
