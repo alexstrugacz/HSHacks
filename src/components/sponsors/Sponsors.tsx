@@ -27,21 +27,21 @@ const Sponsors: React.FC<{}> = (props) => {
                             Your browser does not support the video tag.
                         </motion.video>
                         <div className="absolute top-0 flex flex-col justify-center items-start md:pl-10 text-left w-full h-screen pt-10">
-                            <div className={" w-full max-w-6xl md:px-14 px-5 mx-auto"}>
+                            <div className={" w-full max-w-6xl md:px-14 px-5 mx-auto mb-10"}>
                                 <div className={""}>
-                                    <motion.h4
-                                        initial={{ opacity: 0, x: -100, scale: 0.8 }}
-                                        animate={{ opacity: 1, x: 0, scale: 1 }}
-                                        transition={{ delay: 0.2, duration: 0.5 }}
-                                        className={"text-red-500 text-3xl md:text-5xl font-Poppins font-bold"}>
-                                        Sponsorships at
-                                    </motion.h4>
                                     <motion.h1
                                         initial={{ opacity: 0, x: -100, scale: 0.8 }}
                                         animate={{ opacity: 1, x: 0, scale: 1 }}
-                                        transition={{ delay: 0.9, duration: 0.5 }}
+                                        transition={{ delay: 0, duration: 0.5 }}
                                         className="text-white font-bold text-4xl md:text-7xl font-Poppins mt-0">Innovate Chicago
                                     </motion.h1>
+                                    <motion.h4
+                                        initial={{ opacity: 0, x: -100, scale: 0.8 }}
+                                        animate={{ opacity: 1, x: 0, scale: 1 }}
+                                        transition={{ delay: 0.6, duration: 0.5 }}
+                                        className={"text-red-500 text-3xl md:mt-3 md:text-5xl font-Poppins font-bold"}>
+                                        For Sponsors
+                                    </motion.h4>
                                 </div>
                             </div>
                         </div>

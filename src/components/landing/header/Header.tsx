@@ -14,7 +14,7 @@ const Header: React.FC<{}> = () => {
             <div className={"relative bg-cyan-90 bg-opacity-40 h-screen overflow-hidden"}>
                 <motion.video
                     initial={{ opacity: 1 }}
-                    animate={{ opacity: 0.3, x: 0, scale: 1 }}
+                    animate={{ opacity: 0.1, x: 0, scale: 1 }}
                     transition={{ delay: 0.2, duration: 0.5 }}
                     muted
                     autoPlay
@@ -29,7 +29,7 @@ const Header: React.FC<{}> = () => {
                     Your browser does not support the video tag.
                 </motion.video>
                 <div className="absolute top-0 flex flex-col justify-center items-start pl-5 md:pl-10 text-left w-full h-screen pt-10">
-                    <div className={" w-full max-w-6xl md:px-14 mx-auto"}>
+                    <div className={" w-full max-w-6xl md:px-14 mx-auto mb-10"}>
                         <div className={""}>
                             <motion.h4
                                 initial={{ opacity: 0, x: -100, scale: 0.8 }}

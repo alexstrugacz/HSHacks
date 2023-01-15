@@ -29,8 +29,6 @@ const SponsorContent: React.FC<{}> = (props) => {
             </p>
             <h3 className={"font-Poppins text-2xl font-bold md:mt-20 mt-10"}>Prospectus</h3>
             <p className={"font-Poppins mt-3"}>This will be created by 1/21.</p>
-            <h3 className={"font-Poppins text-2xl font-bold md:mt-20 mt-10"}>The Team</h3>
-            <p className={"font-Poppins mt-3"}>This will be created by 1/21.</p>
             <h3 className={"font-Poppins text-2xl font-bold md:mt-20 mt-10"}>FAQ</h3>
             <div className={"flex flex-col gap-2 mt-3"}>
                 {SPONSOR_DATA.map(sponsor => {
