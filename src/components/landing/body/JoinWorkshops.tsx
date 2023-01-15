@@ -1,23 +1,24 @@
+import { CommandLineIcon } from "@heroicons/react/24/solid";
 import React from "react"
-import joinworkshops from "../../../assets/images/joinworkshops.png"
+import joinworkshops from "../../../assets/images/workshops.png"
 
 
 const JoinWorkshops: React.FC<{}> = () => {
     return (
-        <div className="md:h-[303px] h-full bg-[#E0E0E0] w-screen">
-            <div className="md:flex">
-                <div className="md:hidden md:mt-8">
-                    <img className="md:scale-[1.3] scale-[0.8] md:mt-6" src={joinworkshops}></img>
+
+        <div className={"w-full pt-5"}>
+            <div className="flex flex-col md:flex-row items-center py-14 px-5 md:px-20 mx-auto max-w-6xl gap-10">
+                <div className={"flex flex-1 flex-col items-center"}>
+                    <img src={joinworkshops} className={"object-cover w-full h-full rounded-xl shadow-lg scale-100 hover:scale-105 transition-all"} />
+                    <p className={"mt-5 text-zinc-400 font-Poppins mr-3 text-sm md:text-lg"}>Workshop at the Assemble Hackathon</p>
                 </div>
-                <div className="md:ml-[15vh] ml-[5vh] md:pt-24">
-                    <h2 className="font-Poppins font-bold text-2xl md:text-3xl">🧑‍💻 Join <a className="text-transparent bg-clip-text bg-gradient-to-r from-[#CF424D] to-[#FB7B3C]">workshops</a></h2>
-                    <p className="font-Poppins md:pt-6 pt-4 pb-5 text-sm md:text-lg w-4/5 leading-relaxed">Attend live workshops to learn new skills in web, game development, AI, and more! No experience needed.</p>
+                <div className="flex-1 md:ml-4 mb-5">
+                    <CommandLineIcon className={"w-8 text-zinc-600 mb-1"} />
+                    <h2 className="font-Poppins md:pt-0 font-bold text-2xl md:text-3xl">Join <a className="text-transparent bg-clip-text text-orange-500">workshops</a></h2>
+                    <p className={"font-Poppins text-zinc-800 mt-3 text-lg"}>Attend live, guided workshops to learn new skills in webdev, AI, and more! No experience needed.</p>
                 </div>
-                <div className="hidden md:block mt-8 ml-16 mr-[20vh]">
-                    <img className="scale-[1.3] mt-6" src={joinworkshops}></img>
-                </div>
-            </div>
-        </div >
+            </div >
+        </div>
     )
 }
 
