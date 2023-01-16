@@ -2,15 +2,20 @@ import React from "react"
 import Header from "./landing/header/Header";
 import Body from "./landing/body/Body";
 import Footer from "./landing/footer/Footer";
+import NavbarWrapper from "./navbar/NavbarWrapper";
+import Faq from "./faq/Faq";
 
 
 const Landing: React.FC<{}> = () => {
     return (
-        <div>
-            <Header />
-            <Body />
-            <Footer />
-        </div>
+        <NavbarWrapper>
+            <div>
+                <Header />
+                <Body />
+                <Faq />
+                <Footer />
+            </div>
+        </NavbarWrapper>
     )
 }
 

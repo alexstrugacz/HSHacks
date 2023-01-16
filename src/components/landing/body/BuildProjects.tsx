@@ -1,23 +1,25 @@
+import { FireIcon } from "@heroicons/react/24/solid";
 import React from "react"
-import buildprojects from "../../../assets/images/buildprojects.png"
-
+import projects from "../../../assets/images/projects.png"
 
 const BuildProjects: React.FC<{}> = () => {
     return (
-        <div className="md:h-[303px] h-full bg-[#E0E0E0] w-screen">
-            <div className="md:flex">
-                <div className="md:hidden pt-4 px-10 md:p-8 md:ml-36 md:mr-[15vh]">
-                    <img className="md:object-fit" src={buildprojects}></img>
+        <div className={"w-full pt-10"}>
+            <div className="flex flex-col md:flex-row items-center py-14 px-5 md:px-20 mx-auto max-w-6xl gap-10">
+
+                <div className={`flex-1 block md:hidden`}>
+                    <img src={projects} className={"object-cover w-full h-full rounded-xl shadow-lg scale-100 hover:scale-105 transition-all"} />
                 </div>
-                <div className="ml-[5vh] mr-[5vh] md:ml-[15vh] md:pt-[11vh]">
-                    <h2 className="font-Poppins pt-4 md:pt-0 font-bold text-2xl md:text-3xl">🔨 Build <a className="text-transparent bg-clip-text bg-gradient-to-r from-[#CF424D] to-[#FB7B3C]">Projects</a></h2>
-                    <p className="font-Poppins w-full py-4 md:py-0 md:pt-6 md:text-lg text-sm md:w-4/5 leading-relaxed">Go solo or join a group of 3-5 to build <br className="md:hidden"></br>awesome websites, apps, and more!</p>
+                <div className="flex-1">
+                    <FireIcon className={"w-8 text-zinc-600 mb-1"} />
+                    <h2 className="font-Poppins md:pt-0 font-bold text-2xl md:text-3xl">Build <a className="text-transparent bg-clip-text text-orange-500">projects</a></h2>
+                    <p className={"font-Poppins text-zinc-800 mt-3 text-lg"}>Go solo or join a group of 3-5 to build an awesome project around the hackathon theme! </p>
                 </div>
-                <div className="hidden md:block mt-8 md:ml-36 md:mr-[15vh]">
-                    <img className="md:object-fit" src={buildprojects}></img>
+                <div className={`flex-1 hidden md:block`}>
+                    <img src={projects} className={"object-cover w-full h-full rounded-xl shadow-lg scale-100 hover:scale-105 transition-all"} />
                 </div>
-            </div>
-        </div >
+            </div >
+        </div>
     )
 }
 
