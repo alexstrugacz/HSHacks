@@ -18,7 +18,7 @@ const GetPrizes: React.FC<{}> = () => {
                 </div>
                 <div className={"hidden md:block flex-1 flex flex-col items-center"}>
                     <img src={getprizes} className={"object-cover w-full h-full rounded-xl shadow-lg scale-100 hover:scale-105 transition-all"} />
-                    <p className={"mt-5 text-zinc-400 font-Poppins mr-3"}>Prizes TBD in March 2023</p>
+                    <p className={"mt-5 text-zinc-400 font-Poppins mr-3 text-center"}>Prizes TBD in March 2023</p>
                 </div>
             </div >
         </div>
