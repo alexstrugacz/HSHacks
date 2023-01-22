@@ -1,0 +1,29 @@
+[debug] [2023-01-22T18:09:48.069Z] ----------------------------------------------------------------------
+[debug] [2023-01-22T18:09:48.070Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Miguel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-01-22T18:09:48.070Z] CLI Version:   11.0.1
+[debug] [2023-01-22T18:09:48.070Z] Platform:      win32
+[debug] [2023-01-22T18:09:48.071Z] Node Version:  v14.19.1
+[debug] [2023-01-22T18:09:48.071Z] Time:          Sun Jan 22 2023 12:09:48 GMT-0600 (Central Standard Time)
+[debug] [2023-01-22T18:09:48.071Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-22T18:09:48.129Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-22T18:09:48.129Z] > authorizing via signed-in user (bot.developer3@gmail.com)
+[debug] [2023-01-22T18:09:48.129Z] [iam] checking project innovatechicago-1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-22T18:09:48.131Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/innovatechicago-1:testIamPermissions [none]
+[debug] [2023-01-22T18:09:48.131Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/innovatechicago-1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-22T18:09:48.430Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/innovatechicago-1:testIamPermissions 200
+[debug] [2023-01-22T18:09:48.430Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/innovatechicago-1:testIamPermissions {}
+[debug] [2023-01-22T18:09:48.430Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project innovatechicago-1:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-01-22T18:09:48.431Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/innovatechicago-1 [none]
+[debug] [2023-01-22T18:09:48.762Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/innovatechicago-1 403
+[debug] [2023-01-22T18:09:48.762Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/innovatechicago-1 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-01-22T18:09:48.762Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-01-22T18:09:48.886Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Miguel\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:47:12)
+    at RetryOperation._fn (C:\Users\Miguel\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:286:39)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[error] 
+[error] Error: Failed to get Firebase project innovatechicago-1. Please make sure the project exists and your account has permission to access it.
