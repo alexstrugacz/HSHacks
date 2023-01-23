@@ -8,7 +8,7 @@ const SponsorContent: React.FC<{}> = (props) => {
     const SPONSOR_DATA = [
         {
             question: "What is Innovate Chicago?",
-            answer: "Innovate Chicago is a hackathon for high school students in the Chicago area. It is a 12 hour hackathon that will take place on April 15th, 2023. The hackathon will be hosted virtually and will be free for all participants. We are looking for sponsors to help us make this event a success."
+            answer: "Innovate Chicago is a hackathon for high school students in the Chicago area. It is a 12 hour hackathon that will take place on April 15th, 2023. The hackathon will be hosted in-person and will be free for all participants. We are looking for sponsors to help us make this event a success."
         },
         {
             question: "Where will my money go?",
