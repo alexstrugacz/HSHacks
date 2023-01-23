@@ -17,7 +17,7 @@ const Navbar: React.FC<{
     setOpened(false);
   }
 
-  const REGISTER_LINK = "https://forms.gle/ZLWzubEm8ziv1mm7A";
+  const REGISTER_LINK = "https://forms.gle/z2QPnHTr97g2L9uH8";
 
   return (
     <div className={`fixed top-0 left-0 flex justify-between flex-col md:flex-row md:items-start md:items-center transition-colors z-20 p-5 ${(!props.transparent || opened) ? "bg-zinc-50 bg-opacity-90 shadow-lg" : "bg-neutral-900 bg-opacity-60 border-b-2 border-b-zinc-700 border-opacity-20"} w-full`}>

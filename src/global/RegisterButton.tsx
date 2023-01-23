@@ -4,7 +4,7 @@ import ChevronRightIcon from "@heroicons/react/24/solid/ChevronRightIcon"
 const RegisterButton: React.FC<{
 }> = (props) => {
 
-    const REGISTER_LINK = "https://forms.gle/ZLWzubEm8ziv1mm7A";
+    const REGISTER_LINK = "https://forms.gle/z2QPnHTr97g2L9uH8";
 
     return (
         <div>
