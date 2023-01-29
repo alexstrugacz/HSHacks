@@ -6,7 +6,7 @@ const ProspectusPDF = require('../../assets/Innovate_Chicago_Sponsorsv2.pdf')
 const Prospectus: React.FC<{}> = () => {
     return (
         <div>
-            <h1 className='text-neutral-700 font-Poppins font-bold text-4xl'>Our Prospectus</h1>
+            <h1 className='text-neutral-700 font-Poppins font-bold text-4xl'>Sponsor Prospectus</h1>
             <div className='mt-8'>
                 <a className='hover:ring-offset-1 hover:ring-4 transition-all text-black ring-orange-300 font-Poppins font-bold bg-orange-300 rounded px-8 py-2' href={ProspectusPDF} download="Prospectus">Download as PDF</a>
             </div>
@@ -18,7 +18,9 @@ const Prospectus: React.FC<{}> = () => {
             </div>
             <div>
                 <h1 className='text-red-400 font-Poppins font-bold text-3xl mt-16'><a className=''>Where you </a>come in</h1>
-                <p className='text-neutral-500 text-xl mt-3'>Your sponsorship is critical to Innovate Chicago providing this life-changing experience. We're seeking sponsorships to buy food, prizes, and other supplies to run the event. By sponsoring Innovate Chicago, you'll directly contribute to the personal growth of 90+ local high schoolers.</p>
+                <p className='text-neutral-500 text-xl mt-3'>Your sponsorship is critical to Innovate Chicago providing this life-changing experience. We’re seeking sponsorships to buy food, prizes, and other supplies to run the event.
+                <br/><br/>By sponsoring Innovate Chicago, you’ll directly contribute to inspiring, empowering, and enhancing the abilities of 90+ high school students.
+                <br/><br/>All sponsorships are fully tax deductible under our fiscally sponsored 501(c) nonprofit status. </p>
             </div>
             <div>
                 <h1 className='text-red-400 font-Poppins font-bold text-3xl mt-20'><a className=''>Benefits of </a>sponsorship</h1>
@@ -58,7 +60,7 @@ const Prospectus: React.FC<{}> = () => {
             </div>
             <div>
                 <h1 className='text-red-400 font-Poppins font-bold text-3xl mt-20'><a className=''>Sponsor </a>packages</h1>
-                <p className='mt-3 text-xl mb-12 text-neutral-600'>If you have any questions or would like to discuss adjustments for packages, please contact <a href='mailto:sponsors@innovatechicago.net' className='hover:underline font-bold text-black'>sponsors@innovatechicago.net</a>.</p>
+                <p className='mt-3 text-xl mb-12 text-neutral-600'>If you have any questions or would like to discuss adjustments for packages, please contact <a href='mailto:sponsors@innovatechicago.net' className='hover:underline font-bold text-black'>sponsors@innovatechicago.net</a>. All sponsorships are fully tax deductible under our fiscally sponsored 501(c) nonprofit status.</p>
                 <img className="mt-10" src={sponsorPackages}></img>
                 <div className='text-center mt-12 mb-24'>
                     <p className='font-Poppins text-lg'>Ready to inspire the next generation of developers?</p>
