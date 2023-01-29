@@ -3,12 +3,20 @@ import MapPinIcon from "@heroicons/react/24/solid/MapPinIcon";
 import React from "react";
 import RegisterButton from "../../../global/RegisterButton";
 import Video from "../assets/bg.mp4";
+import { useNavigate } from "react-router-dom";
 
 const Header: React.FC<{}> = () => {
     const openHerseyLink = () => {
         const url = "https://www.google.com/maps/place/John+Hersey+High+School/@42.0896973,-87.9250359,15z/data=!4m5!3m4!1s0x880fbbad9a8cbbcd:0xbc3eb41efde43b5f!8m2!3d42.1038234!4d-87.9590565";
         window.open(url, "_blank");
     }
+
+    const navigate = useNavigate();
+
+    const handleOpenSponsorPage = () => {
+        navigate("/sponsors");
+    }
+
     return (
         <div className={"bg-neutral-900"}>
             <div className={"relative bg-cyan-90 bg-opacity-40 h-screen overflow-hidden"}>
@@ -60,6 +68,7 @@ const Header: React.FC<{}> = () => {
                                     </div>
                                 </div>
                                 <RegisterButton />
+                                <p onClick={handleOpenSponsorPage} className={"mt-4 text-gray-300 font-Poppins"}>Interested in sponsoring? <a className={"text-cyan-400 hover:text-cyan-200 hover:cursor-pointer transition-colors"}>Click here!</a></p>
                             </motion.div>
                         </div>
                     </div>
