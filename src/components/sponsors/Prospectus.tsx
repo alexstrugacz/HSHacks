@@ -1,14 +1,16 @@
 import React from "react"
 const sponsorPackages = require('../../assets/images/ICSponsorPackages.jpg')
 const ProspectusPDF = require('../../assets/Innovate_Chicago_Sponsorsv2.pdf')
+const ProofOfVenue = require('../../assets/ProofOfVenue.pdf')
 
 
 const Prospectus: React.FC<{}> = () => {
     return (
         <div>
             <h1 className='text-neutral-700 font-Poppins font-bold text-4xl'>Sponsor Prospectus</h1>
-            <div className='mt-8'>
-                <a className='hover:ring-offset-1 hover:ring-4 transition-all text-black ring-orange-300 font-Poppins font-bold bg-orange-300 rounded px-8 py-2' href={ProspectusPDF} download="Prospectus">Download as PDF</a>
+            <div className='mt-10 flex'>
+                <a className='hover:ring-offset-1 hover:ring-4 transition-all text-black ring-orange-300 font-Poppins font-bold bg-orange-300 rounded md:px-8 px-2 text-center  py-2' href={ProspectusPDF} download="Prospectus">Download Prospectus</a>
+                <a className='ml-3 hover:ring-offset-1 hover:ring-4 transition-all text-black ring-orange-300 font-Poppins font-bold bg-orange-300 rounded md:px-8 px-2 md:inline block py-2 text-center' href={ProofOfVenue} download="ProofOfVenue">Download Proof of Venue</a >
             </div>
             <h1 className='text-red-400 font-Poppins font-bold text-3xl mt-12'><a className=''>Empowering </a>Future Developers</h1>
             <div className='text-neutral-500 text-xl mt-3'>
@@ -19,8 +21,8 @@ const Prospectus: React.FC<{}> = () => {
             <div>
                 <h1 className='text-red-400 font-Poppins font-bold text-3xl mt-16'><a className=''>Where you </a>come in</h1>
                 <p className='text-neutral-500 text-xl mt-3'>Your sponsorship is critical to Innovate Chicago providing this life-changing experience. We’re seeking sponsorships to buy food, prizes, and other supplies to run the event.
-                <br/><br/>By sponsoring Innovate Chicago, you’ll directly contribute to inspiring, empowering, and enhancing the abilities of 90+ high school students.
-                <br/><br/>All sponsorships are fully tax deductible under our fiscally sponsored 501(c) nonprofit status. </p>
+                    <br /><br />By sponsoring Innovate Chicago, you’ll directly contribute to inspiring, empowering, and enhancing the abilities of 90+ high school students.
+                    <br /><br />All sponsorships are fully tax deductible under our fiscally sponsored 501(c) nonprofit status. </p>
             </div>
             <div>
                 <h1 className='text-red-400 font-Poppins font-bold text-3xl mt-20'><a className=''>Benefits of </a>sponsorship</h1>
