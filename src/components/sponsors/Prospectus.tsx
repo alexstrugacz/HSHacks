@@ -1,5 +1,5 @@
 import React from "react"
-const sponsorPackages = require('../../assets/images/ICSponsorPackages.png')
+const sponsorPackages = require('../../assets/images/ICSponsorPackages.jpg')
 const ProspectusPDF = require('../../assets/Innovate_Chicago_Sponsorsv2.pdf')
 
 
