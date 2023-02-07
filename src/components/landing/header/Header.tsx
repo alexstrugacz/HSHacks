@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import MapPinIcon from "@heroicons/react/24/solid/MapPinIcon";
 import React from "react";
 import RegisterButton from "../../../global/RegisterButton";
-import Video from "../assets/bg.mp4";
+import Video from "../assets/code.mp4";
 import { useNavigate } from "react-router-dom";
 
 const Header: React.FC<{}> = () => {
@@ -19,13 +19,13 @@ const Header: React.FC<{}> = () => {
 
     return (
         <div className={"bg-neutral-900"}>
-            <div className={"relative bg-cyan-90 bg-opacity-40 h-screen overflow-hidden"}>
+        <div className={"relative bg-cyan-90 bg-opacity-40 h-screen overflow-hidden"}>
                 <video
                     muted
                     autoPlay
                     playsInline
                     loop
-                    className={"absolute min-w-full min-h-full max-h-none blur-sm md:blur-lg max-w-none z-2 transition-all opacity-30"}
+                    className={"absolute min-w-full min-h-full max-h-none blur-sm md:blur-md max-w-none z-2 transition-all opacity-20 md:opacity-10"}
                 >
                     <source
                         src={Video}

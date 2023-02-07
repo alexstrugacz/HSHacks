@@ -1,7 +1,7 @@
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import React from "react";
 import RegisterButton from "../../../global/RegisterButton";
-import Video from "../assets/bg.mp4";
+import Video from "../assets/code.mp4";
 
 const ReadyToBuild: React.FC<{}> = () => {
 
@@ -12,13 +12,13 @@ const ReadyToBuild: React.FC<{}> = () => {
     }
 
     return (
-        <div className={"relative w-full overflow-hidden h-[800px]"}>
+        <div className={"relative w-full overflow-hidden h-[800px] bg-neutral-900"}>
             <video
                 muted
                 autoPlay
                 playsInline
                 loop
-                className={"absolute min-w-full min-h-full max-h-none blur-sm md:blur-md max-w-none z-2 scale-105"}
+                className={"absolute min-w-full min-h-full max-h-none blur-sm max-w-none z-2 scale-105 opacity-10 md:opacity-10"}
             >
                 <source
                     src={Video}
