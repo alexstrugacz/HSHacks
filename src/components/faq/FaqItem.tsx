@@ -21,7 +21,7 @@ const FaqItem: React.FC<{
             {showAnswer && (
                 <div className={"p-3 pb-10 pt-5"}>
                     {props.email ? (
-                        <p className={"font-Poppins text-zinc-600"}>Contact us at <a href="mailto:support@innovatechicago.net" className={"underline text-slate-700"}>support@innovatechicago.net</a> and we'd be happy to answer any questions!</p>
+                        <p className={"font-Poppins text-zinc-600"}>Contact us at <a href="mailto:miguelaenlle@icloud.com" className={"underline text-slate-700"}>miguelaenlle@icloud.com</a> and we'd be happy to answer any questions!</p>
                     ) : (
                         <p className={"text-zinc-600 font-Poppins"}>{props.answer}</p>
                     )}

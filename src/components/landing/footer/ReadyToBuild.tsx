@@ -1,7 +1,7 @@
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import React from "react";
 import RegisterButton from "../../../global/RegisterButton";
-import Video from "../assets/bg.mp4";
+import Video from "../assets/code.mp4";
 
 const ReadyToBuild: React.FC<{}> = () => {
 
@@ -12,13 +12,13 @@ const ReadyToBuild: React.FC<{}> = () => {
     }
 
     return (
-        <div className={"relative w-full overflow-hidden h-[800px]"}>
+        <div className={"relative w-full overflow-hidden h-[800px] bg-neutral-900"}>
             <video
                 muted
                 autoPlay
                 playsInline
                 loop
-                className={"absolute min-w-full min-h-full max-h-none blur-sm md:blur-md max-w-none z-2 scale-105"}
+                className={"absolute min-w-full min-h-full max-h-none blur-sm max-w-none z-2 scale-105 opacity-10 md:opacity-10"}
             >
                 <source
                     src={Video}
@@ -29,7 +29,7 @@ const ReadyToBuild: React.FC<{}> = () => {
             <div className="absolute top-0 flex items-center justify-between h-full w-full">
                 <div className="mx-auto md:max-w-7xl px-5 md:px-20">
                     <h2 className="font-bold text-white font-Poppins md:text-6xl text-4xl leading-tight">Ready to Build?</h2>
-                    <p className="mt-2 md:mt-8 md:text-xl text-lg font-Poppins text-[#B0C2DC]">Register for the Innovate Chicago hackathon today for a
+                    <p className="mt-2 md:mt-8 md:text-xl text-lg font-Poppins text-[#B0C2DC]">Register for HSHacks today for a
                         truly unforgettable experience!</p>
                     <div className="mt-8">
                         <div onClick={openHerseyLink} className="group flex gap-2 mr-16 items-center hover:cursor-pointer w-fit">
