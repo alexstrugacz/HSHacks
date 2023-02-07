@@ -23,14 +23,13 @@ const Navbar: React.FC<{
     <div className={`fixed top-0 left-0 flex justify-between flex-col md:flex-row md:items-start md:items-center transition-colors z-20 p-5 ${(!props.transparent || opened) ? "bg-zinc-50 bg-opacity-90 shadow-lg" : "bg-neutral-900 bg-opacity-60 border-b-2 border-b-zinc-700 border-opacity-20"} w-full`}>
       <div className={"flex justify-between"}>
         <div className={`group flex items-start items-center gap-0 hover:cursor-pointer ${props.transparent ? "opacity-80" : "opacity-100"}`}>
-          <img className={`w-9 group-hover:opacity-100 transition-all mt-1 ${props.transparent ? "w-8" : ""}`} alt="logo" src={icIcon}></img>
           <a
             href={"/"}
             className={
               `mr-12 ml-2 font-bold ${props.transparent ? "text-lg md:text-xl" : "text-xl md:text-2xl"} ${(props.transparent && !opened) ? "text-white" : "text-black"} font-Poppins hover:font-bold transition-all`
             }
           >
-            Innovate Chicago
+            <b>HS</b><a className={"font-medium"}>Hacks</a>
           </a>
         </div>
         <div className={"flex flex-col justify-center md:hidden mb-1"}>
@@ -52,7 +51,7 @@ const Navbar: React.FC<{
           <NavItem link={"/sponsors"} text={"For Sponsors"} transparent={(props.transparent && !opened)} />
         </div>
         <div className={"flex items-end"}>
-          <NavItem link={REGISTER_LINK} text={"Register Now"} transparent={(props.transparent && !opened)} redirect/>
+          <NavItem link={REGISTER_LINK} text={"Register Now"} transparent={(props.transparent && !opened)} redirect />
         </div>
       </div>
       {/* </div> */}

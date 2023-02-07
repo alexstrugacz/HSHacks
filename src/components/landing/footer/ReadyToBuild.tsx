@@ -29,7 +29,7 @@ const ReadyToBuild: React.FC<{}> = () => {
             <div className="absolute top-0 flex items-center justify-between h-full w-full">
                 <div className="mx-auto md:max-w-7xl px-5 md:px-20">
                     <h2 className="font-bold text-white font-Poppins md:text-6xl text-4xl leading-tight">Ready to Build?</h2>
-                    <p className="mt-2 md:mt-8 md:text-xl text-lg font-Poppins text-[#B0C2DC]">Register for the Innovate Chicago hackathon today for a
+                    <p className="mt-2 md:mt-8 md:text-xl text-lg font-Poppins text-[#B0C2DC]">Register for HSHacks today for a
                         truly unforgettable experience!</p>
                     <div className="mt-8">
                         <div onClick={openHerseyLink} className="group flex gap-2 mr-16 items-center hover:cursor-pointer w-fit">

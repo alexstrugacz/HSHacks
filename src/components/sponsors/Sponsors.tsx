@@ -49,7 +49,7 @@ const Sponsors: React.FC<{}> = (props) => {
                                         initial={{ opacity: 0, x: -100, scale: 0.8 }}
                                         animate={{ opacity: 1, x: 0, scale: 1 }}
                                         transition={{ delay: 0, duration: 0.5 }}
-                                        className="text-white font-bold text-4xl md:text-7xl font-Poppins mt-0">Innovate Chicago
+                                        className="text-white font-bold text-4xl md:text-7xl font-Poppins mt-0">HSHacks
                                     </motion.h1>
                                     <motion.h4
                                         initial={{ opacity: 0, x: -100, scale: 0.8 }}

@@ -47,14 +47,14 @@ const Header: React.FC<{}> = () => {
                                 initial={{ opacity: 0, x: -100, scale: 0.8 }}
                                 animate={{ opacity: 1, x: 0, scale: 1 }}
                                 transition={{ delay: 0.9, duration: 0.6 }}
-                                className="text-white font-bold text-4xl md:text-7xl font-Poppins mt-0">Innovate Chicago
+                                className="text-white font-bold text-4xl md:text-7xl font-Poppins mt-0">HSHacks
                             </motion.h1>
                             <motion.div
                                 initial={{ opacity: 0, x: -100, scale: 0.8 }}
                                 animate={{ opacity: 1, x: 0, scale: 1 }}
                                 transition={{ delay: 1.4, duration: 0.6 }}
                             >
-                                <p className="text-slate-300 text-lg md:text-xl pr-5 font-Poppins pt-8 max-w-xl">Code epic projects, make new friends, and have a blast at the <a className={"text-white font-bold"}>Innovate Chicago Hackathon!</a></p>
+                                <p className="text-slate-300 text-lg md:text-xl pr-5 font-Poppins pt-8 max-w-xl">Code epic projects, make new friends, and have a blast at the <a className={"text-white font-bold"}>HSHacks Hackathon!</a></p>
                                 <div className="mt-8">
                                     <div onClick={openHerseyLink} className="group flex gap-2 mr-16 items-center hover:cursor-pointer w-fit">
                                         <MapPinIcon className={"w-7 text-white group-hover:text-zinc-400 transition-colors"} />

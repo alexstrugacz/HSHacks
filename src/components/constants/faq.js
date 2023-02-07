@@ -6,15 +6,15 @@ export const FAQ = [
     col: 1,
   },
   {
-    question: "Am I eligible to participate in Innovate Chicago?",
+    question: "Am I eligible to participate in HSHacks?",
     answer:
-      "All high schoolers of all skill levels are welcome to participate in Innovate Chicago. We encourage students to bring their friends and teammates to the event!",
+      "All high schoolers of all skill levels are welcome to participate in HSHacks. We encourage students to bring their friends and teammates to the event!",
     col: 1,
   },
   {
     question: "I’m not that good at coding, can I join?",
     answer:
-      "Absolutely! We encourage students of all skill levels to participate in Innovate Chicago. We will have mentors available to help you with your projects and answer any questions you may have.",
+      "Absolutely! We encourage students of all skill levels to participate in HSHacks. We will have mentors available to help you with your projects and answer any questions you may have.",
     col: 1,
   },
   {
@@ -27,11 +27,11 @@ export const FAQ = [
   {
     question: "How much will it cost?",
     answer:
-      "Innovate Chicago is completely free for all participants. We will provide food, drinks, and swag for all participants. We do not provide travel stipends.",
+      "HSHacks is completely free for all participants. We will provide food, drinks, and swag for all participants. We do not provide travel stipends.",
     col: 2,
   },
   {
-    question: "What can I make at Innovate Chicago?",
+    question: "What can I make at HSHacks?",
     answer:
       "You'll build a project around the theme using any method you'd like -- web, mobile, etc. We encourage you to think outside the box and create something that you are passionate about. We will have mentors available to help you with your projects and answer any questions you may have.",
     col: 2,
@@ -39,7 +39,7 @@ export const FAQ = [
   {
     question: "I have more questions, how can I reach out?",
     answer:
-      "Contact us at support@innovatechicago.net for any questions or concerns. We will be happy to help you out!",
+      "Contact us at miguelaenlle@icloud.com for any questions or concerns. We will be happy to help you out!",
     col: 2,
     isEmail: true,
   },
