@@ -16,12 +16,12 @@ const Prospectus: React.FC<{}> = () => {
             <div className='text-neutral-500 text-xl mt-3'>
                 <p className=''>HSHacks is a 12-hour high school hackathon organized by the <a href='https://herseyhack.club' className='hover:font-bold transition-all underline'>JHHS Hack Club</a>. It will be held at <a href='https://www.google.com/maps/place/John+Hersey+High+School/@42.1038234,-87.9612505,17z/data=!3m1!4b1!4m5!3m4!1s0x880fbbad9a8cbbcd:0xbc3eb41efde43b5f!8m2!3d42.1038234!4d-87.9590565' className='hover:font-bold transition-all underline'>John Hersey High School</a> in Arlington Heights, IL. from 8AM to 8PM on April 15, 2023.</p>
                 <br></br>
-                <p>In a day full of collaboration and creativity, 90 attendees (projected) will bring their ideas to reality, learning skills far beyond just tech. With help from experienced professionals and mentors, students will learn invaluable skills by collaboratively building projects, joining engaging workshops, and more!</p>
+                <p>In a day full of collaboration and creativity, 50 attendees (projected) will bring their ideas to reality, learning skills far beyond just tech. With help from experienced professionals and mentors, students will learn invaluable skills by collaboratively building projects, joining engaging workshops, and more!</p>
             </div>
             <div>
                 <h1 className='text-red-400 font-Poppins font-bold text-3xl mt-16'><a className=''>Where you </a>come in</h1>
                 <p className='text-neutral-500 text-xl mt-3'>Your sponsorship is critical to HSHacks providing this life-changing experience. We’re seeking sponsorships to buy food, prizes, and other supplies to run the event.
-                    <br /><br />By sponsoring HSHacks, you’ll directly contribute to inspiring, empowering, and enhancing the abilities of 90+ high school students.
+                    <br /><br />By sponsoring HSHacks, you’ll directly contribute to inspiring, empowering, and enhancing the abilities of 50+ high school students.
                     <br /><br />All sponsorships are fully tax deductible under our fiscally sponsored 501(c) nonprofit status. </p>
             </div>
             <div>
