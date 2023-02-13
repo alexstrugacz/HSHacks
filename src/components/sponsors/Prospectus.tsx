@@ -60,13 +60,13 @@ const Prospectus: React.FC<{}> = () => {
                 </div>
                 <p className='text-neutral-500 text-xl mt-3'>Inventive minds and fresh eyes can help bring a new mindset to a challenge or problem. Let HSHacks participants take a crack at challenging problems in your field of operations or in the larger world.</p>
             </div>
-            <br />
-            <br />
             <div>
-
-                <div className='text-left mt-12 mb-24'>
-                    <p className='font-Poppins text-xl mb-2'>Interested in supporting HSHacks?</p>
-                    <p className='font-Poppins text-2xl'>Contact organizer Miguel Aenlle at <a href='mailto:miguelaenlle@icloud.com' className='font-bold'>miguelaenlle@icloud.com</a> to chat about next steps!</p>
+                <h1 className='text-red-400 font-Poppins font-bold text-3xl mt-20'><a className=''>Sponsor </a>packages</h1>
+                <p className='mt-3 text-xl mb-12 text-neutral-600'>If you have any questions or would like to discuss adjustments for packages, please contact <a href='mailto:miguelaenlle@icloud.com' className='hover:underline font-bold text-black'>miguelaenlle@icloud.com</a>. All sponsorships are fully tax deductible under our fiscally sponsored 501(c) nonprofit status.</p>
+                <img className="mt-10" src={sponsorPackages}></img>
+                <div className='text-center mt-12 mb-24'>
+                    <p className='font-Poppins text-lg'>Ready to inspire the next generation of developers?</p>
+                    <p className='font-Poppins text-xl'>Contact <a href='mailto:miguelaenlle@icloud.com' className='font-bold'>miguelaenlle@icloud.com</a> to discuss next steps!</p>
                 </div>
             </div>
         </div>
