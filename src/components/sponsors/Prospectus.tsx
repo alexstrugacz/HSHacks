@@ -66,7 +66,7 @@ const Prospectus: React.FC<{}> = () => {
                 <img className="mt-10" src={sponsorPackages}></img>
                 <div className='text-center mt-12 mb-24'>
                     <p className='font-Poppins text-lg'>Ready to inspire the next generation of developers?</p>
-                    <p className='font-Poppins text-xl'>Contact <a href='mailto:miguelaenlle@icloud.com' className='font-bold'>miguelaenlle@icloud.com</a> to discuss next steps!</p>
+                    <p className='font-Poppins text-xl'>Contact <a href='mailto:alexstrugacz@icloud.com' className='font-bold'>alexstrugacz@icloud.com</a> or <a className='font-bold' href='mailto:miguelaenlle@icloud.com'>miguelaenlle@icloud.com</a> to discuss next steps!</p>
                 </div>
             </div>
         </div>
