@@ -10,7 +10,7 @@ const Faq: React.FC<{}> = (props) => {
     ]
 
     return (
-        <div className={"bg-zinc-200 py-20"}>
+        <div className={"bg-zinc-200 py-20 border-t-2 border-t-zinc-300"}>
             <h3 className={"text-center text-3xl font-Poppins font-bold"}>Frequently Asked Questions</h3>
             <br />
             <div className={"md:max-w-6xl flex flex-col md:flex-row gap-1 md:gap-3 mx-auto px-5 md:px-20"}>
