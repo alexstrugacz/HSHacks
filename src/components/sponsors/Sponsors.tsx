@@ -55,7 +55,7 @@ const Sponsors: React.FC<{}> = (props) => {
                                         initial={{ opacity: 0, x: -100, scale: 0.8 }}
                                         animate={{ opacity: 1, x: 0, scale: 1 }}
                                         transition={{ delay: 0.6, duration: 0.5 }}
-                                        className={"text-red-500 text-3xl md:mt-3 md:text-5xl font-Poppins font-bold"}>
+                                        className={"text-[#5BC0DE] text-3xl md:mt-3 md:text-5xl font-Poppins font-bold"}>
                                         Sponsorships
                                     </motion.h4>
                                 </div>

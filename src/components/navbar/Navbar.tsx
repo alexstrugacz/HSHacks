@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import navimg from "./navimg.png";
 import NavItem from "./NavItem";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import HSHacksLogo from "../shared/HSHacksLogo";
 const icIcon = require("../../assets/images/ic-icon.png")
 
 const Navbar: React.FC<{
@@ -26,10 +27,13 @@ const Navbar: React.FC<{
           <a
             href={"/"}
             className={
-              `mr-12 ml-2 font-bold ${props.transparent ? "text-lg md:text-xl" : "text-xl md:text-2xl"} ${(props.transparent && !opened) ? "text-white" : "text-black"} font-Poppins hover:font-bold transition-all`
+              `flex items-center gap-2 mr-12 ml-2 ${props.transparent ? "brightness-150" : ""} font-bold ${props.transparent ? "text-lg md:text-xl" : "text-xl md:text-2xl"} ${(props.transparent && !opened) ? "text-white" : "text-blue-500"} font-Poppins hover:font-bold transition-all`
             }
           >
-            <b>HS</b><a className={"font-medium"}>Hacks</a>
+            <HSHacksLogo
+              className={`${props.transparent ? "h-8" : "h-10"} transition-all`}
+            />
+            <b className={"text-[#508ECB]"}>HSHacks</b>
           </a>
         </div>
         <div className={"flex flex-col justify-center md:hidden mb-1"}>

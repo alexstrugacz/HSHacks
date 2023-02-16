@@ -14,7 +14,7 @@ const JoinWorkshops: React.FC<{}> = () => {
                 </div>
                 <div className="flex-1 md:ml-4 mb-5">
                     <CommandLineIcon className={"w-8 text-zinc-600 mb-1"} />
-                    <h2 className="font-Poppins md:pt-0 font-bold text-2xl md:text-3xl">Join <a className="text-transparent bg-clip-text text-orange-500">workshops</a></h2>
+                    <h2 className="font-Poppins md:pt-0 font-bold text-2xl md:text-3xl">Join <a className="text-transparent bg-clip-text text-[#338EDA]">workshops</a></h2>
                     <p className={"font-Poppins text-zinc-800 mt-3 text-lg"}>Attend live, guided workshops to learn new skills in webdev, AI, and more! No experience needed.</p>
                 </div>
             </div >

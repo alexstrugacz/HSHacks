@@ -40,7 +40,7 @@ const Header: React.FC<{}> = () => {
                                 initial={{ opacity: 0, x: -100, scale: 0.8 }}
                                 animate={{ opacity: 1, x: 0, scale: 1 }}
                                 transition={{ delay: 0.2, duration: 0.6 }}
-                                className={"text-red-500 text-3xl md:text-5xl font-Poppins font-bold"}>
+                                className={"text-[#5BC0DE] text-3xl md:text-5xl font-Poppins font-bold"}>
                                 Welcome to
                             </motion.h4>
                             <motion.h1
