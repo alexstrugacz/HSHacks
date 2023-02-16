@@ -12,7 +12,7 @@ const HaveLotsOfFun: React.FC<{}> = () => {
                 </div>
                 <div className="flex-1 md:ml-4">
                     <FaceSmileIcon className={"w-8 text-zinc-600 mb-1"} />
-                    <h2 className="font-Poppins md:pt-0 font-bold text-2xl md:text-3xl">Have <a className="text-transparent bg-clip-text text-orange-500">lots of fun!</a></h2>
+                    <h2 className="font-Poppins md:pt-0 font-bold text-2xl md:text-3xl">Have <a className="text-transparent bg-clip-text text-[#338EDA]">lots of fun!</a></h2>
                     <p className={"font-Poppins text-zinc-800 mt-3 text-lg"}>We’ll hold mini-games and provide free food/drink throughout the hackathon!</p>
                 </div>
             </div >
