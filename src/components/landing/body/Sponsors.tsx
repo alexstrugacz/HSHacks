@@ -3,6 +3,7 @@ const _66degrees = require("../assets/logos/66degrees.png")
 const hackclub = require("../assets/logos/hackclub.png")
 const stickermule = require("../assets/logos/stickermule.png")
 const wolfram = require("../assets/logos/wolfram-1.png")
+const postman = require("../assets/logos/Postman.png")
 
 const Sponsors: React.FC<{}> = (props) => {
     return (
@@ -22,6 +23,9 @@ const Sponsors: React.FC<{}> = (props) => {
                     </a>
                     <a href={"https://www.stickermule.com/"} target="_blank" className={"h-30"}>
                         <img className={"object-contain shadow-md p-5 rounded-lg h-20 pt-6 bg-zinc-100 hover:scale-110 hover:cursor-pointer transition-all stroke-2 stroke-black"} src={stickermule} />
+                    </a>
+                    <a href={"https://www.postman.com/"} target="_blank" className={"h-30"}>
+                        <img className={"object-contain shadow-md p-5 rounded-lg h-20 pt-6 bg-zinc-100 hover:scale-110 hover:cursor-pointer transition-all stroke-2 stroke-black"} src={postman} />
                     </a>
                 </div>
             </div >
