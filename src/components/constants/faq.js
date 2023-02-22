@@ -39,7 +39,7 @@ export const FAQ = [
   {
     question: "I have more questions, how can I reach out?",
     answer:
-      "Contact us at miguelaenlle@icloud.com for any questions or concerns. We will be happy to help you out!",
+      "Contact us at hshacks@programmer.net for any questions or concerns. We will be happy to help you out!",
     col: 2,
     isEmail: true,
   },

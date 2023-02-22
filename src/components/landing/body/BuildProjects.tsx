@@ -13,7 +13,7 @@ const BuildProjects: React.FC<{}> = () => {
                 <div className="flex-1">
                     <FireIcon className={"w-8 text-zinc-600 mb-1"} />
                     <h2 className="font-Poppins md:pt-0 font-bold text-2xl md:text-3xl">Build <a className="text-transparent bg-clip-text text-[#338EDA]">projects</a></h2>
-                    <p className={"font-Poppins text-zinc-800 mt-3 text-lg"}>Go solo or join a group of 3-5 to build an awesome project around the hackathon theme! </p>
+                    <p className={"font-Poppins text-zinc-800 mt-3 text-lg"}>Go solo or join a group of 3-5 to build an awesome project around the hackathon theme</p>
                 </div>
                 <div className={`flex-1 hidden md:block`}>
                     <img src={projects} className={"object-cover w-full h-full rounded-xl shadow-lg scale-100 hover:scale-105 transition-all"} />

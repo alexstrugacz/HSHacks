@@ -41,7 +41,7 @@ const SponsorContent: React.FC<{}> = (props) => {
                 })}
             </div>
             <h3 className={"font-Poppins text-2xl font-bold mt-10 md:mt-20"}>Contact Us</h3>
-            <p className={"font-Poppins mt-3"}>Email us about sponsorship inquiries at <a href="mailto:alexstrugacz@icloud.com" className={"underline text-slate-700"}>alexstrugacz@icloud.com</a> or <a className='underline text-slate-700' href='mailto:miguelaenlle@icloud.com'>miguelaenlle@icloud.com</a>!</p>
+            <p className={"font-Poppins mt-3"}>Email us about sponsorship inquiries at <a href="mailto:hshacks@programmer.net" className={"underline text-slate-700"}>hshacks@programmer.net</a>!</p>
             <br />
         </div>
     );
