@@ -1,0 +1,1 @@
+export const REGISTER_LINK = "https://forms.gle/z2QPnHTr97g2L9uH8";

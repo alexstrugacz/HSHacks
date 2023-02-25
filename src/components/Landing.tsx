@@ -1,7 +1,7 @@
 import React from "react"
 import Header from "./landing/header/Header";
 import Body from "./landing/body/Body";
-import Footer from "./landing/footer/Footer";
+import Footer from "./landing/body/footer/Footer";
 import NavbarWrapper from "./navbar/NavbarWrapper";
 import Faq from "./faq/Faq";
 

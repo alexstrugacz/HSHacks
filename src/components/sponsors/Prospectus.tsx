@@ -62,11 +62,11 @@ const Prospectus: React.FC<{}> = () => {
             </div>
             <div>
                 <h1 className='text-[#508ECB] font-Poppins font-bold text-3xl mt-20'><a className=''>Sponsor </a>packages</h1>
-                <p className='mt-3 text-xl mb-12 text-neutral-600'>If you have any questions or would like to discuss adjustments for packages, please contact <a href='mailto:miguelaenlle@icloud.com' className='hover:underline font-bold text-black'>miguelaenlle@icloud.com</a>. All sponsorships are fully tax deductible under our fiscally sponsored 501(c) nonprofit status.</p>
+                <p className='mt-3 text-xl mb-12 text-neutral-600'>If you have any questions or would like to discuss adjustments for packages, please contact <a href='mailto:hshacks@programmer.net' className='hover:underline font-bold text-black'>hshacks@programmer.net</a>. All sponsorships are fully tax deductible under our fiscally sponsored 501(c) nonprofit status.</p>
                 <img className="mt-10" src={sponsorPackages}></img>
                 <div className='text-center mt-12 mb-24'>
                     <p className='font-Poppins text-lg'>Ready to inspire the next generation of developers?</p>
-                    <p className='font-Poppins text-xl'>Contact <a href='mailto:alexstrugacz@icloud.com' className='font-bold'>alexstrugacz@icloud.com</a> or <a className='font-bold' href='mailto:miguelaenlle@icloud.com'>miguelaenlle@icloud.com</a> to discuss next steps!</p>
+                    <p className='font-Poppins text-xl'>Contact <a className='font-bold' href='mailto:hshacks@programmer.net'>hshacks@programmer.net</a> to discuss next steps!</p>
                 </div>
             </div>
         </div>
