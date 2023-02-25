@@ -1,12 +1,31 @@
 import * as React from "react"
 const Sponsor: React.FC<{
-    url: string,
-    src: string
+    tier: string;
+    logo: string;
+    body: string;
+    url: string;
 }> = (props) => {
+
+    const tierBackgrounds: { [key: string]: string } = {
+        "platinum": "bg-slate-900",
+        "gold": "bg-yellow-700",
+        "silver": "bg-green-500"
+    }
+
+    const handleClick = () => {
+        // open url in new tab
+        window.open(props.url, "_blank")
+
+
+    }
+
+
     return (
-        <a href={props.url} target="_blank" className={"flex justify-center items-center flex-1"}>
-            <img className={"hover:scale-105 hover:cursor-pointer transition-all object-contain h-12 "} src={props.src} />
-        </a>
+        <div onClick={handleClick} className={"bg-zinc-200 rounded-lg p-2 hover:cursor-pointer hover:scale-105 transition-all hover:bg-zinc-300"}>
+            <p className={`p-2 mb-2 ${tierBackgrounds[props.tier]} text-white font-Poppins font-bold w-fit rounded-lg text-sm`}>{props.tier.toUpperCase()}</p>
+            <img src={props.logo} className={"h-15 max-h-12 my-8 mb-1 mt-3 w-fit"} />
+            <p className={"p-1 font-Poppins"}>{props.body}</p>
+        </div>
     );
 }
 export default Sponsor
