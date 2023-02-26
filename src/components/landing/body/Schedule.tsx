@@ -39,7 +39,7 @@ const Schedule: React.FC<{}> = (props) => {
             eventName: "Weather API Workshop",
             body: ""
         },
-        {
+
         {
             startTime: "2:00PM",
             eventName: "Main Hacking Time",
