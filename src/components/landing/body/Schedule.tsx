@@ -3,14 +3,20 @@ import ScheduleItem from "./ScheduleItem";
 const Schedule: React.FC<{}> = (props) => {
 
     const SCHEDULE: { [key: string]: string }[] = [
-        {
-            startTime: "7:20AM",
-            eventName: "Leaders Arrive",
-            body: ""
-        },
+
         {
             startTime: "8:00AM",
             eventName: "Opening Ceremony",
+            body: ""
+        },
+        {
+            startTime: "8:30AM",
+            eventName: "Project Headspace & Timing Speaker",
+            body: ""
+        },
+        {
+            startTime: "8:45AM",
+            eventName: "Theme Announcement",
             body: ""
         },
         {
@@ -34,10 +40,6 @@ const Schedule: React.FC<{}> = (props) => {
             body: ""
         },
         {
-            startTime: "1:00PM",
-            eventName: "Project Headspace & Timing Speaker & Keynote",
-            body: ""
-        },
         {
             startTime: "2:00PM",
             eventName: "Main Hacking Time",
@@ -45,7 +47,7 @@ const Schedule: React.FC<{}> = (props) => {
         },
         {
             startTime: "3:00PM",
-            eventName: "Secondary Dashboard Workshop",
+            eventName: "Sound Galaxy Workshop with Guest Speaker",
             body: ""
         },
         {
