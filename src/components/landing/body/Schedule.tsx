@@ -25,7 +25,7 @@ const Schedule: React.FC<{}> = (props) => {
         },
         {
             startTime: "11:00AM",
-            eventName: "Lunchtime",
+            eventName: "Lunch",
             body: ""
         },
         {
@@ -50,7 +50,7 @@ const Schedule: React.FC<{}> = (props) => {
         },
         {
             startTime: "5:00PM",
-            eventName: "Dinner Time",
+            eventName: "Dinner",
             body: ""
         },
         {
