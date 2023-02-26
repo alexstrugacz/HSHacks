@@ -4,20 +4,75 @@ const Schedule: React.FC<{}> = (props) => {
 
     const SCHEDULE: { [key: string]: string }[] = [
         {
-            startTime: "8:00AM",
-            eventName: "Opening Ceremony",
-            body: "In an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, rema"
-        },
-        {
-            startTime: "9:00AM",
-            eventName: "Opening Ceremony",
-            body: "In an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaIn an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaIn an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, rema"
+            startTime: "7:20AM",
+            eventName: "Leaders Arrive",
+            body: ""
         },
         {
             startTime: "8:00AM",
             eventName: "Opening Ceremony",
-            body: "In an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, rema"
-        }
+            body: ""
+        },
+        {
+            startTime: "8:45AM",
+            eventName: "Hacking Begins",
+            body: ""
+        },
+        {
+            startTime: "10:00AM",
+            eventName: "Postman Workshop",
+            body: ""
+        },
+        {
+            startTime: "11:00AM",
+            eventName: "Lunchtime",
+            body: ""
+        },
+        {
+            startTime: "12:00PM",
+            eventName: "Weather API Workshop",
+            body: ""
+        },
+        {
+            startTime: "1:00PM",
+            eventName: "Project Headspace & Timing Speaker & Keynote",
+            body: ""
+        },
+        {
+            startTime: "2:00PM",
+            eventName: "Main Hacking Time",
+            body: ""
+        },
+        {
+            startTime: "3:00PM",
+            eventName: "Secondary Dashboard Workshop",
+            body: ""
+        },
+        {
+            startTime: "5:00PM",
+            eventName: "Dinner Time",
+            body: ""
+        },
+        {
+            startTime: "6:00PM",
+            eventName: "Finishing Touches on Projects",
+            body: ""
+        },
+        {
+            startTime: "7:00PM",
+            eventName: "Final Submission Deadline",
+            body: ""
+        },
+        {
+            startTime: "7:45PM",
+            eventName: "Award Ceremony",
+            body: ""
+        },
+        {
+            startTime: "8:00PM",
+            eventName: "The End of an Awesome Day!",
+            body: ""
+        },
     ]
 
     return (
