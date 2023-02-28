@@ -39,8 +39,17 @@ const Body: React.FC<{}> = () => {
             <div ref={scrollRef}>
                 <HowProjectsWork />
             </div>
+            <div className={"block md:hidden"}>
+                <br />
+                <br />
+                <br />
+            </div>
             <Schedule />
-
+            <div className={"block md:hidden"}>
+                <br />
+                <br />
+                <br />
+            </div>
             <Sponsors />
         </div>
     )

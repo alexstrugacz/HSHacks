@@ -22,6 +22,7 @@ const Faq: React.FC<{}> = (props) => {
                                     if (data.isEmail) {
                                         return (
                                             <FaqItem
+                                                key={`faq-${index}`}
                                                 question={data.question}
                                                 answer={data.answer}
                                                 email={data.isEmail}
@@ -30,6 +31,7 @@ const Faq: React.FC<{}> = (props) => {
                                     } else {
                                         return (
                                             <FaqItem
+                                                key={`faq-${index}`}
                                                 question={data.question}
                                                 answer={data.answer}
                                             />
