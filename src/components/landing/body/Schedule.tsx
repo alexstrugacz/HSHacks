@@ -21,7 +21,12 @@ const Schedule: React.FC<{}> = (props) => {
         },
         {
             startTime: "8:45AM",
-            eventName: "Hacking Begins",
+            eventName: "Coding Begins",
+            body: ""
+        },
+        {
+            startTime: "9:00AM",
+            eventName: "Team Formation",
             body: ""
         },
         {
@@ -47,7 +52,7 @@ const Schedule: React.FC<{}> = (props) => {
         },
         {
             startTime: "3:00PM",
-            eventName: "Sound Galaxy Workshop with Guest Speaker",
+            eventName: "Sound Galaxy Workshop",
             body: ""
         },
         {
@@ -82,9 +87,10 @@ const Schedule: React.FC<{}> = (props) => {
             <div className={"max-w-6xl w-full mx-auto px-5 md:px-20"}>
                 <h2 className="font-bold font-Poppins text-2xl pb-3 border-b-2 border-b-[#3f6fa650]">Hackathon Schedule</h2>
                 <br />
-                {SCHEDULE.map(schedule => {
+                {SCHEDULE.map((schedule, index) => {
                     return (
                         <ScheduleItem
+                            key={`schedule-${index}`}
                             startTime={schedule.startTime}
                             eventName={schedule.eventName}
                             body={schedule.body}

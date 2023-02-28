@@ -23,7 +23,7 @@ const Header: React.FC<{}> = () => {
 
     return (
         <div className={"bg-neutral-900"}>
-            <div className={"relative bg-cyan-90 bg-opacity-40 h-screen overflow-hidden"}>
+            <div className={"relative bg-cyan-90 bg-opacity-40 h-screen min-h-[800px] overflow-hidden"}>
                 <video
                     muted
                     autoPlay
@@ -37,7 +37,7 @@ const Header: React.FC<{}> = () => {
                     />
                     Your browser does not support the video tag.
                 </video>
-                <div className="absolute top-0 flex flex-col justify-center items-start pl-5 md:pl-10 text-left w-full h-screen pt-10">
+                <div className="absolute top-0 flex flex-col justify-center items-start pl-5 md:pl-10 text-left w-full h-screen min-h-[800px] pt-10">
                     <div className={" w-full max-w-6xl md:px-14 mx-auto mb-10"}>
                         <div className={""}>
                             <motion.h4
@@ -58,8 +58,8 @@ const Header: React.FC<{}> = () => {
                                 animate={{ opacity: 1, x: 0, scale: 1 }}
                                 transition={{ delay: 1.4, duration: 0.6 }}
                             >
-                                <p className="text-slate-300 text-md md:text-xl pr-5 font-Poppins pt-2 md:pt-8 max-w-xl">Build projects for a nonprofit, make new friends, and have a blast at the <a className={"text-white font-bold"}>HSHacks Hackathon!</a></p>
-                                <div className="mt-5 md:mt-8">
+                                <p className="text-slate-300 text-md md:text-xl pr-5 font-Poppins pt-2 md:pt-5 max-w-xl">Build projects for a nonprofit, make new friends, and have a blast at the <a className={"text-white font-bold"}>HSHacks Hackathon!</a></p>
+                                <div className="mt-5 md:mt-7">
                                     <div onClick={openHerseyLink} className="group flex gap-1 mr-16 items-center hover:cursor-pointer w-fit">
                                         <MapPinIcon className={"w-6 text-white group-hover:text-zinc-400 transition-colors"} />
                                         <h2 className="font-bold text-white font-Poppins group-hover:text-zinc-400 transition-colors text-md md:text-xl mb-0">John Hersey High School ARC</h2>

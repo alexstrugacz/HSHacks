@@ -3,7 +3,7 @@ import ChevronRightIcon from "@heroicons/react/24/solid/ChevronRightIcon"
 
 const JoinTheDiscord: React.FC<{}> = (props) => {
 
-    const JOIN_THE_DISCORD = "https://discord.gg/fmu8xdjTMV"
+    const JOIN_THE_DISCORD = "https://discord.gg/rja2sB9C3q"
 
     return (
         <div>
