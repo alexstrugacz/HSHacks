@@ -36,7 +36,7 @@ const Sponsors: React.FC<{}> = (props) => {
                     />
                     <Sponsor
                         tier={"gold"}
-                        logo={wolfram}
+                        logo={"https://images.ctfassets.net/2lpsze4g694w/7bkN622iWKMAPwRpRR5LEV/e97ceedd530c321519e75d0294f0fb8f/wolfram-language-text-logo-copy-1.png?w=800"}
                         body={"Wolfram is a technology company that specializes in the development of mathematical software, programming languages, and data analysis tools! Thank you for providing us with Wolfram|One access!"}
                         url={"https://www.wolfram.com/"}
                     />
