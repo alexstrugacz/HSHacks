@@ -4,8 +4,7 @@ import styles from "./RegisterButton.module.css"
 
 const RegisterButton: React.FC<{
 }> = (props) => {
-
-    const REGISTER_LINK = "https://forms.gle/z2QPnHTr97g2L9uH8";
+    const REGISTER_LINK = "https://forms.gle/WSJr9xL5Hs4xbqfYA";
 
     return (
         <div>

@@ -20,13 +20,8 @@ const Schedule: React.FC<{}> = (props) => {
             body: ""
         },
         {
-            startTime: "8:45AM",
-            eventName: "Coding Begins",
-            body: ""
-        },
-        {
             startTime: "9:00AM",
-            eventName: "Team Formation",
+            eventName: "Personal Website Workshop",
             body: ""
         },
         {
@@ -35,39 +30,33 @@ const Schedule: React.FC<{}> = (props) => {
             body: ""
         },
         {
-            startTime: "11:00AM",
+            startTime: "12:00PM",
             eventName: "Lunch",
             body: ""
         },
         {
-            startTime: "12:00PM",
-            eventName: "Weather API Workshop",
-            body: ""
-        },
-
-        {
-            startTime: "2:00PM",
+            startTime: "1:00PM",
             eventName: "Main Hacking Time",
             body: ""
         },
         {
-            startTime: "3:00PM",
-            eventName: "Sound Galaxy Workshop",
+            startTime: "2:00PM",
+            eventName: "Jimmy McDermott (CTO of Transeo) AMA",
             body: ""
         },
         {
-            startTime: "5:00PM",
-            eventName: "Dinner",
+            startTime: "3:30PM",
+            eventName: "Minigame",
             body: ""
         },
         {
-            startTime: "6:00PM",
-            eventName: "Finishing Touches on Projects",
+            startTime: "5:45PM",
+            eventName: "Presentations",
             body: ""
         },
         {
-            startTime: "7:00PM",
-            eventName: "Final Submission Deadline",
+            startTime: "6:30PM",
+            eventName: "Dinner + Judging",
             body: ""
         },
         {

@@ -1,13 +1,13 @@
-import { motion } from "framer-motion";
 import MapPinIcon from "@heroicons/react/24/solid/MapPinIcon";
+import { motion } from "framer-motion";
 import React from "react";
 
-import Video from "../assets/code.mp4";
+import { CalendarIcon } from "@heroicons/react/24/solid";
 import { useNavigate } from "react-router-dom";
-import { REGISTER_LINK } from "../../../global/links";
-import RegisterButton from "../../../global/RegisterButton";
 import JoinTheDiscord from "../../../global/JoinTheDiscord";
-import { CalendarIcon, WrenchIcon } from "@heroicons/react/24/solid";
+import RegisterButton from "../../../global/RegisterButton";
+import Video from "../assets/code.mp4";
+import CountDownTimer from "../body/Countdown";
 
 const Header: React.FC<{}> = () => {
     const openHerseyLink = () => {
@@ -64,9 +64,10 @@ const Header: React.FC<{}> = () => {
                                         <MapPinIcon className={"w-6 text-white group-hover:text-zinc-400 transition-colors"} />
                                         <h2 className="font-bold text-white font-Poppins group-hover:text-zinc-400 transition-colors text-md md:text-xl mb-0">John Hersey High School ARC</h2>
                                     </div>
-                                    <div className="flex mt-2 md:mt-3 gap-1">
+                                    <div className="flex mt-2 md:mt-3 gap-1 items-center">
                                         <CalendarIcon className={"w-6 text-white"} />
-                                        <h2 className="font-bold text-white font-Poppins text-md md:text-xl">April 15, 2023</h2>
+                                        <h2 className="font-bold text-white font-Poppins text-md md:text-xl mr-2">April 15, 2023</h2>
+                                        <CountDownTimer/>
                                     </div>
                                 </div>
                                 <JoinTheDiscord />

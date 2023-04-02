@@ -11,7 +11,7 @@ const Sponsors: React.FC<{}> = (props) => {
     return (
         <div>
             <div className={"max-w-6xl w-full mx-auto px-5 md:px-20"}>
-                <h2 className="font-bold font-Poppins text-2xl pb-3 border-b-2 border-b-[#3f6fa650]">Proudly presented by <a className="text-transparent bg-clip-text text-[#338EDA]">our sponsors</a> </h2>
+                <h2 className="font-bold font-Poppins text-2xl pb-3 border-b-2 border-b-[#3f6fa650]">Proudly presented by <a className=" bg-clip-text text-[#338eda]">our sponsors</a> </h2>
                 <br />
 
 
@@ -19,7 +19,7 @@ const Sponsors: React.FC<{}> = (props) => {
                     <Sponsor
                         tier={"platinum"}
                         logo={_66degrees}
-                        body={"Huge thank you for 66degree's support in making this event possible! 66degrees is a software development company that works alongside businesses to modernize cloud infrastructure with Google Cloud Platform."}
+                        body={"Huge thank you for 66degrees's support in making this event possible! 66degrees is a software development company that works alongside businesses to modernize cloud infrastructure with Google Cloud Platform."}
                         url={"https://66degrees.com/"}
                     />
                     <Sponsor
@@ -40,9 +40,22 @@ const Sponsors: React.FC<{}> = (props) => {
                         body={"Wolfram is a technology company that specializes in the development of mathematical software, programming languages, and data analysis tools! Thank you for providing us with Wolfram|One access!"}
                         url={"https://www.wolfram.com/"}
                     />
+                    <Sponsor
+                        tier={"silver"}
+                        logo={"https://cdn.oreillystatic.com/images/sitewide-headers/oreilly_logo_mark_red.svg"}
+                        body={"O'Reilly is a technology media company that publishes books, online training, and conferences on technology topics. Thank you for providing us with O'Reilly learning platform access!"}
+                        url={"https://www.oreilly.com/"}
+                    />
+                    <Sponsor
+                        tier={"silver"}
+                        logo={"https://stickerninja.com/wp-content/themes/sticker-ninja/dist/images/logo-dark_3e368c83.png"}
+                        body={"StickerNinja is a sticker printing company that provides awesome, high-quality stickers at a low cost for all of your sticker needs! Thank you for providing us with HSHacks stickers!"}
+                        url={"https://stickerninja.com/"}
+                    />
                 </div>
 
             </div>
+            <br />
             <br />
             <br />
         </div>
