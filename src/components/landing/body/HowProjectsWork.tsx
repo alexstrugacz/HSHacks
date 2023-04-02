@@ -7,7 +7,7 @@ const HowProjectsWork: React.FC<{}> = (props) => {
     return (
         <div>
             <div className={"max-w-6xl w-full mx-auto px-5 md:px-20"}>
-                <h2 className="font-bold font-Poppins text-2xl pb-3 border-b-2 border-b-[#3f6fa650]">How projects work at <a className="text-transparent bg-clip-text text-[#338EDA]">HSHacks</a> </h2>
+                <h2 className="font-bold font-Poppins text-2xl pb-3 border-b-2 border-b-[#3f6fa650]">How projects work at <a className=" bg-clip-text text-[#338eda]">HSHacks</a> </h2>
                 <div className={"flex gap-10 mobile:gap-3 mobile:flex-col"}>
                     <HowProjectsWorkCol
                         icon={<WrenchScrewdriverIcon className={"w-6 h-6 mt-[0.5px]"} />}

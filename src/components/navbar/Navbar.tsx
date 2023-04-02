@@ -18,20 +18,20 @@ const Navbar: React.FC<{
     setOpened(false);
   }
 
-  const REGISTER_LINK = "https://forms.gle/z2QPnHTr97g2L9uH8";
+  const REGISTER_LINK = "https://forms.gle/WSJr9xL5Hs4xbqfYA";
 
   return (
     <div className={`fixed top-0 left-0 flex justify-between flex-col md:flex-row md:items-start md:items-center transition-colors z-20 p-5 ${(!props.transparent || opened) ? "bg-zinc-50 bg-opacity-90 shadow-lg" : "bg-neutral-900 bg-opacity-60 border-b-2 border-b-zinc-700 border-opacity-20"} w-full`}>
       <div className={"flex justify-between"}>
-        <div className={`group flex items-start items-center gap-0 hover:cursor-pointer ${props.transparent ? "opacity-80" : "opacity-100"}`}>
+        <div className={`group flex items-start items-center gap-0 hover:cursor-pointer ${(props.transparent && !opened)? "opacity-80" : "opacity-100"}`}>
           <a
             href={"/"}
             className={
-              `flex items-center gap-2 mr-12 ml-2 ${props.transparent ? "brightness-150" : ""} font-bold ${props.transparent ? "text-lg md:text-xl" : "text-xl md:text-2xl"} ${(props.transparent && !opened) ? "text-white" : "text-blue-500"} font-Poppins hover:font-bold transition-all`
+              `flex items-center gap-2 mr-12 ml-2 ${(props.transparent && !opened) ? "brightness-150" : ""} font-bold ${(props.transparent && !opened) ? "text-lg md:text-xl" : "text-xl md:text-2xl"} ${(props.transparent && !opened) ? "text-white" : "text-[#508ECB]"} font-Poppins hover:font-bold transition-all`
             }
           >
             <HSHacksLogo
-              className={`${props.transparent ? "h-8" : "h-10"} transition-all`}
+              className={`${(props.transparent && !opened) ? "h-8" : "h-10"} transition-all`}
             />
             <b className={"text-[#508ECB]"}>HSHacks</b>
           </a>
@@ -51,6 +51,9 @@ const Navbar: React.FC<{
         <div className={"flex mr-8 md:mt-0 items-end"}>
           <NavItem link={"/"} text={"Overview"} transparent={(props.transparent && !opened)} />
         </div>
+        {/* <div className={"flex mr-8 items-end"}>
+          <NavItem link={"/homepage"} text={"Homepage"} transparent={(props.transparent && !opened)} />
+        </div> */}
         <div className={"flex mr-8 items-end"}>
           <NavItem link={"/sponsors"} text={"For Sponsors"} transparent={(props.transparent && !opened)} />
         </div>
