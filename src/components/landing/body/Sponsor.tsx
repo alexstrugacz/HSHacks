@@ -9,7 +9,7 @@ const Sponsor: React.FC<{
     const tierBackgrounds: { [key: string]: string } = {
         "platinum": "bg-slate-900",
         "gold": "bg-yellow-700",
-        "silver": "bg-green-500"
+        "silver": "bg-zinc-500"
     }
 
     const handleClick = () => {
