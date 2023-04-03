@@ -14,7 +14,7 @@ const GetPrizes: React.FC<{}> = () => {
                 <div className="flex-1 mb-5">
                     <GiftIcon className={"w-8 text-zinc-600 mb-1"} />
                     <h2 className="font-Poppins pt-4 md:pt-0 font-bold text-2xl md:text-3xl">Get <a className=" bg-clip-text text-[#338eda]">prizes & swag</a></h2>
-                    <p className={"font-Poppins text-zinc-800 mt-3 text-lg"}>All participants will receive free HSHacks Swag, and the top 3 projects will receive tech prizes!</p>
+                    <p className={"font-Poppins text-zinc-800 mt-3 text-lg"}>All participants will receive free HSHacks Swag, and the top projects will receive special prizes!</p>
                 </div>
             </div >
         </div>

@@ -67,8 +67,13 @@ const Header: React.FC<{}> = () => {
                                     <div className="flex mt-2 md:mt-3 gap-1 items-center">
                                         <CalendarIcon className={"w-6 text-white"} />
                                         <h2 className="font-bold text-white font-Poppins text-md md:text-xl mr-2">April 15, 2023</h2>
-                                        <CountDownTimer/>
+                                        <div className={`visible mobile:hidden`}>
+                                            <CountDownTimer />
+                                        </div>
                                     </div>
+                                </div>
+                                <div className={`visible md:hidden mt-3`}>
+                                    <CountDownTimer />
                                 </div>
                                 <JoinTheDiscord />
                                 <RegisterButton />

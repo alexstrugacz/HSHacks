@@ -51,9 +51,9 @@ const Navbar: React.FC<{
         <div className={"flex mr-8 md:mt-0 items-end"}>
           <NavItem link={"/"} text={"Overview"} transparent={(props.transparent && !opened)} />
         </div>
-        {/* <div className={"flex mr-8 items-end"}>
+        <div className={"flex mr-8 items-end"}>
           <NavItem link={"/homepage"} text={"Homepage"} transparent={(props.transparent && !opened)} />
-        </div> */}
+        </div>
         <div className={"flex mr-8 items-end"}>
           <NavItem link={"/sponsors"} text={"For Sponsors"} transparent={(props.transparent && !opened)} />
         </div>
