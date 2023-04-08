@@ -30,6 +30,18 @@ const Sponsors: React.FC<{}> = (props) => {
                     />
                     <Sponsor
                         tier={"gold"}
+                        logo={"https://i.ibb.co/YfdgkMF/nav-logo.png"}
+                        body={"Normandy Remodeling is a Chicago-area remodeling company specializing in home, kitchen, and bathroom models. Thank you for supporting HSHacks!"}
+                        url={"https://www.normandyremodeling.com/"}
+                    />
+                    <Sponsor
+                        tier={"gold"}
+                        logo={"https://1000logos.net/wp-content/uploads/2021/04/Costco-logo.png"}
+                        body={"Costco is a membership-only warehouse club that provides a wide selection of merchandise. Thank you for supporting HSHacks!"}
+                        url={"https://www.normandyremodeling.com/"}
+                    />
+                    <Sponsor
+                        tier={"gold"}
                         logo={hackclub}
                         body={"Hack Club is a global network of student-led coding clubs. They provide the resources, community, and support you need to start and sustain a coding club at your school."}
                         url={"https://hackclub.com/"}
@@ -42,15 +54,21 @@ const Sponsors: React.FC<{}> = (props) => {
                     />
                     <Sponsor
                         tier={"silver"}
+                        logo={"https://stickerninja.com/wp-content/themes/sticker-ninja/dist/images/logo-dark_3e368c83.png"}
+                        body={"StickerNinja is a sticker printing company that provides awesome, high-quality stickers at a low cost for all of your sticker needs! Thank you for providing us with HSHacks stickers!"}
+                        url={"https://stickerninja.com/"}
+                    />
+                    <Sponsor
+                        tier={"silver"}
                         logo={"https://cdn.oreillystatic.com/images/sitewide-headers/oreilly_logo_mark_red.svg"}
                         body={"O'Reilly is a technology media company that publishes books, online training, and conferences on technology topics. Thank you for providing us with O'Reilly learning platform access!"}
                         url={"https://www.oreilly.com/"}
                     />
                     <Sponsor
                         tier={"silver"}
-                        logo={"https://stickerninja.com/wp-content/themes/sticker-ninja/dist/images/logo-dark_3e368c83.png"}
-                        body={"StickerNinja is a sticker printing company that provides awesome, high-quality stickers at a low cost for all of your sticker needs! Thank you for providing us with HSHacks stickers!"}
-                        url={"https://stickerninja.com/"}
+                        logo={"https://i.ibb.co/tqHwGZX/echo3-D-brand-logo-2-removebg-preview-1.png"}
+                        body={"Echo3D is a 3d asset management company for developers, focusing on API and cloud infrastructure for 3d asset management. Thank you for providing us with Echo3D access!"}
+                        url={"https://www.oreilly.com/"}
                     />
                 </div>
 

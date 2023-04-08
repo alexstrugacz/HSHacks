@@ -9,6 +9,7 @@ import HowProjectsWork from "./HowProjectsWork";
 import JoinWorkshops from "./JoinWorkshops";
 import Schedule from "./Schedule";
 import Sponsors from "./Sponsors";
+import AwardsList from "./awards/AwardsList";
 
 
 const Body: React.FC<{}> = () => {
@@ -39,6 +40,12 @@ const Body: React.FC<{}> = () => {
             <div ref={scrollRef}>
                 <HowProjectsWork />
             </div>
+            <div className={"block md:hidden"}>
+                <br />
+                <br />
+                <br />
+            </div>
+            <AwardsList />
             <div className={"block md:hidden"}>
                 <br />
                 <br />
