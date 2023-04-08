@@ -5,8 +5,8 @@ const Schedule: React.FC<{}> = (props) => {
     const SCHEDULE: { [key: string]: string }[] = [
 
         {
-            startTime: "8:00AM",
-            eventName: "Opening Ceremony",
+            startTime: "7:50AM",
+            eventName: "Check-in Starts",
             body: ""
         },
         {

@@ -94,7 +94,7 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "1:45PM",
         endTime: "2:15PM",
         minutes: 30,
-        description: "Jimmy McDermott, CTO of Transeo, an edtech company, will join via Zoom to hold an AMA & share his experiences with coding, hackathons, and more!"
+        description: "Jimmy McDermott, Forbes 30 Under 30 member and CTO of Transeo, an edtech company, will join via Zoom to hold an AMA & share his experiences with coding, hackathons, and more!"
     },
     {
         i: 10,

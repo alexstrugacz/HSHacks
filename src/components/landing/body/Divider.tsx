@@ -7,7 +7,7 @@ const Divider: React.FC<{}> = (props) => {
             <div className={"text-left max-w-6xl w-full mx-auto px-5 md:px-20"}>
                 <div className="flex flex-col md:flex-row w-full gap-10 md:gap-36 py-5">
                     <DividerCell
-                        number={"$8000"}
+                        number={"$12000"}
                         title={"Total Prize Valuation"}
                     />
                     <DividerCell
