@@ -7,12 +7,14 @@ import Homepage from './components/homepage/Homepage';
 import HackathonMap from './components/homepage/HackathonMap';
 import Schedule from './components/homepage/Schedule';
 import ProjectsThemes from './components/homepage/ProjectsThemes';
+import LandingScreen from './components/landing-screen/LandingScreen';
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/landing-screen" element={<LandingScreen />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/homepage" element={<Homepage animated={true} />} />
         <Route path="/home" element={<Homepage animated={false} />} />

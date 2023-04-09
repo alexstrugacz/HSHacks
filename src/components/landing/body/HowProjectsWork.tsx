@@ -16,7 +16,7 @@ const HowProjectsWork: React.FC<{}> = (props) => {
                     /><HowProjectsWorkCol
                         icon={<LightBulbIcon className={"w-6 h-6 mt-[0.5px]"} />}
                         text={"Build your own ideas"}
-                        body={"You may also build your own ideas around the theme of mental health. You can build a mobile app, web app, or even a hardware project. We'll have mentors and workshops to help you build your project, and you'll have the opportunity to win prizes for your project!"}
+                        body={"You may also build your own ideas around the theme. You can build a mobile app, web app, or even a hardware project. We'll have mentors and workshops to help you build your project, and you'll have the opportunity to win prizes for your project!"}
                     />
                 </div>
             </div>

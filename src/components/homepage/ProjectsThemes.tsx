@@ -3,9 +3,13 @@ import * as React from "react"
 import { AnimatedBg } from "../shared/AnimatedBg";
 import { useNavigate } from "react-router-dom";
 import CountdownLarge from "./CountdownLarge";
+import { useCountdown } from "../landing/use-countdown";
+import { START_PROJ } from "../constants/start";
+import ContestantPage from "./ContestantPage";
 const ProjectsThemes: React.FC<{}> = (props) => {
 
     const navigate = useNavigate();
+    const countdownHook = useCountdown(START_PROJ);
 
     const goToHomepage = () => {
         navigate("/home");
@@ -34,12 +38,17 @@ const ProjectsThemes: React.FC<{}> = (props) => {
                 </AnimatedBg>
             </div>
             <br />
-            <div className={"flex-1 w-full h-full flex items-center justify-center"}>
-                <div className={"flex flex-col items-center px-5"}>
-                    <h3 className={"text-2xl text-center text-white font-Poppins font-bold mb-5"}>Project Requests & Themes will be announced in</h3>
-                    <CountdownLarge />
+            {countdownHook.countDown < 0 ? ( // TODO: Fix
+                <div className={"flex-1 w-full h-full flex items-center justify-center"}>
+                    <div className={"flex flex-col items-center px-5"}>
+                        <h3 className={"text-2xl text-center text-white font-Poppins font-bold mb-5"}>Project Requests & Themes will be announced in</h3>
+                        <CountdownLarge />
+                    </div>
                 </div>
-            </div>
+
+            ) : (
+                <ContestantPage />
+            )}
 
         </div>
     );
