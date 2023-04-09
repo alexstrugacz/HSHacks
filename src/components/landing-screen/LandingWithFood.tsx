@@ -3,7 +3,7 @@ import * as React from "react";
 import Video from "../../assets/code.mp4";
 import HSHacksLogo from "../shared/HSHacksLogo";
 import SponsorsList from "./SponsorsList";
-const LandingScreen: React.FC<{}> = (props) => {
+const LandingWithFood: React.FC<{}> = (props) => {
     return (
         <div className={"bg-neutral-900"}>
             <div className={"relative bg-cyan-90 bg-opacity-40 h-screen overflow-hidden"}>
@@ -27,7 +27,7 @@ const LandingScreen: React.FC<{}> = (props) => {
                     <div>
                         <h4
                             className={"text-[#5BC0DE] text-5xl font-Poppins font-bold"}>
-                            Welcome to
+                            Welcome to 
                         </h4>
                         <div className={"flex items-center gap-5 mt-2"}>
                             <HSHacksLogo className={"h-[6rem] -mr-2"} />
@@ -43,4 +43,4 @@ const LandingScreen: React.FC<{}> = (props) => {
         </div>
     );
 }
-export default LandingScreen
+export default LandingWithFood

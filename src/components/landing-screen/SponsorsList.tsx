@@ -10,8 +10,8 @@ const SponsorsList: React.FC<{}> = (props) => {
         "https://i.ibb.co/x2Y5Z5D/wa.png",
     ]
     const SILVER_SPONSORS = [
-        "https://i.ibb.co/pdcTvh8/oreilly.png",
         "https://i.ibb.co/cNmrc5N/logo-dark-3e368c83.png",
+        "https://i.ibb.co/pdcTvh8/oreilly.png",
         "https://i.ibb.co/tqHwGZX/echo3-D-brand-logo-2-removebg-preview-1.png",
     ]
 
@@ -23,7 +23,7 @@ const SponsorsList: React.FC<{}> = (props) => {
                     <SponsorCell src={"https://i.ibb.co/WfjLmFM/66degrees.png"} large />
                     {GOLD_SPONSORS.map(sponsor => {
                         return (
-                            <SponsorCell src={sponsor}/>
+                            <SponsorCell src={sponsor} />
                         )
                     })}
                 </div>

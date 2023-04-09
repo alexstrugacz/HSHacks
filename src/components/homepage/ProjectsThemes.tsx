@@ -16,7 +16,7 @@ const ProjectsThemes: React.FC<{}> = (props) => {
     }
 
     return (
-        <div className={"flex flex-col bg-zinc-800 h-screen"}>
+        <div className={"flex flex-col bg-zinc-800 min-h-screen"}>
             <div className={"h-[9rem]"}>
                 <AnimatedBg className={"rounded-b-xl"}>
                     <div className={"p-5 md:p-10"}>
@@ -38,7 +38,7 @@ const ProjectsThemes: React.FC<{}> = (props) => {
                 </AnimatedBg>
             </div>
             <br />
-            {countdownHook.countDown < 0 ? ( // TODO: Fix
+            {countdownHook.countDown > 0 ? ( // TODO: Fix
                 <div className={"flex-1 w-full h-full flex items-center justify-center"}>
                     <div className={"flex flex-col items-center px-5"}>
                         <h3 className={"text-2xl text-center text-white font-Poppins font-bold mb-5"}>Project Requests & Themes will be announced in</h3>

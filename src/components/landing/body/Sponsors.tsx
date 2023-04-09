@@ -38,7 +38,7 @@ const Sponsors: React.FC<{}> = (props) => {
                         tier={"gold"}
                         logo={"https://1000logos.net/wp-content/uploads/2021/04/Costco-logo.png"}
                         body={"Costco is a membership-only warehouse club that provides a wide selection of merchandise. Thank you for supporting HSHacks!"}
-                        url={"https://www.normandyremodeling.com/"}
+                        url={"https://www.costco.com/"}
                     />
                     <Sponsor
                         tier={"gold"}

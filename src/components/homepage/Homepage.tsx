@@ -69,8 +69,8 @@ const Homepage: React.FC<{
                         <Activity
                             icon={<CommandLineIcon className={"text-cyan-600 w-10 mr-2"} />}
                             title={"Projects & Themes"}
-                            description={"From PH&T"}
-                            extLink="https://herseyhacks.notion.site/HSHacks-Project-Requests-1da8850315bd42288b2fab3ff0d62112"
+                            description={"From PH&T. Scoring criteria also included."}
+                            intLink={"/pht"}
                         />
                     </motion.div>
                     <motion.div
