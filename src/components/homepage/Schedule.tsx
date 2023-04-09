@@ -166,7 +166,7 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                     </GradientScroll>
                 </div>
                 <div className={"mobile:hidden flex-[0.6] flex flex-col"}>
-                    <div className={`flex flex-col ${props.display ? "flex-[0.8]" : "flex-[0.5]"} bg-zinc-300 p-5 rounded-lg pb-10 h-fit mt-10 mb-5`}>
+                    <div className={`flex flex-col ${props.display ? "flex-[2]" : "flex-[0.5]"} bg-zinc-300 p-5 rounded-lg pb-10 h-fit mt-10 mb-5 overflow-hidden`}>
                         <div className={"xl:flex xl:items-center gap-2 border-b-2 border-b-slate-400 pb-3"}>
                             {currentItem.emoji}
                             <div>
@@ -181,7 +181,7 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                     </div>
                     {props.display && (
 
-                        <div className={"flex flex-col flex-[0.3] bg-zinc-300 p-5 rounded-lg pb-20 h-fit mb-10"}>
+                        <div className={"flex flex-col flex-1 bg-zinc-300 p-5 rounded-lg pb-20 h-fit mb-10 overflow-hidden"}>
                             <h2 className={"font-Poppins font-bold text-xl"}>Powered By</h2>
                             <div className={"flex flex-wrap mt-2 gap-2 opacity-90"}>
                                 <SponsorCell src={"https://i.ibb.co/WfjLmFM/66degrees.png"} large />
