@@ -2,6 +2,8 @@
 import Video from "../../assets/code.mp4";
 import * as React from "react"
 import { motion } from "framer-motion";
+import HSHacksLogo from "../shared/HSHacksLogo";
+import SponsorsList from "./SponsorsList";
 const LandingScreen: React.FC<{}> = (props) => {
     return (
         <div className={"bg-neutral-900"}>
@@ -11,7 +13,7 @@ const LandingScreen: React.FC<{}> = (props) => {
                     autoPlay
                     playsInline
                     loop
-                    className={"absolute min-w-full min-h-full max-h-none blur-sm md:blur-md max-w-none z-2 transition-all opacity-20 md:opacity-10"}
+                    className={"absolute min-w-full min-h-full max-h-none blur-md max-w-none z-2 transition-all opacity-20 opacity-10"}
                 >
                     <source
                         src={Video}
@@ -23,22 +25,20 @@ const LandingScreen: React.FC<{}> = (props) => {
 
             <div className="absolute top-0 flex flex-col justify-center items-start px-10 text-left w-full h-screen pt-10">
                 <div className={"flex items-center justify-between w-full max-w-6xl md:px-14 pr-20 mx-auto mb-10"}>
-                    <div className={""}>
-                        <motion.h4
-                            initial={{ opacity: 0, x: -100, scale: 0.8 }}
-                            animate={{ opacity: 1, x: 0, scale: 1 }}
-                            transition={{ delay: 0.2, duration: 0.6 }}
-                            className={"text-[#5BC0DE] text-5xl md:text-6xl font-Poppins font-bold"}>
+                    <div>
+                        <h4
+                            className={"text-[#5BC0DE] text-5xl font-Poppins font-bold"}>
                             Welcome to
-                        </motion.h4>
-                        <motion.h1
-                            initial={{ opacity: 0, x: -100, scale: 0.8 }}
-                            animate={{ opacity: 1, x: 0, scale: 1 }}
-                            transition={{ delay: 0.9, duration: 0.6 }}
-                            className="text-white font-bold text-5xl md:text-6xl font-Poppins mt-0">HSHacks!!
-                        </motion.h1>
+                        </h4>
+                        <div className={"flex items-center gap-5 mt-2"}>
+                            <HSHacksLogo className={"h-[6rem] -mr-2"} />
+                            <h1
+                                className="text-white font-bold text-8xl font-Poppins mt-0">HSHacks
+                            </h1>
+                        </div>
+                        <SponsorsList />
+
                     </div>
-                    <img className={"h-30 mb-5"} src={"https://emojis.slackmojis.com/emojis/images/1643514977/10031/60fps_parrot.gif?1643514977"} />
                 </div>
             </div>
         </div>

@@ -68,7 +68,7 @@ const Sponsors: React.FC<{}> = (props) => {
                         tier={"silver"}
                         logo={"https://i.ibb.co/tqHwGZX/echo3-D-brand-logo-2-removebg-preview-1.png"}
                         body={"Echo3D is a 3d asset management company for developers, focusing on API and cloud infrastructure for 3d asset management. Thank you for providing us with Echo3D access!"}
-                        url={"https://www.oreilly.com/"}
+                        url={"https://www.echo3d.com/"}
                     />
                 </div>
 
