@@ -9,7 +9,6 @@ const GetPrizes: React.FC<{}> = () => {
             <div className="flex flex-col md:flex-row items-center py-0 px-5 md:px-20 mx-auto max-w-6xl gap-10">
                 <div className={"flex-1 flex flex-col items-center mobile:w-full"}>
                     <img src={getprizes} className={"object-cover w-full h-60 mobile:h-80 rounded-xl shadow-lg scale-100 hover:scale-105 transition-all"} />
-                    <p className={"mt-5 text-zinc-400 font-Poppins mr-3 text-center mobile:text-left mobile:w-full"}>Prizes TBD in March 2023</p>
                 </div>
                 <div className="flex-1 mb-5">
                     <GiftIcon className={"w-8 text-zinc-600 mb-1"} />

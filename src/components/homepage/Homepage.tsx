@@ -70,7 +70,7 @@ const Homepage: React.FC<{
                             icon={<CommandLineIcon className={"text-cyan-600 w-10 mr-2"} />}
                             title={"Projects & Themes"}
                             description={"From PH&T"}
-                            intLink={"/pht"}
+                            extLink="https://herseyhacks.notion.site/HSHacks-Project-Requests-1da8850315bd42288b2fab3ff0d62112"
                         />
                     </motion.div>
                     <motion.div
