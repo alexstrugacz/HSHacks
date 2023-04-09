@@ -8,6 +8,7 @@ import HackathonMap from './components/homepage/HackathonMap';
 import Schedule from './components/homepage/Schedule';
 import ProjectsThemes from './components/homepage/ProjectsThemes';
 import LandingScreen from './components/landing-screen/LandingScreen';
+import Workshop from './components/workshops/Workshop';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/school-map" element={<HackathonMap />} />
         <Route path="/live-schedule" element={<Schedule display={false} />} />
         <Route path="/live-schedule-screen" element={<Schedule display={true} />} />
+        <Route path="/workshops/:workshopId" element={<Workshop />} />
         <Route path="/pht" element={<ProjectsThemes />} />
       </Routes>
     </div>

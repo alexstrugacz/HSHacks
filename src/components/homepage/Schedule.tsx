@@ -9,6 +9,7 @@ import GradientScroll from 'react-gradient-scroll-indicator'
 import { START_EARLY } from "../constants/start";
 import moment from "moment";
 import HSHacksLogo from "../shared/HSHacksLogo";
+import SponsorCell from "../landing-screen/SponsorCell";
 const Schedule: React.FC<{ display: boolean }> = (props) => {
 
     const navigate = useNavigate();
@@ -58,6 +59,24 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
         }
         setActiveItem(newActiveItem);
     }
+
+    const PLAT_SPONSORS = [
+        "https://i.ibb.co/WfjLmFM/66degrees.png"
+    ]
+
+    const GOLD_SPONSORS = [
+        "https://i.ibb.co/KrzLm6f/postman.png",
+        "https://i.ibb.co/YfdgkMF/nav-logo.png",
+        "https://i.ibb.co/Q9mqsKz/costco.png",
+        "https://i.ibb.co/Pr46qFS/hc.png",
+        "https://i.ibb.co/x2Y5Z5D/wa.png",
+    ]
+    const SILVER_SPONSORS = [
+        "https://i.ibb.co/cNmrc5N/logo-dark-3e368c83.png",
+        "https://i.ibb.co/pdcTvh8/oreilly.png",
+        "https://i.ibb.co/tqHwGZX/echo3-D-brand-logo-2-removebg-preview-1.png",
+    ]
+
 
     // repeat every second
 
@@ -146,8 +165,8 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                         </div>
                     </GradientScroll>
                 </div>
-                <div className={"mobile:hidden flex-[0.6] flex"}>
-                    <div className={"flex flex-col  flex-1 bg-zinc-300 p-5 rounded-lg pb-20 h-fit mt-10"}>
+                <div className={"mobile:hidden flex-[0.6] flex flex-col"}>
+                    <div className={`flex flex-col ${props.display ? "flex-[0.8]" : "flex-[0.5]"} bg-zinc-300 p-5 rounded-lg pb-10 h-fit mt-10 mb-5`}>
                         <div className={"xl:flex xl:items-center gap-2 border-b-2 border-b-slate-400 pb-3"}>
                             {currentItem.emoji}
                             <div>
@@ -160,6 +179,25 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                             {currentItem.description}
                         </p>
                     </div>
+                    {props.display && (
+
+                        <div className={"flex flex-col flex-[0.3] bg-zinc-300 p-5 rounded-lg pb-20 h-fit mb-10"}>
+                            <h2 className={"font-Poppins font-bold text-xl"}>Powered By</h2>
+                            <div className={"flex flex-wrap mt-2 gap-2 opacity-90"}>
+                                <SponsorCell src={"https://i.ibb.co/WfjLmFM/66degrees.png"} large />
+                                {GOLD_SPONSORS.map(sponsor => {
+                                    return (
+                                        <SponsorCell src={sponsor} />
+                                    )
+                                })}
+                                {SILVER_SPONSORS.map(sponsor => {
+                                    return (
+                                        <SponsorCell src={sponsor} small />
+                                    )
+                                })}
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
 

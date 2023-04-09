@@ -3,7 +3,7 @@ import { AnimatedBg } from "../shared/AnimatedBg";
 import HSHacksLogo from "../shared/HSHacksLogo";
 import Activity from "./Activity";
 import { motion } from "framer-motion";
-import { CalendarDaysIcon, CalendarIcon, ChatBubbleLeftIcon, ChatBubbleLeftRightIcon, CommandLineIcon, MapIcon } from "@heroicons/react/24/solid";
+import { CalendarDaysIcon, CalendarIcon, ChatBubbleLeftIcon, ChatBubbleLeftRightIcon, CommandLineIcon, GlobeAltIcon, MapIcon, WrenchScrewdriverIcon } from "@heroicons/react/24/solid";
 import { useParams, useSearchParams } from "react-router-dom";
 import { Controlled as ControlledZoom } from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
@@ -69,7 +69,7 @@ const Homepage: React.FC<{
                         <Activity
                             icon={<CommandLineIcon className={"text-cyan-600 w-10 mr-2"} />}
                             title={"Projects & Themes"}
-                            description={"From PH&T. Scoring criteria also included."}
+                            description={"Rubrics also included"}
                             intLink={"/pht"}
                         />
                     </motion.div>
@@ -110,6 +110,19 @@ const Homepage: React.FC<{
                             description={"Map of JHHS"}
                             bgImg={"https://i.ibb.co/BLpDYvX/src.png"}
                             intLink={"/school-map"}
+                        />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        transition={{ delay: props.animated ? 1 + 0.5 : 0, duration: props.animated ? 0.5 : 0 }}
+                    >
+                        <Activity
+                            icon={<WrenchScrewdriverIcon className={"text-cyan-800 w-10 mr-2"} />}
+                            title={"Personal Website"}
+                            description={"Resources for Live Workshop #1"}
+                            bgImg={"https://i.ibb.co/BLpDYvX/src.png"}
+                            intLink={"/workshops/personal_website_live"}
                         />
                     </motion.div>
                 </div>
