@@ -1,0 +1,39 @@
+.markdown img {
+    margin: 15px 0;
+    margin-bottom: 35px;
+} 
+
+.markdown pre {
+    margin: 25px 0 !important;
+}
+
+.markdown li {
+    list-style-type: disc !important;
+}
+
+.markdown {
+    font-family: "Phantom Sans" !important;
+}
+
+
+.markdown li {
+    font-size: 1.2rem;
+}
+
+
+.markdown p {
+    font-size: 1.2rem;
+}
+
+.markdown h3 {
+    font-size: 1.5rem;
+}
+
+.markdown h2 {
+    font-size: 1.7rem !important;
+    margin-top: 50px !important;
+}
+
+hr {
+    margin: 50px 0 !important;
+}

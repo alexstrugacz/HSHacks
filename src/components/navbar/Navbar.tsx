@@ -57,9 +57,9 @@ const Navbar: React.FC<{
         <div className={"flex mr-8 items-end"}>
           <NavItem link={"/sponsors"} text={"For Sponsors"} transparent={(props.transparent && !opened)} />
         </div>
-        <div className={"flex items-end"}>
+        {/* <div className={"flex items-end"}>
           <NavItem link={REGISTER_LINK} text={"Register Now"} transparent={(props.transparent && !opened)} redirect />
-        </div>
+        </div> */}
       </div>
       {/* </div> */}
     </div>

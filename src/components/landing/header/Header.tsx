@@ -76,7 +76,10 @@ const Header: React.FC<{}> = () => {
                                     <CountDownTimer />
                                 </div>
                                 <JoinTheDiscord />
-                                <RegisterButton />
+
+                                <div className={"opacity-50 pointer-events-none"}>
+                                    <RegisterButton />
+                                </div>
                                 {/* <FullButton
                                     startColor={"#E96C2Eff".toLowerCase()}
                                     endColor={"#CF424Eff".toLowerCase()}
