@@ -5,7 +5,6 @@ const SponsorsList: React.FC<{}> = (props) => {
     const GOLD_SPONSORS = [
         "https://i.ibb.co/KrzLm6f/postman.png",
         "https://i.ibb.co/YfdgkMF/nav-logo.png",
-        "https://i.ibb.co/Q9mqsKz/costco.png",
         "https://i.ibb.co/Pr46qFS/hc.png",
         "https://i.ibb.co/x2Y5Z5D/wa.png",
     ]
@@ -33,6 +32,7 @@ const SponsorsList: React.FC<{}> = (props) => {
                             <SponsorCell src={sponsor} small />
                         )
                     })}
+                    <SponsorCell src={"https://i.ibb.co/Q9mqsKz/costco.png"} />
                 </div>
             </div>
         </div>

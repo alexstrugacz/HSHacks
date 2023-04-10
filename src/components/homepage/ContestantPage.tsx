@@ -11,10 +11,11 @@ const ContestantPage: React.FC<{}> = (props) => {
         ['Presentation', 'Problem & solution are effectively communicated in a fun, engaging way', 'Problem & solution are effectively communicated', 'Idea comes across but isn\'t cohesive', 'Had a hard time understanding the idea']
     ];
 
+
     const PROJECT_REQUEST_RUBRIC = [
         ['Criteria/Score', 4, 3, 2, 1],
-        ['Problem Relevancy', 'Fully addresses a project request', 'Addresses most of what was requested', 'Loosely connected to a project request', 'Not connected to a project request'],
-        ['Quality of Solution', 'Unique solution that addresses the problem', 'Similar solutions exist but it solves the problem', 'Not unique, but addresses the problem but does not solve it', 'Not unique and does not address the problem at all'],
+        ['Problem Relevancy', 'Immediate 4 for Project Requests'],
+        ['Quality of Solution', "Fully addresses the selected project request", "Addresses most of the selected project request", "Addresses part of the selected project request", "Does not address the selected project request"],
         ['Functionality', 'Project works and runs smoothly', 'Some parts of the project work', 'Functionality attempted but seems broken', 'Does not work at all'],
         ['Aesthetics & UX', 'Looks very professional', 'Looks somewhat professional', 'Little effort put forth for appearance', 'No effort put forth for appearance'],
         ['Presentation', 'Problem & solution are effectively communicated in a fun, engaging way', 'Problem & solution are effectively communicated', 'Idea comes across but isn\'t cohesive', 'Had a hard time understanding the idea']
@@ -71,7 +72,7 @@ const ContestantPage: React.FC<{}> = (props) => {
                         return (
                             <ProjectOption
                                 key={`project-option-${index}`}
-                                number={index+1}
+                                number={index + 1}
                                 projectRequestName={request[1]}
                                 extLink={request[2]}
                             />

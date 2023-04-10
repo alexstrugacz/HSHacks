@@ -36,12 +36,6 @@ const Sponsors: React.FC<{}> = (props) => {
                     />
                     <Sponsor
                         tier={"gold"}
-                        logo={"https://1000logos.net/wp-content/uploads/2021/04/Costco-logo.png"}
-                        body={"Costco is a membership-only warehouse club that provides a wide selection of merchandise. Thank you for supporting HSHacks!"}
-                        url={"https://www.costco.com/"}
-                    />
-                    <Sponsor
-                        tier={"gold"}
                         logo={hackclub}
                         body={"Hack Club is a global network of student-led coding clubs. They provide the resources, community, and support you need to start and sustain a coding club at your school."}
                         url={"https://hackclub.com/"}
@@ -57,6 +51,12 @@ const Sponsors: React.FC<{}> = (props) => {
                         logo={"https://stickerninja.com/wp-content/themes/sticker-ninja/dist/images/logo-dark_3e368c83.png"}
                         body={"StickerNinja is a sticker printing company that provides awesome, high-quality stickers at a low cost for all of your sticker needs! Thank you for providing us with HSHacks stickers!"}
                         url={"https://stickerninja.com/"}
+                    />
+                    <Sponsor
+                        tier={"silver"}
+                        logo={"https://1000logos.net/wp-content/uploads/2021/04/Costco-logo.png"}
+                        body={"Costco is a membership-only warehouse club that provides a wide selection of merchandise. Thank you for supporting HSHacks!"}
+                        url={"https://www.costco.com/"}
                     />
                     <Sponsor
                         tier={"silver"}
