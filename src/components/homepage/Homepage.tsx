@@ -3,7 +3,7 @@ import { AnimatedBg } from "../shared/AnimatedBg";
 import HSHacksLogo from "../shared/HSHacksLogo";
 import Activity from "./Activity";
 import { motion } from "framer-motion";
-import { CalendarDaysIcon, CalendarIcon, ChatBubbleLeftIcon, ChatBubbleLeftRightIcon, CommandLineIcon, GlobeAltIcon, MapIcon, WrenchScrewdriverIcon } from "@heroicons/react/24/solid";
+import { CalendarDaysIcon, CalendarIcon, ChatBubbleLeftIcon, ChatBubbleLeftRightIcon, CommandLineIcon, GlobeAltIcon, HandRaisedIcon, HandThumbUpIcon, MapIcon, UserGroupIcon, WrenchScrewdriverIcon } from "@heroicons/react/24/solid";
 import { useParams, useSearchParams } from "react-router-dom";
 import { Controlled as ControlledZoom } from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
@@ -71,6 +71,18 @@ const Homepage: React.FC<{
                             title={"Projects & Themes"}
                             description={"Rubrics also included"}
                             intLink={"/pht"}
+                        />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        transition={{ delay: props.animated ? 0.2 + 0.5 : 0, duration: props.animated ? 0.5 : 0 }}
+                    >
+                        <Activity
+                            icon={<HandThumbUpIcon className={"text-cyan-600 w-10 mr-2"} />}
+                            title={"Peer Mentorship"}
+                            description={"A quick explanation"}
+                            extLink={"https://herseyhacks.notion.site/Peer-Mentorship-742f9132b78a4f8a8f45f6954785a68c"}
                         />
                     </motion.div>
                     <motion.div

@@ -1,5 +1,7 @@
 import * as React from "react"
 import ProjectOption from "./ProjectOption";
+import AwardsList from "../landing/body/awards/AwardsList";
+import AwardsAndPrizes from "./AwardsAndPrizes";
 const ContestantPage: React.FC<{}> = (props) => {
 
     const INDIVIDUAL_RUBRIC = [
@@ -28,18 +30,18 @@ const ContestantPage: React.FC<{}> = (props) => {
     ][] = [
             [
                 1,
-                "Placeholder Project 1",
-                "https://google.com"
+                "Volunteering Portal",
+                "https://herseyhacks.notion.site/Project-Request-1-Volunteer-Sign-Up-Portal-f807e2b7bbec40d3b8937b984fc2468b"
             ],
             [
                 2,
-                "Placeholder Project 2",
-                "https://google.com"
+                "Veterans' Outreach Signup",
+                "https://herseyhacks.notion.site/Project-Request-2-Veterans-Event-Signup-91020961af924fdd8da629324a6449af"
             ],
             [
                 3,
-                "Placeholder Project 3",
-                "https://google.com"
+                "Donor Receipt System",
+                "https://herseyhacks.notion.site/Project-Request-3-Donor-Receipt-System-ccd4fcb70efc449a91c4c2e4dfdbf323"
             ]
         ]
 
@@ -66,7 +68,7 @@ const ContestantPage: React.FC<{}> = (props) => {
                 <br />
                 <h2 className={"text-2xl font-bold font-Poppins text-white border-b-[2px] border-b-zinc-600 pb-3"}>🔨 PH&T Project Requests</h2>
                 <p className={"font-Poppins text-zinc-300 text-xl"}>PH&T Project Request Projects must be web-based, and only need to address one Project Request. If you're up for it, try to address multiple Project Requests!</p>
-                <p className={"text-xl text-zinc-300 font-Poppins font-bold"}>Project Options</p>
+                <p className={"text-xl text-zinc-300 font-Poppins font-bold"}>Project Requests</p>
                 <div className={"grid gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3"}>
                     {PROJECT_REQUESTS.map((request, index) => {
                         return (
@@ -111,7 +113,7 @@ const ContestantPage: React.FC<{}> = (props) => {
                 </div>
                 <br />
                 <h2 className={"text-2xl font-bold font-Poppins text-white border-b-[2px] border-b-zinc-600 pb-3"}>💡 Original Idea Guidelines</h2>
-                <p className={"font-Poppins text-zinc-300 text-xl"}>Build a website, app, or game that addresses the Mental Health Theme based on an original idea.</p>
+                <p className={"font-Poppins text-zinc-300 text-xl"}>Build a website, app, or game that addresses the <b>Mental Health Theme</b> based on an original idea.</p>
                 <p className={"text-xl text-zinc-300 font-Poppins font-bold"}>Scoring Rubric</p>
                 <div className={"w-full overflow-auto"}>
                     <table className="table-fixed bg-zinc-100 rounded-lg overflow-hidden shadow-lg">
@@ -141,6 +143,11 @@ const ContestantPage: React.FC<{}> = (props) => {
                     </table>
                 </div>
                 <br />
+                <h2 className={"text-2xl font-bold font-Poppins text-white border-b-[2px] border-b-zinc-600 pb-3"}>🏆 Awards & Prizes</h2>
+                <AwardsAndPrizes />
+                <br/> 
+                <br/>
+
 
 
             </div>
