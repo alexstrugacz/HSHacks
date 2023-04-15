@@ -1,12 +1,10 @@
 In this workshop, you’ll build your own **Personal Website**!
 
-# Skip to Part V if you did the workshop at the beginning of the year!
-
 *Here is an image of what the base looks like (before we all customize it!):*
 
 ![Untitled](https://i.ibb.co/nQ5qMp9/Untitled.png)
 
-🕙 This workshop will take one meetup.
+🕙 This workshop will take one hour.
 
 💻 This workshop requires **no prior coding experience.**
 
@@ -17,7 +15,7 @@ In this workshop, you’ll build your own **Personal Website**!
 To get started:
 
 1) Create an account on <a href="https://repl.it" target="_blank">repl.it</a>, our code editor
-2) Clone the starter code <a href="https://replit.com/@AlexStrugacz1/astrugaczs-Personal-Website-Starter-Code?v=1" target="_blank">here</a>
+2) Clone the starter code <a href="https://repl.it/languages/html" target="_blank">here</a>
 
 Once you **clone** the starter code, your screen should look like this:
 
@@ -226,9 +224,9 @@ In this section, your challenge is to add additional features to your website to
 
 <a href="https://workable-clove-91e.notion.site/Adding-a-YouTube-video-to-your-site-6cd91e0af6984e19b68916fd8b040ecf" target="_blank">Adding a YouTube video to your site</a>
 
-<a href="https://workable-clove-91e.notion.site/Add-some-cool-animations-aa7aa444d0b34994b0a056851042eade" target="_blank">Add some cool animations</a><br />
+<a href="https://workable-clove-91e.notion.site/Add-some-cool-animations-aa7aa444d0b34994b0a056851042eade" target="_blank">Add some cool animations</a>
 
-<p>Want to use a different font? Google it! Want to add more pictures? Google it! Want to add more text? Your entire life story? Background image? Background music? Video? More pages? Google it!</p>
+Want to use a different font? Google it! Want to add more pictures? Google it! Want to add more text? Your entire life story? Background image? Background music? Video? More pages? Google it!
 
 A good way to get ideas for what to add to your website is to look at other people's websites. Find a website that you like, either from the below list or from somewhere else on the internet, pick one aspect of that website that you would like on your own website, and Google for ways to make it happen!
 
@@ -262,14 +260,6 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 <br/>
 
-
-# Part VI: Showcase
-### To submit your site to our Hersey Hack Club Showcase…
-
-- Head over to <a href="https://herseyhack.club/showcase" target="_blank">https://herseyhack.club/showcase</a>
-- Fill out the simple form and include the link to your website
-
-**We will update the showcase soon after the meetup to put new sites up!**
 
 ## Cool Resources
 [Fonts you can use](https://www.w3.org/Style/Examples/007/fonts.en.html)
