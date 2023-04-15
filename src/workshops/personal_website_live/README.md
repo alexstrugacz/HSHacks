@@ -7,27 +7,30 @@ _Here is an image of what the base looks like (before we all customize it!):_
 
 ![Untitled](https://i.ibb.co/nQ5qMp9/Untitled.png)
 
-🕙 This workshop will take one meetup.
+🕙 This workshop will take one hour.
 
 💻 This workshop requires **no prior coding experience.**
 
 🖐️ Ask questions and customize your website as you code!
+
+
+Self-Guided Version: Click [here](http://localhost:3000/workshops/personal_website)
 
 ## Getting Started
 
 To get started:
 
 1) Create an account on <a href="https://repl.it" target="_blank">repl.it</a>, our code editor
-2) Clone the starter code <a href="https://replit.com/@AlexStrugacz1/astrugaczs-Personal-Website-Starter-Code?v=1" target="_blank">here</a>
+2) Clone the starter code <a href="https://repl.it/languages/html" target="_blank">here</a>
 
 
 Once you **clone** the starter code, your screen should look like this:
 
 ![Untitled](https://i.ibb.co/8rbgQdN/Untitled-1.png)
 
-Now, listen along to the live workshop being hosted!
-
-Once we get to the hacking part, use the resources below…
+## Workshop Resources
+Coder Dino Image URL: https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png
+HSHacks Image URL: https://i.ibb.co/nnVGjdw/hshacks.png
 
 ## Hacking!
 
@@ -41,6 +44,8 @@ In this section, your challenge is to add additional features to your website to
 
 <a href="https://workable-clove-91e.notion.site/Add-some-cool-animations-aa7aa444d0b34994b0a056851042eade" target="_blank">Add some cool animations</a>
 
+&nbsp;
+
 **Additional ideas you can do on your own:**
 
 1. Add custom links to your own social media sites on your page
@@ -53,9 +58,13 @@ In this section, your challenge is to add additional features to your website to
 
 5. Ask OpenAI what you should add to your website…
 
+&nbsp;
+
 Want to use a different font? Google it! Want to add more pictures? Google it! Want to add more text? Your entire life story? Background image? Background music? Video? More pages? Google it!
 
 A good way to get ideas for what to add to your website is to look at other people's websites. Find a website that you like, either from the below list or from somewhere else on the internet, pick one aspect of that website that you would like on your own website, and Google for ways to make it happen!
+
+&nbsp;
 
 ### Other Personal sites for inspiration:
 
@@ -71,31 +80,13 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 ![Untitled](https://i.ibb.co/LPgKbCz/Untitled-4.png)
 
-# Part VI: Showcase
-
-### To submit your site to our Hersey Hack Club Showcase…
-
-- Head over to <a href="https://herseyhack.club/showcase" target="_blank">https://herseyhack.club/showcase</a>
-- Fill out the simple form and include the link to your website
-
-**We will update the showcase soon after the meetup to put new sites up!**
-
 ## Cool Resources
 
 [Fonts you can use](https://www.w3.org/Style/Examples/007/fonts.en.html)
 
 [Color Picker](https://www.google.com/search?q=color+picker&oq=color+picker&ie=UTF-8)
 
-**Finished code below** ⤵️ (don’t sneak peak!!)
 
-[astrugacz's Personal Website Finished (w/o customization)](https://replit.com/@AlexStrugacz1/astrugaczs-Personal-Website-Finished-witho-customization?v=1)
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+&nbsp;
+&nbsp;
+&nbsp;
