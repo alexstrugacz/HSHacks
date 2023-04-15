@@ -276,9 +276,6 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 [Color Picker](https://www.google.com/search?q=color+picker&oq=color+picker&ie=UTF-8)
 
-**Finished code below** ⤵️ (don’t sneak peak!!)
-
-[astrugacz's Personal Website Finished (w/o customization)](https://replit.com/@AlexStrugacz1/astrugaczs-Personal-Website-Finished-witho-customization)
 <br/>
 <br/>
 <br/>

@@ -58,9 +58,7 @@ const HackathonMap: React.FC<{}> = (props) => {
                 <p className={"font-Poppins text-white"}>Arlington Heights, IL 60004</p>
             </div>
             <div className={"flex items-center justify-center mt-10 mx-5"}>
-                <Zoom>
                     <img className={"object-cover rounded-xl shadow-xl"} src={"https://i.ibb.co/pPHJS5Q/Copy-of-jhhs-map.jpg"} />
-                </Zoom>
             </div>
             <br />
             <br />
