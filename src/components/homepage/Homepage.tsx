@@ -51,7 +51,8 @@ const Homepage: React.FC<{
                                         />
                                         <b className={"text-white text-xl font-bold"}>HSHacks</b>
                                     </a>
-                                    <h1 className={"font-Poppins text-2xl md:text-4xl font-bold mt-0 md:mt-0"}>Hackathon Homepage</h1>
+                                    <h1 className={"font-Poppins text-2xl md:text-4xl font-bold mt-0 md:mt-0"}>HSHacks 2023 Homepage</h1>
+                                    <p className={"font-Poppins font-xl text-zinc-300"}>Archive of last year's hackathon homepage.</p>
                                 </div>
                             </div>
                         </div>

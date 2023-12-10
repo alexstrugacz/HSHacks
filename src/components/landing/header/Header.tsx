@@ -58,7 +58,7 @@ const Header: React.FC<{}> = () => {
                                 animate={{ opacity: 1, x: 0, scale: 1 }}
                                 transition={{ delay: 1.4, duration: 0.6 }}
                             >
-                                <p className="text-slate-300 text-md md:text-xl pr-5 font-Poppins pt-2 md:pt-5 max-w-xl">Build projects for a nonprofit, make new friends, and have a blast at the <a className={"text-white font-bold"}>HSHacks Hackathon!</a></p>
+                                <p className="text-slate-300 text-md md:text-xl pr-5 font-Poppins pt-2 md:pt-5 max-w-xl">Build projects, make new friends, and have a blast at <a className={"text-white font-bold"}>HSHacks 2024!</a></p>
                                 <div className="mt-5 md:mt-7">
                                     <div onClick={openHerseyLink} className="group flex gap-1 mr-16 items-center hover:cursor-pointer w-fit">
                                         <MapPinIcon className={"w-6 text-white group-hover:text-zinc-400 transition-colors"} />
@@ -66,7 +66,7 @@ const Header: React.FC<{}> = () => {
                                     </div>
                                     <div className="flex mt-2 md:mt-3 gap-1 items-center">
                                         <CalendarIcon className={"w-6 text-white"} />
-                                        <h2 className="font-bold text-white font-Poppins text-md md:text-xl mr-2">April 15, 2023</h2>
+                                        <h2 className="font-bold text-white font-Poppins text-md md:text-xl mr-2">April 20, 2024</h2>
                                         <div className={`visible mobile:hidden`}>
                                             <CountDownTimer />
                                         </div>
@@ -86,7 +86,7 @@ const Header: React.FC<{}> = () => {
                                     text={"Register Now (Free)"}
                                     link={REGISTER_LINK}
                                 /> */}
-                                <p onClick={handleOpenSponsorPage} className={"mt-4 text-gray-300 font-Poppins"}>Interested in sponsoring? <a className={"text-cyan-400 hover:text-cyan-200 hover:cursor-pointer transition-colors"}>Click here!</a></p>
+                                {/* <p onClick={handleOpenSponsorPage} className={"mt-4 text-gray-300 font-Poppins"}>Interested in sponsoring? <a className={"text-cyan-400 hover:text-cyan-200 hover:cursor-pointer transition-colors"}>Click here!</a></p> */}
                             </motion.div>
                         </div>
                     </div>
