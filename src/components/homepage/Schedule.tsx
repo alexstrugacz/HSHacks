@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import { SCHEDULE_ITEMS } from "./schedule-items";
 import ScheduleItem from "./ScheduleItem";
 import { IScheduleItem } from "./IScheduleItem";
-import GradientScroll from 'react-gradient-scroll-indicator'
 import { START_EARLY } from "../constants/start";
 import moment from "moment";
 import HSHacksLogo from "../shared/HSHacksLogo";
@@ -138,31 +137,24 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                 </AnimatedBg>
             </div>
             <div className={"flex-1 flex px-10 gap-5 overflow-y-hidden"}>
-                <div className={"flex-1"}>
-                    <GradientScroll
-                        primaryColor={"#27272a"}
-                        fadeHeight={"50px"}
-                    >
-                        <div className={"flex-1 flex flex-col gap-3 max-h-full h-full overflow-y-scroll py-10"}>
-                            {
-                                SCHEDULE_ITEMS.map((scheduleItem: IScheduleItem, i: number) => {
-                                    return (
-                                        <ScheduleItem
-                                            id={`schedule-${i}`}
-                                            key={`schedule-${i}`}
-                                            item={scheduleItem}
-                                            active={currentItem.i === scheduleItem.i}
-                                            handleClick={() => {
-                                                handleClick(scheduleItem);
-                                            }}
-                                        />
-                                    )
-                                })
-                            }
-                            <br />
-                            <br />
-                        </div>
-                    </GradientScroll>
+                <div className={"flex-1 flex flex-col gap-3 max-h-full h-full py-10 overflow-y-scroll"}  style={ { scrollbarWidth: "none" } }>
+                    {
+                        SCHEDULE_ITEMS.map((scheduleItem: IScheduleItem, i: number) => {
+                            return (
+                                <ScheduleItem
+                                    id={`schedule-${i}`}
+                                    key={`schedule-${i}`}
+                                    item={scheduleItem}
+                                    active={currentItem.i === scheduleItem.i}
+                                    handleClick={() => {
+                                        handleClick(scheduleItem);
+                                    }}
+                                />
+                            )
+                        })
+                    }
+                    <br />
+                    <br />
                 </div>
                 <div className={"mobile:hidden flex-[0.6] flex flex-col"}>
                     <div className={`flex flex-col ${props.display ? "flex-[2]" : "flex-[0.5]"} bg-zinc-300 p-5 rounded-lg pb-10 h-fit mt-10 mb-5 overflow-hidden`}>
