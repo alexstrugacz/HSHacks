@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import Header from "./landing/header/Header";
 import Body from "./landing/body/Body";
 import Footer from "./landing/body/footer/Footer";
