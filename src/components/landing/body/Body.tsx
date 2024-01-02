@@ -10,6 +10,7 @@ import JoinWorkshops from "./JoinWorkshops";
 import Schedule from "./Schedule";
 import Sponsors from "./Sponsors";
 import AwardsList from "./awards/AwardsList";
+import MeetTheTeam from "./MeetTheTeam";
 
 
 const Body: React.FC<{}> = () => {
@@ -24,7 +25,7 @@ const Body: React.FC<{}> = () => {
 
     return (
         <div className="overflow-hidden bg-gradient-to-b from-white to-slate-100">
-            {/* <Divider /> */}
+            <Divider />
             <Description />
             <div className={"max-w-6xl w-full mx-auto px-5 md:px-20"}>
                 <h2 className="font-bold font-Poppins text-2xl pb-3 border-b-2 border-b-[#3f6fa650]">What we'll do at HSHacks</h2>
@@ -37,9 +38,9 @@ const Body: React.FC<{}> = () => {
                 <GetPrizes />
                 <HaveLotsOfFun />
             </div>
-            {/* <div ref={scrollRef}>
+            <div ref={scrollRef}>
                 <HowProjectsWork />
-            </div> */}
+            </div>
             {/* <div className={"block md:hidden"}>
                 <br />
                 <br />
@@ -51,13 +52,18 @@ const Body: React.FC<{}> = () => {
                 <br />
                 <br />
             </div> */}
-            {/* <Schedule /> */}
+            <Schedule />
+            <MeetTheTeam />
+
+            <br />
+            <br />
+            <br />
             {/* <div className={"block md:hidden"}>
                 <br />
                 <br />
                 <br />
-            </div>
-            <Sponsors /> */}
+            </div>*/}
+            {/*<Sponsors />*/}
         </div>
     )
 }

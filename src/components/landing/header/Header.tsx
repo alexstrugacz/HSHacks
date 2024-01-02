@@ -8,6 +8,7 @@ import JoinTheDiscord from "../../../global/JoinTheDiscord";
 import RegisterButton from "../../../global/RegisterButton";
 import Video from "../assets/code.mp4";
 import CountDownTimer from "../body/Countdown";
+import SponsorsList from "../../landing-screen/SponsorsList";
 
 const Header: React.FC<{}> = () => {
     const openHerseyLink = () => {
@@ -29,7 +30,7 @@ const Header: React.FC<{}> = () => {
                     autoPlay
                     playsInline
                     loop
-                    className={"absolute min-w-full min-h-full max-h-none blur-sm md:blur-md max-w-none z-2 transition-all opacity-20 md:opacity-10"}
+                    className={"absolute min-w-full min-h-full max-h-none blur-sm md:blur-md max-w-none z-2 transition-all opacity-20 md:opacity-15"}
                 >
                     <source
                         src={Video}
@@ -44,7 +45,7 @@ const Header: React.FC<{}> = () => {
                                 initial={{ opacity: 0, x: -100, scale: 0.8 }}
                                 animate={{ opacity: 1, x: 0, scale: 1 }}
                                 transition={{ delay: 0.2, duration: 0.6 }}
-                                className={"text-[#5BC0DE] text-5xl md:text-6xl font-Poppins font-bold"}>
+                                className={"text-[#5FA7ED] text-5xl md:text-6xl font-Poppins font-bold"}>
                                 Welcome to
                             </motion.h4>
                             <motion.h1
@@ -54,31 +55,30 @@ const Header: React.FC<{}> = () => {
                                 className="text-white font-bold text-5xl md:text-6xl font-Poppins mt-0">HSHacks.
                             </motion.h1>
                             <motion.div
-                                initial={{ opacity: 0, x: -100, scale: 0.8 }}
-                                animate={{ opacity: 1, x: 0, scale: 1 }}
-                                transition={{ delay: 1.4, duration: 0.6 }}
+                                initial={{opacity: 0, x: -100, scale: 0.8}}
+                                animate={{opacity: 1, x: 0, scale: 1}}
+                                transition={{delay: 1.4, duration: 0.6}}
                             >
-                                <p className="text-slate-300 text-md md:text-xl pr-5 font-Poppins pt-2 md:pt-5 max-w-xl">Build projects, make new friends, and have a blast at <a className={"text-white font-bold"}>HSHacks 2024!</a></p>
+                                <p className="text-[#C8DEFF] text-md md:text-xl pr-5 font-Poppins pt-2 md:pt-5 max-w-xl">Make
+                                    projects come to life, make new friends, and have a blast at the <a className={"text-[#C8DEFF] font-bold"}>HSHacks Hackathon</a>!</p>
+                                <div className={"mt-3"}>
+                                    {/*<CountDownTimer/>*/}
+                                </div>
+                                <RegisterButton/>
+                                <JoinTheDiscord/>
                                 <div className="mt-5 md:mt-7">
-                                    <div onClick={openHerseyLink} className="group flex gap-1 mr-16 items-center hover:cursor-pointer w-fit">
-                                        <MapPinIcon className={"w-6 text-white group-hover:text-zinc-400 transition-colors"} />
-                                        <h2 className="font-bold text-white font-Poppins group-hover:text-zinc-400 transition-colors text-md md:text-xl mb-0">John Hersey High School ARC</h2>
+                                    <div onClick={openHerseyLink}
+                                         className="group flex gap-1 mr-16 items-center hover:cursor-pointer w-fit">
+                                        <MapPinIcon
+                                            className={"w-6 text-white group-hover:text-zinc-400 transition-colors"}/>
+                                        <h2 className="font-bold text-white font-Poppins group-hover:text-zinc-400 transition-colors text-md md:text-xl mb-0">John
+                                            Hersey High School ARC</h2>
                                     </div>
                                     <div className="flex mt-2 md:mt-3 gap-1 items-center">
-                                        <CalendarIcon className={"w-6 text-white"} />
-                                        <h2 className="font-bold text-white font-Poppins text-md md:text-xl mr-2">April 20, 2024</h2>
-                                        <div className={`visible mobile:hidden`}>
-                                            <CountDownTimer />
-                                        </div>
+                                        <CalendarIcon className={"w-6 text-white"}/>
+                                        <h2 className="font-bold text-white font-Poppins text-md md:text-xl mr-2">April
+                                            20, 2024</h2>
                                     </div>
-                                </div>
-                                <div className={`visible md:hidden mt-3`}>
-                                    <CountDownTimer />
-                                </div>
-                                <JoinTheDiscord />
-
-                                <div className={"opacity-50 pointer-events-none"}>
-                                    <RegisterButton />
                                 </div>
                                 {/* <FullButton
                                     startColor={"#E96C2Eff".toLowerCase()}
@@ -86,12 +86,14 @@ const Header: React.FC<{}> = () => {
                                     text={"Register Now (Free)"}
                                     link={REGISTER_LINK}
                                 /> */}
-                                {/* <p onClick={handleOpenSponsorPage} className={"mt-4 text-gray-300 font-Poppins"}>Interested in sponsoring? <a className={"text-cyan-400 hover:text-cyan-200 hover:cursor-pointer transition-colors"}>Click here!</a></p> */}
+                                 <p onClick={handleOpenSponsorPage} className={"mt-4 text-gray-300 font-Poppins"}>Interested in sponsoring? <a className={"text-[#5FA7ED] hover:text-cyan-200 hover:cursor-pointer transition-colors"}>Click here!</a></p>
                             </motion.div>
+                            {/*<SponsorsList />*/}
                         </div>
+
                     </div>
                 </div>
-            </div >
+            </div>
         </div>
 
     )

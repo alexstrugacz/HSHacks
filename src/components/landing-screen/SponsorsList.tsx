@@ -3,10 +3,8 @@ import SponsorCell from "./SponsorCell";
 const SponsorsList: React.FC<{}> = (props) => {
 
     const GOLD_SPONSORS = [
-        "https://i.ibb.co/KrzLm6f/postman.png",
         "https://i.ibb.co/YfdgkMF/nav-logo.png",
         "https://i.ibb.co/Pr46qFS/hc.png",
-        "https://i.ibb.co/x2Y5Z5D/wa.png",
     ]
     const SILVER_SPONSORS = [
         "https://i.ibb.co/cNmrc5N/logo-dark-3e368c83.png",
