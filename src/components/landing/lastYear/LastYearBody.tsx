@@ -26,22 +26,22 @@ const LastYearBody: React.FC<{}> = (props) => {
 
     return (
         <div className={"max-w-6xl mx-auto px-5 md:px-20 "}>
-            <div className={"flex justify-between w-full my-14"}>
+            <div className={"flex flex-col lg:flex-row justify-between w-full my-14"}>
                 <div className={"space-y-5"}>
                     <div onClick={openHerseyLink}
-                        className="group flex gap-1 mr-16 items-center hover:cursor-pointer w-fit">
+                        className="group flex gap-2 mr-16 items-center hover:cursor-pointer w-fit">
                         <MapPinIcon
                             className={"w-6 text-zinc-700 group-hover:text-zinc-400 transition-colors"} />
-                        <h2 className="font-bold text-zinc-700 font-Poppins group-hover:text-zinc-400 transition-colors text-2xl mb-0">John
+                        <h2 className="font-bold text-zinc-700 font-Poppins group-hover:text-zinc-400 transition-colors text-xl lg:text-2xl mb-0">John
                             Hersey High School ARC</h2>
                     </div>
-                    <div className="flex mt-2 md:mt-3 gap-1 items-center">
+                    <div className="flex mt-2 md:mt-3 gap-2 items-center">
                         <CalendarIcon className={"w-6 text-zinc-700"} />
-                        <h2 className="font-bold text-zinc-700 font-Poppins text-2xl mr-2">April
+                        <h2 className="font-bold text-zinc-700 font-Poppins text-xl lg:text-2xl mr-2">April
                             20, 2024</h2>
                     </div>
                 </div>
-                <div className="flex flex-1 gap-10 justify-right items-center">
+                <div className="flex flex-col lg:flex-row flex-1 mt-10 lg:mt-0 gap-5 lg:gap-10 lg:justify-right lg:items-center">
                     <div className={"flex-1"}>
 
                     </div>
@@ -71,7 +71,7 @@ const LastYearBody: React.FC<{}> = (props) => {
                 referrerPolicy="no-referrer-when-downgrade">
             </iframe>
 
-            <div className={"grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-10"}>
+            <div className={"grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-10"}>
                 {IMAGES.map((image, index) => (
                     <img src={image} className={"w-full h-96 object-cover rounded-lg shadow-lg border-2 border-white-200"} />
                 ))}
