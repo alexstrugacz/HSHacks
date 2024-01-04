@@ -26,7 +26,7 @@ const LandingScreen: React.FC<{}> = (props) => {
                 <div className={"flex items-center justify-between w-full max-w-6xl md:px-14 pr-20 mx-auto mb-10"}>
                     <div>
                         <h4
-                            className={"text-[#5BC0DE] text-5xl font-Poppins font-bold"}>
+                            className={"text-[#508ECB] text-5xl font-Poppins font-bold"}>
                             Welcome to
                         </h4>
                         <div className={"flex items-center gap-5 mt-2"}>

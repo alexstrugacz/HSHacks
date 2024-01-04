@@ -17,13 +17,12 @@ const Navbar: React.FC<{
   const handleClose = () => {
     setOpened(false);
   }
-
-  const REGISTER_LINK = "https://forms.gle/WSJr9xL5Hs4xbqfYA";
+  const REGISTER_LINK = "https://forms.gle/xxnx1HFVpszntRGf8";
 
   return (
     <div className={`fixed top-0 left-0 flex justify-between flex-col md:flex-row md:items-start md:items-center transition-colors z-20 p-5 ${(!props.transparent || opened) ? "bg-zinc-50 bg-opacity-90 shadow-lg" : "bg-neutral-900 bg-opacity-60 border-b-2 border-b-zinc-700 border-opacity-20"} w-full`}>
       <div className={"flex justify-between"}>
-        <div className={`group flex items-start items-center gap-0 hover:cursor-pointer ${(props.transparent && !opened)? "opacity-80" : "opacity-100"}`}>
+        <div className={`group flex items-start items-center gap-0 hover:cursor-pointer ${(props.transparent && !opened) ? "opacity-80" : "opacity-100"}`}>
           <a
             href={"/"}
             className={
@@ -52,14 +51,14 @@ const Navbar: React.FC<{
           <NavItem link={"/"} text={"Overview"} transparent={(props.transparent && !opened)} />
         </div>
         <div className={"flex mr-8 items-end"}>
-          <NavItem link={"/homepage"} text={"HSHacks 2023 Homepage"} transparent={(props.transparent && !opened)} />
-        </div>
-        {/* <div className={"flex mr-8 items-end"}>
           <NavItem link={"/sponsors"} text={"For Sponsors"} transparent={(props.transparent && !opened)} />
-        </div> */}
-        {/* <div className={"flex items-end"}>
+        </div>
+        <div className={"flex mr-8 items-end"}>
+          <NavItem link={"/last-year"} text={"Last Year's HSHacks"} transparent={(props.transparent && !opened)} />
+        </div>
+        <div className={"flex items-end"}>
           <NavItem link={REGISTER_LINK} text={"Register Now"} transparent={(props.transparent && !opened)} redirect />
-        </div> */}
+        </div>
       </div>
       {/* </div> */}
     </div>

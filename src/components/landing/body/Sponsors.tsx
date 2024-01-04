@@ -2,8 +2,6 @@ import * as React from "react"
 import Sponsor from "./Sponsor"
 const _66degrees = require("../assets/logos/66degrees.png")
 const hackclub = require("../assets/logos/hackclub.png")
-const stickermule = require("../assets/logos/stickermule.png")
-const wolfram = require("../assets/logos/wolfram-1.png")
 const postman = require("../assets/logos/Postman.png")
 
 const Sponsors: React.FC<{}> = (props) => {
@@ -13,8 +11,6 @@ const Sponsors: React.FC<{}> = (props) => {
             <div className={"max-w-6xl w-full mx-auto px-5 md:px-20"}>
                 <h2 className="font-bold font-Poppins text-2xl pb-3 border-b-2 border-b-[#3f6fa650]">Proudly presented by <a className=" bg-clip-text text-[#338eda]">our sponsors</a> </h2>
                 <br />
-
-
                 <div className={"grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-10"}>
                     <Sponsor
                         tier={"platinum"}

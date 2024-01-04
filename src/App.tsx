@@ -9,6 +9,7 @@ import Schedule from './components/homepage/Schedule';
 import ProjectsThemes from './components/homepage/ProjectsThemes';
 import LandingScreen from './components/landing-screen/LandingScreen';
 import Workshop from './components/workshops/Workshop';
+import LastYear from './components/landing/lastYear/LastYear';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/homepage" element={<Homepage animated={true} />} />
         <Route path="/home" element={<Homepage animated={false} />} />
+        <Route path="/last-year" element={<LastYear />} />
         <Route path="/school-map" element={<HackathonMap />} />
         <Route path="/live-schedule" element={<Schedule display={false} />} />
         <Route path="/live-schedule-screen" element={<Schedule display={true} />} />

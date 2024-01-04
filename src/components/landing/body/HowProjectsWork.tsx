@@ -12,7 +12,7 @@ const HowProjectsWork: React.FC<{}> = (props) => {
                     <HowProjectsWorkCol
                         icon={<WrenchScrewdriverIcon className={"w-6 h-6 mt-[0.5px]"} />}
                         text={"Build a real-world project"}
-                        body={"Nonprofit partner Project Headspace and Timing will provide opportunities to build real-world projects that will used by their organization! PH&T focuses on supporting veterans' mental health, so the applications you build will enable them to more effectively do that and have a great impact in the community. You don't have to build the whole finished product within the hackathon -- you may continue working with Project Headspace and Timing on your app after the hackathon is finished."}
+                        body={"4-6 nonprofit partners of HSHacks will pitch projects to support their organizations! Then, in teams or solo, you'll get to build applications to enable them to have a greater impact in the community. You don't have to build the whole finished product within the hackathon -- you may continue working with a nonprofit partner after the hackathon finishes."}
                     /><HowProjectsWorkCol
                         icon={<LightBulbIcon className={"w-6 h-6 mt-[0.5px]"} />}
                         text={"Build your own ideas"}
