@@ -39,32 +39,32 @@ const Body: React.FC<{}> = () => {
                 <GetPrizes />
                 <HaveLotsOfFun />
             </div>
+            <div className={"block"}>
+                <br />
+                <br />
+                <br />
+            </div>
+
+            <MeetTheTeam />
+
+            <div className={"block"}>
+                <br />
+                <br />
+                <br />
+            </div>
+
             <div ref={scrollRef}>
                 <HowProjectsWork />
             </div>
-            {/* <div className={"block md:hidden"}>
-                <br />
-                <br />
-                <br />
-            </div> */}
-            {/* <AwardsList /> */}
-            {/* <div className={"block md:hidden"}>
-                <br />
-                <br />
-                <br />
-            </div> */}
-            {/* <Schedule /> */}
-            <MeetTheTeam />
 
-            <br />
-            <br />
-            <br />
-            {/* <div className={"block md:hidden"}>
+            <div className={"block"}>
                 <br />
                 <br />
                 <br />
-            </div>*/}
-            {/*<Sponsors />*/}
+            </div>
+
+            <Sponsors />
+            
         </div>
     )
 }

@@ -13,28 +13,10 @@ const Sponsors: React.FC<{}> = (props) => {
                 <br />
                 <div className={"grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-10"}>
                     <Sponsor
-                        tier={"platinum"}
-                        logo={_66degrees}
-                        body={"Huge thank you for 66degrees's support in making this event possible! 66degrees is a software development company that works alongside businesses to modernize cloud infrastructure with Google Cloud Platform."}
-                        url={"https://66degrees.com/"}
-                    />
-                    <Sponsor
-                        tier={"gold"}
-                        logo={postman}
-                        body={"Postman is a collaboration platform for API development. Postman's features simplify each step of building an API and streamline collaboration so you can create better APIs—faster."}
-                        url={"https://www.postman.com/"}
-                    />
-                    <Sponsor
                         tier={"gold"}
                         logo={"https://i.ibb.co/YfdgkMF/nav-logo.png"}
                         body={"Normandy Remodeling is a Chicago-area remodeling company specializing in home, kitchen, and bathroom models. Thank you for supporting HSHacks!"}
                         url={"https://www.normandyremodeling.com/"}
-                    />
-                    <Sponsor
-                        tier={"gold"}
-                        logo={hackclub}
-                        body={"Hack Club is a global network of student-led coding clubs. They provide the resources, community, and support you need to start and sustain a coding club at your school."}
-                        url={"https://hackclub.com/"}
                     />
                     <Sponsor
                         tier={"gold"}
@@ -44,27 +26,29 @@ const Sponsors: React.FC<{}> = (props) => {
                     />
                     <Sponsor
                         tier={"silver"}
-                        logo={"https://stickerninja.com/wp-content/themes/sticker-ninja/dist/images/logo-dark_3e368c83.png"}
-                        body={"StickerNinja is a sticker printing company that provides awesome, high-quality stickers at a low cost for all of your sticker needs! Thank you for providing us with HSHacks stickers!"}
-                        url={"https://stickerninja.com/"}
-                    />
-                    <Sponsor
-                        tier={"silver"}
-                        logo={"https://1000logos.net/wp-content/uploads/2021/04/Costco-logo.png"}
-                        body={"Costco is a membership-only warehouse club that provides a wide selection of merchandise. Thank you for supporting HSHacks!"}
-                        url={"https://www.costco.com/"}
-                    />
-                    <Sponsor
-                        tier={"silver"}
-                        logo={"https://cdn.oreillystatic.com/images/sitewide-headers/oreilly_logo_mark_red.svg"}
-                        body={"O'Reilly is a technology media company that publishes books, online training, and conferences on technology topics. Thank you for providing us with O'Reilly learning platform access!"}
-                        url={"https://www.oreilly.com/"}
-                    />
-                    <Sponsor
-                        tier={"silver"}
                         logo={"https://i.ibb.co/tqHwGZX/echo3-D-brand-logo-2-removebg-preview-1.png"}
                         body={"Echo3D is a 3d asset management company for developers, focusing on API and cloud infrastructure for 3d asset management. Thank you for providing us with Echo3D access!"}
                         url={"https://www.echo3d.com/"}
+                    />
+                    <Sponsor
+                        tier={"silver"}
+                        logo={"https://i.ibb.co/P4s7FFs/images-removebg-preview.png"}
+                        body={"InterviewBuddy is a platform that provides virtual face-to-face mock interviews with industry experts, enabling developers and students to practice and prepare for their next tech job interview!"}
+                        url={"https://www.interviewbuddy.net/"}
+                        customHeight={"max-h-[4.5rem]"}
+                    />
+                    <Sponsor
+                        tier={"silver"}
+                        logo={"https://i.ibb.co/WsDKSsN/Logos-website-05-1.png"}
+                        body={"Balsamiq is a rapid wireframing software that combines the simplicity of paper sketching with the power of a digital tool so that teams can focus on what's important!"}
+                        url={"https://www.balsamiq.com/"}
+                    />
+                    <Sponsor
+                        tier={"silver"}
+                        logo={"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Desmos_logo.svg/1200px-Desmos_logo.svg.png"}
+                        body={"Desmos is a dynamic mathematical tool that transforms the way students and educators engage with mathematical concepts! Users can graph functions, plot data, evaluate equations, explore transformations, and much more!"}
+                        customHeight={"max-h-10"}
+                        url={"https://www.desmos.com/"}
                     />
                 </div>
 
