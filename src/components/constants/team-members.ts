@@ -1,5 +1,7 @@
 import Efe from "../../assets/people/efe.png";
 import Miguel from "../../assets/people/miguel.png";
+import Alex from "../../assets/people/alex.jpeg";
+import Albert from "../../assets/people/albert.jpg";
 
 export interface ITeamMember {
     name: string;
@@ -24,7 +26,8 @@ export const TEAM_MEMBERS: ITeamMember[] = [
     },
     {
         name: "Alex Strugacz",
-        description: "Senior, John Hersey HS"
+        description: "Senior, John Hersey HS",
+        imageUrl: Alex
     },
     {
         name: "Matthew Lundeen",
@@ -40,6 +43,7 @@ export const TEAM_MEMBERS: ITeamMember[] = [
     },
     {
         name: "Albert Kim",
-        description: "Junior, Prospect HS"
+        description: "Junior, Prospect HS",
+        imageUrl: Albert
     }
 ]

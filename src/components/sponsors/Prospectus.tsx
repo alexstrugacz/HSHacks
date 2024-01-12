@@ -18,12 +18,12 @@ const Prospectus: React.FC<{}> = () => {
             <div className='text-neutral-500 text-xl mt-3'>
                 <p className=''>HSHacks is a 12-hour high school hackathon organized by the <a href='https://herseyhack.club' className='hover:font-bold transition-all underline'>JHHS Hack Club</a>. It will be held at <a href='https://www.google.com/maps/place/John+Hersey+High+School/@42.1038234,-87.9612505,17z/data=!3m1!4b1!4m5!3m4!1s0x880fbbad9a8cbbcd:0xbc3eb41efde43b5f!8m2!3d42.1038234!4d-87.9590565' className='hover:font-bold transition-all underline'>John Hersey High School</a> in Arlington Heights, IL. from 8AM to 8PM on April 20, 2023.</p>
                 <br></br>
-                <p>In a day full of collaboration and creativity, 50 attendees (projected) will bring their ideas to reality, learning skills far beyond just tech. With help from experienced professionals and mentors, students will learn invaluable skills by collaboratively building projects, joining engaging workshops, and more!</p>
+                <p>In a day full of collaboration and creativity, 100 attendees (projected) will bring their ideas to reality, learning skills far beyond just tech. With help from experienced professionals and mentors, students will learn invaluable skills by collaboratively building projects, joining engaging workshops, and more!</p>
             </div>
             <div>
                 <h1 className='text-[#508ECB] font-Poppins font-bold text-3xl mt-16'><a className=''>Where you </a>come in</h1>
                 <p className='text-neutral-500 text-xl mt-3'>Your sponsorship is critical to HSHacks providing this life-changing experience. We’re seeking sponsorships to buy food, prizes, and other supplies to run the event.
-                    <br /><br />By sponsoring HSHacks, you’ll directly contribute to inspiring, empowering, and enhancing the abilities of 50+ high school students.
+                    <br /><br />By sponsoring HSHacks, you’ll directly contribute to inspiring, empowering, and enhancing the abilities of 100+ high school students.
                     <br /><br />All sponsorships are fully tax deductible under our fiscally sponsored 501(c) nonprofit status. </p>
             </div>
             <div>
@@ -122,11 +122,11 @@ const Prospectus: React.FC<{}> = () => {
             </div>
             <div>
                 <h1 className='text-[#508ECB] font-Poppins font-bold text-3xl mt-20'><a className=''>Sponsor </a>packages</h1>
-                <p className='mt-3 text-xl mb-12 text-neutral-600'>If you have any questions or would like to discuss adjustments for packages, please contact <a href='mailto:hshacks@programmer.net' className='hover:underline font-bold text-black'>hshacks@programmer.net</a>. All sponsorships are fully tax deductible under our fiscally sponsored 501(c) nonprofit status.</p>
+                <p className='mt-3 text-xl mb-12 text-neutral-600'>If you have any questions or would like to discuss adjustments for packages, please contact <a href='mailto:team@hshacks.org' className='hover:underline font-bold text-black'>team@hshacks.org</a>. All sponsorships are fully tax deductible under our fiscally sponsored 501(c) nonprofit status.</p>
                 <img className="mt-10" src={sponsorPackages}></img>
                 <div className='text-center mt-12 mb-24'>
                     <p className='font-Poppins text-lg'>Ready to inspire the next generation of developers?</p>
-                    <p className='font-Poppins text-xl'>Contact <a className='font-bold' href='mailto:hshacks@programmer.net'>hshacks@programmer.net</a> to discuss next steps!</p>
+                    <p className='font-Poppins text-xl'>Contact <a className='font-bold' href='mailto:team@hshacks.org'>team@hshacks.org</a> to discuss next steps!</p>
                 </div>
             </div>
         </div>

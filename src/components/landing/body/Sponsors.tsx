@@ -24,18 +24,52 @@ const Sponsors: React.FC<{}> = (props) => {
                         body={"Wolfram is a technology company that specializes in the development of mathematical software, programming languages, and data analysis tools! Thank you for providing us with Wolfram|One access!"}
                         url={"https://www.wolfram.com/"}
                     />
+                    
+
+
+                    <Sponsor
+                        tier={"silver"}
+                        logo={"https://stickerninja.com/wp-content/themes/sticker-ninja/dist/images/logo-dark_3e368c83.png"}
+                        body={"StickerNinja is a sticker printing company that provides awesome, high-quality stickers at a low cost for all of your sticker needs! Thank you for providing us with HSHacks stickers!"}
+                        url={"https://www.stickerninja.com/"}
+                        customHeight={"max-h-[3.5rem]"}
+                    />
+
+                    <Sponsor
+                        tier={"silver"}
+                        logo={"https://2023.hawkhacks.com/interviewcake-logo.png"}
+                        body={"InterviewCake is an online software engineering course offering a structured approach to preparing for tech interviews with in-depth readings, practical questions, step-by-step solutions, and valuable tips."}
+                        url={"https://www.interviewcake.com/"}
+                    />
                     <Sponsor
                         tier={"silver"}
                         logo={"https://i.ibb.co/tqHwGZX/echo3-D-brand-logo-2-removebg-preview-1.png"}
                         body={"Echo3D is a 3d asset management company for developers, focusing on API and cloud infrastructure for 3d asset management. Thank you for providing us with Echo3D access!"}
                         url={"https://www.echo3d.com/"}
                     />
+
+
+
                     <Sponsor
                         tier={"silver"}
-                        logo={"https://i.ibb.co/P4s7FFs/images-removebg-preview.png"}
+                        logo={"https://i.ibb.co/G2wjtPh/interviewbuddy.png"}
                         body={"InterviewBuddy is a platform that provides virtual face-to-face mock interviews with industry experts, enabling developers and students to practice and prepare for their next tech job interview!"}
                         url={"https://www.interviewbuddy.net/"}
-                        customHeight={"max-h-[4.5rem]"}
+                        customHeight={"max-h-[3.5rem]"}
+                    />
+                    <Sponsor
+                        tier={"silver"}
+                        logo={"https://i.ibb.co/Vj0WLD7/Group-200-1.png"}
+                        body={"Art of Problem Solving provides advanced online Math learning resources, classes, and books for students from Elementary to High School, enabling them to expand their mathematical problem-solving skills!"}
+                        url={"https://artofproblemsolving.com/"}
+                        customHeight={"max-h-[3.5rem]"}
+                    />
+                    <Sponsor
+                        tier={"silver"}
+                        logo={"https://cdn.worldvectorlogo.com/logos/axure-2.svg"}
+                        body={"Axure is a powerful tool for creating prototypes and specifications for websites and applications, simplifying the process of bringing your digital ideas to life."}
+                        url={"https://www.axure.com/"}
+                        customHeight={"max-h-[2rem]"}
                     />
                     <Sponsor
                         tier={"silver"}
@@ -50,6 +84,7 @@ const Sponsors: React.FC<{}> = (props) => {
                         customHeight={"max-h-10"}
                         url={"https://www.desmos.com/"}
                     />
+
                 </div>
 
             </div>
