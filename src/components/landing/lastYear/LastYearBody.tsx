@@ -38,7 +38,7 @@ const LastYearBody: React.FC<{}> = (props) => {
                     <div className="flex mt-2 md:mt-3 gap-2 items-center">
                         <CalendarIcon className={"w-6 text-zinc-700"} />
                         <h2 className="font-bold text-zinc-700 font-Poppins text-xl lg:text-2xl mr-2">April
-                            20, 2024</h2>
+                            15, 2023</h2>
                     </div>
                 </div>
                 <div className="flex flex-col lg:flex-row flex-1 mt-10 lg:mt-0 gap-5 lg:gap-10 lg:justify-right lg:items-center">
