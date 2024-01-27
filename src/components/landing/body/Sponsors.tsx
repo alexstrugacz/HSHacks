@@ -20,13 +20,28 @@ const Sponsors: React.FC<{}> = (props) => {
                     />
                     <Sponsor
                         tier={"gold"}
+                        logo={hackclub}
+                        body={"Hack Club is a global network of student-led coding clubs. They provide the resources, community, and support you need to start and sustain a coding club at your school."}
+                        url={"https://hackclub.com/"}
+                    />
+                    <Sponsor
+                        tier={"silver"}
                         logo={"https://images.ctfassets.net/2lpsze4g694w/7bkN622iWKMAPwRpRR5LEV/e97ceedd530c321519e75d0294f0fb8f/wolfram-language-text-logo-copy-1.png?w=800"}
                         body={"Wolfram is a technology company that specializes in the development of mathematical software, programming languages, and data analysis tools! Thank you for providing us with Wolfram|One access!"}
                         url={"https://www.wolfram.com/"}
                     />
-                    
-
-
+                    <Sponsor
+                        tier={"silver"}
+                        logo={"https://i.ibb.co/QX1kWfz/unitedcoder.png"}
+                        body={"United Coder offers instructor-led project-based software development and test automation engineer training programs, enabling anyone to pursue new careers in these fields! Thank you for supporting the HSHacks Hackathon."}
+                        url={"https://www.unitedcoder.com/"}
+                    />
+                    <Sponsor
+                        tier={"silver"}
+                        logo={"https://i.ibb.co/9T7S4Fh/draftbit.png"}
+                        body={"Draftbit is a tool to build native moile apps, responsive web apps, and internal tools visually and collaboratively. Thank you for providing DraftBit demos to HSHacks attendees!"}
+                        url={"https://draftbit.com/"}
+                    />
                     <Sponsor
                         tier={"silver"}
                         logo={"https://stickerninja.com/wp-content/themes/sticker-ninja/dist/images/logo-dark_3e368c83.png"}
