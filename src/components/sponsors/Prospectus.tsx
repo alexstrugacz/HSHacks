@@ -1,20 +1,16 @@
 import React from "react"
-import SponsorsList from "../landing-screen/SponsorsList"
-import Sponsor from "../landing/body/Sponsor"
 import _66degrees from "../landing/assets/logos/66degrees.png";
-import hackclub from "../landing/assets/logos/hackclub.png"
-import postman from "../landing/assets/logos/Postman.png"
-const sponsorPackages = require('../../assets/images/ICSponsorPackages.jpg')
+const ProspectusPDF = require("../landing/assets/Prospectus.pdf");
 
 const Prospectus: React.FC<{}> = () => {
     return (
         <div>
             <h1 className='text-neutral-700 font-Poppins font-bold text-4xl'>Sponsor Prospectus</h1>
-            {/* <div className='mt-10 flex'>
+            <div className='mt-10 flex'>
                 <a className='hover:ring-offset-1 hover:ring-4 transition-all text-black ring-orange-300 font-Poppins font-bold bg-orange-300 rounded md:px-8 px-2 text-center  py-2' href={ProspectusPDF} download="Prospectus">Download Prospectus</a>
-                <a className='ml-3 hover:ring-offset-1 hover:ring-4 transition-all text-black ring-orange-300 font-Poppins font-bold bg-orange-300 rounded md:px-8 px-2 md:inline block py-2 text-center' href={ProofOfVenue} download="ProofOfVenue">Download Proof of Venue</a >
-            </div> */}
-            <h1 className='text-[#508ECB] font-Poppins font-bold text-3xl mt-12'><a className=''>Empowering </a>Future Developers</h1>
+                {/* <a className='ml-3 hover:ring-offset-1 hover:ring-4 transition-all text-black ring-orange-300 font-Poppins font-bold bg-orange-300 rounded md:px-8 px-2 md:inline block py-2 text-center' href={ProofOfVenue} download="ProofOfVenue">Download Proof of Venue</a > */}
+            </div>
+            {/* <h1 className='text-[#508ECB] font-Poppins font-bold text-3xl mt-12'><a className=''>Empowering </a>Future Developers</h1>
             <div className='text-neutral-500 text-xl mt-3'>
                 <p className=''>HSHacks is a 12-hour high school hackathon organized by the <a href='https://herseyhack.club' className='hover:font-bold transition-all underline'>JHHS Hack Club</a>. It will be held at <a href='https://www.google.com/maps/place/John+Hersey+High+School/@42.1038234,-87.9612505,17z/data=!3m1!4b1!4m5!3m4!1s0x880fbbad9a8cbbcd:0xbc3eb41efde43b5f!8m2!3d42.1038234!4d-87.9590565' className='hover:font-bold transition-all underline'>John Hersey High School</a> in Arlington Heights, IL. from 8AM to 8PM on April 20, 2023.</p>
                 <br></br>
@@ -128,7 +124,7 @@ const Prospectus: React.FC<{}> = () => {
                     <p className='font-Poppins text-lg'>Ready to inspire the next generation of developers?</p>
                     <p className='font-Poppins text-xl'>Contact <a className='font-bold' href='mailto:team@hshacks.org'>team@hshacks.org</a> to discuss next steps!</p>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
