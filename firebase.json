@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "build",
+    "source": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -11,6 +11,9 @@
         "source": "**",
         "destination": "/index.html"
       }
-    ]
+    ],
+    "frameworksBackend": {
+      "region": "us-central1"
+    }
   }
 }
