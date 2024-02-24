@@ -28,7 +28,7 @@ const Body: React.FC<{}> = () => {
             <Divider />
             <Description />
             <div className={"max-w-6xl w-full mx-auto px-5 md:px-20"}>
-                <h2 className="font-bold font-Poppins text-2xl pb-3 border-b-2 border-b-[#3f6fa650]">What 2 we'll do at HSHacks</h2>
+                <h2 className="font-bold font-Poppins text-2xl pb-3 border-b-2 border-b-[#3f6fa650]">What we'll do at HSHacks</h2>
             </div>
             <br />
             <div className={"flex flex-col gap-20"}>
