@@ -7,8 +7,6 @@ const BuildProjects: React.FC<{
 }> = (props) => {
     return (
         <div className={"w-full pt-10"}>
-
-
             <div className="flex flex-col md:flex-row items-start py-5 pt-5 px-5 md:px-20 mx-auto max-w-6xl gap-10">
                 <div className={`flex-1 w-full`}>
                     <img src={projects} className={"object-cover w-full h-72 mid:h-96 desktop:h-62 rounded-xl shadow-lg scale-100 hover:scale-105 transition-all"} />

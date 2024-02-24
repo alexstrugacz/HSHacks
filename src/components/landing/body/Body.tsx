@@ -1,5 +1,5 @@
 import React from "react";
-import Faq from "../../faq/Faq";
+import { SCHEDULE_2024, SCHEDULE_GROUPINGS_2024 } from "../../shared/schedule2024";
 import BuildProjects from "./BuildProjects";
 import Description from "./Description";
 import Divider from "./Divider";
@@ -7,10 +7,10 @@ import GetPrizes from "./GetPrizes";
 import HaveLotsOfFun from "./HaveLotsOfFun";
 import HowProjectsWork from "./HowProjectsWork";
 import JoinWorkshops from "./JoinWorkshops";
-import Schedule from "./Schedule";
-import Sponsors from "./Sponsors";
-import AwardsList from "./awards/AwardsList";
 import MeetTheTeam from "./MeetTheTeam";
+import Schedule2024Item from "./Schedule2024Item";
+import ScheduleItem from "./ScheduleItem";
+import Sponsors from "./Sponsors";
 
 
 const Body: React.FC<{}> = () => {
@@ -28,7 +28,7 @@ const Body: React.FC<{}> = () => {
             <Divider />
             <Description />
             <div className={"max-w-6xl w-full mx-auto px-5 md:px-20"}>
-                <h2 className="font-bold font-Poppins text-2xl pb-3 border-b-2 border-b-[#3f6fa650]">What we'll do at HSHacks</h2>
+                <h2 className="font-bold font-Poppins text-2xl pb-3 border-b-2 border-b-[#3f6fa650]">What 2 we'll do at HSHacks</h2>
             </div>
             <br />
             <div className={"flex flex-col gap-20"}>
@@ -45,16 +45,65 @@ const Body: React.FC<{}> = () => {
                 <br />
             </div>
 
-            <MeetTheTeam />
+            <div ref={scrollRef}>
+                <HowProjectsWork />
+            </div>
+
+
+            <div className={"pt-10 overflow-x-scroll"}>
+                <div className="flex flex-col items-start p-5 md:px-20 mx-auto max-w-6xl">
+                    <br />
+                    <h2 className="font-bold font-Poppins text-2xl pb-3 border-b-2 border-b-[#3f6fa650] w-full">Schedule</h2>
+                    <br />
+                    <div className="gap-3 hidden xl:flex">
+                        {SCHEDULE_2024.map((scheduleCol, index) => (
+                            <div key={`schedule-list-${index}`} className="flex flex-col">
+                                {scheduleCol.map((scheduleItem, scheduleIndex) => {
+                                    if (scheduleItem.isEmpty) {
+                                        return <div style={{
+                                            display: "flex",
+                                            height: `${scheduleItem.height * 6}rem`
+                                        }}>
+                                            <div className={`bg-zinc-100 rounded-xl p-3 mb-3 w-full flex-1`}>
+                                            </div>
+                                        </div>
+                                    } else {
+                                        return <Schedule2024Item
+                                            key={`schedule-${scheduleIndex}`}
+                                            startTime={scheduleItem.startTime}
+                                            name={scheduleItem.eventName}
+                                            includeStartTime={index === 0}
+                                            height={scheduleItem.height}
+                                        />
+                                    }
+                                })}
+                            </div>
+                        ))}
+                    </div>
+                    <div className="w-full xl:hidden">
+                        {SCHEDULE_GROUPINGS_2024.map((group) => {
+                            return (
+                                <div className="w-full">
+                                    <p className={"font-Poppins w-16 min-w-[4rem] text-lg mb-2"}>{group.time}</p>
+                                    {group.items.map((item, itemIndex) => (
+                                        <Schedule2024Item
+                                            key={`schedule-${itemIndex}`}
+                                            startTime={item.startTime}
+                                            name={item.eventName}
+                                            includeStartTime={false}
+                                        />
+                                    ))}
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+            </div>
 
             <div className={"block"}>
                 <br />
                 <br />
                 <br />
-            </div>
-
-            <div ref={scrollRef}>
-                <HowProjectsWork />
             </div>
 
             <div className={"block"}>
@@ -64,7 +113,12 @@ const Body: React.FC<{}> = () => {
             </div>
 
             <Sponsors />
-            
+
+
+            <MeetTheTeam />
+
+
+
         </div>
     )
 }

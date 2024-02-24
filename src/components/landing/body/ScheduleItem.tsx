@@ -14,7 +14,6 @@ const ScheduleItem: React.FC<{
                     <p className={"font-Poppins mt-1"}>{props.body}</p>
                 )}
             </div>
-
         </div>
     );
 }
