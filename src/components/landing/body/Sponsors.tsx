@@ -26,6 +26,12 @@ const Sponsors: React.FC<{}> = (props) => {
                     />
                     <Sponsor
                         tier={"silver"}
+                        logo={"https://i.ibb.co/27ZzQ4K/1-removebg-preview.png"}
+                        body={"MobileMakersEdu by Uncharted Learning is a mobile app development course that enables students to apply real-world software development methodologies to build custom-made iOS apps! Through the course, students learn invaluable teamwork, problem-solving, and collaboration skills. Thank you for sponsoring the HSHacks Hackathon!"}
+                        url={"https://www.unchartedlearning.org/student-programs/mobilemakersedu"}
+                    />
+                    <Sponsor
+                        tier={"silver"}
                         logo={"https://i.ibb.co/QX1kWfz/unitedcoder.png"}
                         body={"United Coder offers instructor-led project-based software development and test automation engineer training programs, enabling anyone to pursue new careers in these fields! Thank you for sponsoring the HSHacks Hackathon."}
                         url={"https://www.unitedcoder.com/"}
