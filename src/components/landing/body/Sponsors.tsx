@@ -27,7 +27,7 @@ const Sponsors: React.FC<{}> = (props) => {
                     <Sponsor
                         tier={"silver"}
                         logo={"https://i.ibb.co/27ZzQ4K/1-removebg-preview.png"}
-                        body={"MobileMakersEdu by Uncharted Learning is a mobile app development course that enables students to apply real-world software development methodologies to build custom-made iOS apps! Through the course, students learn invaluable teamwork, problem-solving, and collaboration skills. Thank you for sponsoring the HSHacks Hackathon!"}
+                        body={"MobileMakersEdu by Uncharted Learning offers iOS development courses that enable students to learn coding, design, and collaboration skills to bring mobile app ideas to life! Thank you for sponsoring the HSHacks Hackathon."}
                         url={"https://www.unchartedlearning.org/student-programs/mobilemakersedu"}
                     />
                     <Sponsor

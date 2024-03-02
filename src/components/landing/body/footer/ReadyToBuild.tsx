@@ -48,9 +48,9 @@ const ReadyToBuild: React.FC<{}> = () => {
                         </div>
                     </div>
                     <JoinTheDiscord />
-                    <div className={"opacity-50 pointer-events-none"}>
-                        <RegisterButton />
-                    </div>
+                    {/* <div className={"opacity-50 pointer-events-none"}> */}
+                    <RegisterButton />
+                    {/* </div> */}
 
                 </div>
             </div>
