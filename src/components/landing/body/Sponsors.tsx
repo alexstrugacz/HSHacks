@@ -18,6 +18,7 @@ const Sponsors: React.FC<{}> = (props) => {
                         body={"Normandy Remodeling is a Chicago-area remodeling company specializing in home, kitchen, and bathroom models. Thank you for supporting HSHacks!"}
                         url={"https://www.normandyremodeling.com/"}
                     />
+
                     <Sponsor
                         tier={"gold"}
                         logo={hackclub}
@@ -55,7 +56,12 @@ const Sponsors: React.FC<{}> = (props) => {
                         url={"https://www.stickerninja.com/"}
                         customHeight={"max-h-[3.5rem]"}
                     />
-
+                    <Sponsor
+                        tier={"silver"}
+                        logo={"https://cdn.oreillystatic.com/images/sitewide-headers/oreilly_logo_mark_red.svg"}
+                        body={"For over 40 years O’Reilly has provided technology and business training, knowledge, and insight to help companies succeed. Our unique network of experts and innovators share their knowledge and expertise through books, articles, and our online learning platform. O’Reilly online learning gives you on-demand access to live training courses, in-depth learning paths, interactive coding environments, certification prep materials, and a vast collection of text and video from O’Reilly and 200+ other publishers. For more information visit oreilly.com."}
+                        url={"https://www.oreilly.com/"}
+                    />
                     <Sponsor
                         tier={"silver"}
                         logo={"https://2023.hawkhacks.com/interviewcake-logo.png"}
