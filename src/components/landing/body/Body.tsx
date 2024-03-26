@@ -57,7 +57,7 @@ const Body: React.FC<{}> = () => {
                     <br />
                     <div className="gap-3 hidden xl:flex">
                         {SCHEDULE_2024.map((scheduleCol, index) => (
-                            <div key={`schedule-list-${index}`} className="flex flex-col">
+                            <div key={`schedule-list-${index}`} className={index===0 ? `flex flex-col flex-[1.5]` : "flex flex-col flex-1"}>
                                 {scheduleCol.map((scheduleItem, scheduleIndex) => {
                                     if (scheduleItem.isEmpty) {
                                         return <div style={{
