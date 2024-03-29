@@ -45,16 +45,22 @@ const Sponsors: React.FC<{}> = (props) => {
                     />
                     <Sponsor
                         tier={"silver"}
-                        logo={"https://images.ctfassets.net/2lpsze4g694w/7bkN622iWKMAPwRpRR5LEV/e97ceedd530c321519e75d0294f0fb8f/wolfram-language-text-logo-copy-1.png?w=800"}
-                        body={"Wolfram is a technology company that specializes in the development of mathematical software, programming languages, and data analysis tools! Thank you for providing us with Wolfram|One access!"}
-                        url={"https://www.wolfram.com/"}
-                    />
-                    <Sponsor
-                        tier={"silver"}
                         logo={"https://stickerninja.com/wp-content/themes/sticker-ninja/dist/images/logo-dark_3e368c83.png"}
                         body={"StickerNinja is a sticker printing company that provides awesome, high-quality stickers at a low cost for all of your sticker needs! Thank you for providing us with HSHacks stickers!"}
                         url={"https://www.stickerninja.com/"}
                         customHeight={"max-h-[3.5rem]"}
+                    />
+                    <Sponsor
+                        tier={"silver"}
+                        logo={postman}
+                        body={"Postman is a collaboration platform for API development. Postman's features simplify each step of building an API and streamline collaboration so you can create better APIs—faster."}
+                        url={"https://www.postman.com/"}
+                    />
+                    <Sponsor
+                        tier={"silver"}
+                        logo={"https://images.ctfassets.net/2lpsze4g694w/7bkN622iWKMAPwRpRR5LEV/e97ceedd530c321519e75d0294f0fb8f/wolfram-language-text-logo-copy-1.png?w=800"}
+                        body={"Wolfram is a technology company that specializes in the development of mathematical software, programming languages, and data analysis tools! Thank you for providing us with Wolfram|One access!"}
+                        url={"https://www.wolfram.com/"}
                     />
                     <Sponsor
                         tier={"silver"}
