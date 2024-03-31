@@ -55,27 +55,27 @@ const Header: React.FC<{}> = () => {
                                 className="text-white font-bold text-5xl md:text-6xl font-Poppins mt-0">HSHacks.
                             </motion.h1>
                             <motion.div
-                                initial={{opacity: 0, x: -100, scale: 0.8}}
-                                animate={{opacity: 1, x: 0, scale: 1}}
-                                transition={{delay: 1.4, duration: 0.6}}
+                                initial={{ opacity: 0, x: -100, scale: 0.8 }}
+                                animate={{ opacity: 1, x: 0, scale: 1 }}
+                                transition={{ delay: 1.4, duration: 0.6 }}
                             >
                                 <p className="text-[#C8DEFF] text-md md:text-xl pr-5 font-Poppins pt-2 md:pt-5 max-w-xl">Make
                                     projects come to life, make new friends, and have a blast at the <a className={"text-[#C8DEFF] font-bold"}>HSHacks Hackathon</a>!</p>
                                 <div className={"mt-3"}>
-                                    {/*<CountDownTimer/>*/}
+                                    <CountDownTimer />
                                 </div>
-                                <RegisterButton/>
-                                <JoinTheDiscord/>
+                                <RegisterButton />
+                                <JoinTheDiscord />
                                 <div className="mt-5 md:mt-7">
                                     <div onClick={openHerseyLink}
-                                         className="group flex gap-1 mr-16 items-center hover:cursor-pointer w-fit">
+                                        className="group flex gap-1 mr-16 items-center hover:cursor-pointer w-fit">
                                         <MapPinIcon
-                                            className={"w-6 text-white group-hover:text-zinc-400 transition-colors"}/>
+                                            className={"w-6 text-white group-hover:text-zinc-400 transition-colors"} />
                                         <h2 className="font-bold text-white font-Poppins group-hover:text-zinc-400 transition-colors text-md md:text-xl mb-0">John
                                             Hersey High School ARC</h2>
                                     </div>
                                     <div className="flex mt-2 md:mt-3 gap-1 items-center">
-                                        <CalendarIcon className={"w-6 text-white"}/>
+                                        <CalendarIcon className={"w-6 text-white"} />
                                         <h2 className="font-bold text-white font-Poppins text-md md:text-xl mr-2">April
                                             20, 2024</h2>
                                     </div>
@@ -86,7 +86,7 @@ const Header: React.FC<{}> = () => {
                                     text={"Register Now (Free)"}
                                     link={REGISTER_LINK}
                                 /> */}
-                                 <p onClick={handleOpenSponsorPage} className={"mt-4 text-gray-300 font-Poppins"}>Interested in sponsoring? <a className={"text-[#5FA7ED] hover:text-cyan-200 hover:cursor-pointer transition-colors"}>Click here!</a></p>
+                                <p onClick={handleOpenSponsorPage} className={"mt-4 text-gray-300 font-Poppins"}>Interested in sponsoring? <a className={"text-[#5FA7ED] hover:text-cyan-200 hover:cursor-pointer transition-colors"}>Click here!</a></p>
                             </motion.div>
                             {/*<SponsorsList />*/}
                         </div>
