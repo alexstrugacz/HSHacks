@@ -16,7 +16,7 @@ const Sponsors: React.FC<{}> = (props) => {
                         tier={"platinum"}
                         logo={"https://i.ibb.co/YfdgkMF/nav-logo.png"}
                         body={"Normandy Remodeling is a Chicago-area remodeling company specializing in home, kitchen, and bathroom models. Thank you for supporting HSHacks!"}
-                        url={"https://www.normandyremodeling.com/"}
+                        url={"https://codecrafters.io/"}
                     />
                     <Sponsor
                         tier={"gold"}
