@@ -8,6 +8,7 @@ const Sponsor: React.FC<{
 }> = (props) => {
 
     const tierBackgrounds: { [key: string]: string } = {
+        "diamond": "bg-slate-400",
         "platinum": "bg-slate-900",
         "gold": "bg-yellow-700",
         "silver": "bg-zinc-500"
