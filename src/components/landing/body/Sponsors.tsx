@@ -31,6 +31,12 @@ const Sponsors: React.FC<{}> = (props) => {
                         url={"https://hackclub.com/"}
                     />
                     <Sponsor
+                        tier={"gold"}
+                        logo={"https://i.ibb.co/9T7S4Fh/draftbit.png"}
+                        body={"Draftbit is a tool to build native mobile apps, responsive web apps, and internal tools visually and collaboratively. Thank you for providing us with Draftbit access!"}
+                        url={"https://draftbit.com/"}
+                    />
+                    <Sponsor
                         tier={"silver"}
                         logo={"https://i.ibb.co/27ZzQ4K/1-removebg-preview.png"}
                         body={"MobileMakersEdu by Uncharted Learning offers iOS development courses that enable students to learn coding, design, and collaboration skills to bring mobile app ideas to life! Thank you for sponsoring the HSHacks Hackathon."}
@@ -41,13 +47,7 @@ const Sponsors: React.FC<{}> = (props) => {
                         logo={"https://i.ibb.co/QX1kWfz/unitedcoder.png"}
                         body={"United Coder offers instructor-led project-based software development and test automation engineer training programs, enabling anyone to pursue new careers in these fields! Thank you for sponsoring the HSHacks Hackathon."}
                         url={"https://www.unitedcoder.com/"}
-                    />
-                    <Sponsor
-                        tier={"silver"}
-                        logo={"https://i.ibb.co/9T7S4Fh/draftbit.png"}
-                        body={"Draftbit is a tool to build native mobile apps, responsive web apps, and internal tools visually and collaboratively. Thank you for providing us with Draftbit access!"}
-                        url={"https://draftbit.com/"}
-                    />
+                    /> 
                     <Sponsor
                         tier={"silver"}
                         logo={"https://stickerninja.com/wp-content/themes/sticker-ninja/dist/images/logo-dark_3e368c83.png"}
