@@ -45,7 +45,7 @@ const Sponsors: React.FC<{}> = (props) => {
                     <Sponsor
                         tier={"silver"}
                         logo={"https://i.ibb.co/9T7S4Fh/draftbit.png"}
-                        body={"Draftbit is a tool to build native moile apps, responsive web apps, and internal tools visually and collaboratively. Thank you for providing us with Draftbit access!"}
+                        body={"Draftbit is a tool to build native mobile apps, responsive web apps, and internal tools visually and collaboratively. Thank you for providing us with Draftbit access!"}
                         url={"https://draftbit.com/"}
                     />
                     <Sponsor
