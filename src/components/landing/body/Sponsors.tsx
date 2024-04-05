@@ -1,6 +1,5 @@
 import * as React from "react"
 import Sponsor from "./Sponsor"
-const _66degrees = require("../assets/logos/66degrees.png")
 const hackclub = require("../assets/logos/hackclub.png")
 const postman = require("../assets/logos/Postman.png")
 
@@ -11,7 +10,7 @@ const Sponsors: React.FC<{}> = (props) => {
             <div className={"max-w-6xl w-full mx-auto px-5 md:px-20"}>
                 <h2 className="font-bold font-Poppins text-2xl pb-3 border-b-2 border-b-[#3f6fa650]">Proudly presented by <a className=" bg-clip-text text-[#338eda]">our sponsors</a> </h2>
                 <br />
-                <div className={"grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-10"}> 
+                <div className={"grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-10"}>
                     <Sponsor
                         tier={"platinum"}
                         logo={"https://i.ibb.co/YfdgkMF/nav-logo.png"}
@@ -23,6 +22,12 @@ const Sponsors: React.FC<{}> = (props) => {
                         logo={"https://lh3.googleusercontent.com/fife/ALs6j_Fr4B6sypE37bqSMZsgLHVbLA62sl1d02TLWRXOl3w2ykhwPeMKx8V7MD8xW-ulsDYuHwrcox1fgs7VKRLXHdC27_j6BJYdMcCOZC2-kVvZepEe4qg4p-E6ZssIc1698tXG2z1s8hNOUiEgJ3zPMGqPVPahHfFhqxgWg9xxoAmm9rZ83A46FLCoSiPq8vvtsYK0N2l2hzFU91hc74rH2r9O7l8PY2xb0pkkQtCqKNvmWjkDw55TxO0Q__2t4fFlV-OuCvE5-9KHL9ncVPLU2GwjmrOG98CwihHaWb0_92SVuZ21GiVUZGLrcQfMm9jEmB9Lg4bcjwfo7NKXsvod_2Q2VRERIyvDXxQ-whZu_PZrGEVFI4iq4ASpe10ENpDCrDku6apNohmFUpZzoocxorZuW-z6lCkyxmYktB3wf0tid1TNExBsDilF2j6lql59Wm2bZnux4YW_LMOqJzvGAxOD9TvJyNdic1anwiJIZZbf3GgX9Bjjwbsvk5GWqxuO85I5x7i4v-ARdnBREiswri5vlAIJLXtZGRYWiZrxlS-8CdJTB5NP3uzOB5HEL4Vdxa0OpzXQ5K7_r9hRZ-Zbp0ggBuFJ1Xnub02UQNyHI3Dkxguc6nEiXkUhShkArPEhn5ZvKODXKtTm5j61SnM_tVXdb2H5d7tHfY7k65TblShawjNWMCAAW-SKtswl1MAkFHJ4Q23XzlDWeD1s9qSoGOZMT-kE6mUOdwdSjh1wFYKSl0wnxQKWSFNNhQxIu06zBSwy9_PQxHhHuu_fEZJHMvA5LetbdijEbNEQ2xa1JwVRHF9Ra48JN1yLZXf0hAm6AR9Uprpu7_cKRBSAX9uXneaUBLRAFkRavVjvGy7LlRyZyNPCYOGTX1Xmsz4cgTHCOfgCW7I1VYcJEsiffvNGEceqpho4DBGU0ri3c_RwYD96bFCwC3NQOpgK2BTFL5xN-FIjC0HmOQt_-nzCgptDbEHsuoJyQuaS1qd15IQkUO_YjiD8u3WFNr0ePfAGKzXRWr7RaT6Z-3MjJwzELmm_sIG8G1yxfdWcfZvkWSVM8azzY-VPyfe8bmu7r4t7boMFywUD05tpvdsfIfG1HvRbq3RN3iKmX_r4q6EuUpv1WGWGsCc_RrldIqz3zjO26zw9zbVULRU1H4pKXaXCFpoXL__GkNBiZVscYFMdB87KlgGAMVpmiEAuceq5MOwL8MIdhScC9hK7VDdJkgVs-Zv8sBgTpng0_Go5F-JExC23ciSAkrPuXz2-rp9IDnsXILXDpVW9rkxlkZtd1iiL29OObCQLCUcunqcjTNBnkx_jK2_-MSgda8EiFcyjSQNb9LU-dXI_2u-2gdgKjqUEVhtvfKe3Dj8qXeCwnqogJPLtZ0KO54DpdpDMtnraH4bpaF5BlQJCgVi50o-PkXLeqDq0J3bXgrwBu_7ZebvgdZL39ub25WAxzkQNfLkNtkG5WdX1gp109qJK_xgpBHVUvzF_SIB4gxl8nFJLG0HWl2w3PyVf_4D6xCrN-LxRrjVJc_h9j4s6axa14qJrlrgseM1FDbRCsYgls96Q2Z3N9mtL3_SPh49CPyJYZceUtWfR0hTLfzaUN4x8y9ZU1Gf-lN80WqpUZzu_yJ4xbREKLciS_rkif7Oq42Qv4Z8dErRB9BuaNEcb5Aq0W6WRRLgJrLpZrorB3Qf6oxfIYmLqeN1FdMter9p2z_1S_Vm1g9Dgyho1vYPTiZA-Zs5Y6A1ogGhku1Y-G8Tgxw=w2880-h1576"}
                         body={"CodeCrafters offers hands-on learning for programmers. Programmers get to learn how existing developer tools work by building similar ones themselves! Thank you for supporting HSHacks!"}
                         url={"https://codecrafters.io/"}
+                    />
+                    <Sponsor
+                        tier={"gold"}
+                        logo={"https://i.ibb.co/Kq2WYhv/D214-Logo-0614-min.png"}
+                        body={"Township District 214 is a Blue Ribbon School District that offers a complete academic program, comprehensive extracurricular offerings, and life-long learning opportunities! Thank you for supporting HSHacks!"}
+                        url={"https://hackclub.com/"}
                     />
                     <Sponsor
                         tier={"gold"}
@@ -47,7 +52,7 @@ const Sponsors: React.FC<{}> = (props) => {
                         logo={"https://i.ibb.co/QX1kWfz/unitedcoder.png"}
                         body={"United Coder offers instructor-led project-based software development and test automation engineer training programs, enabling anyone to pursue new careers in these fields! Thank you for sponsoring the HSHacks Hackathon."}
                         url={"https://www.unitedcoder.com/"}
-                    /> 
+                    />
                     <Sponsor
                         tier={"silver"}
                         logo={"https://stickerninja.com/wp-content/themes/sticker-ninja/dist/images/logo-dark_3e368c83.png"}
