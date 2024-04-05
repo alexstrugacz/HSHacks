@@ -27,7 +27,7 @@ const Sponsors: React.FC<{}> = (props) => {
                         tier={"gold"}
                         logo={"https://i.ibb.co/Kq2WYhv/D214-Logo-0614-min.png"}
                         body={"Township District 214 is a Blue Ribbon School District that offers a complete academic program, comprehensive extracurricular offerings, and life-long learning opportunities! Thank you for supporting HSHacks!"}
-                        url={"https://hackclub.com/"}
+                        url={"https://www.d214.org/"}
                     />
                     <Sponsor
                         tier={"gold"}
