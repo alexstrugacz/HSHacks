@@ -69,10 +69,11 @@ export const WORKSHOPS: {
         "id": "personal_website_live",
         "image": "https://i.ibb.co/Lk1NcyN/sam-poder.png",
         "number": 11,
-        "name": "Personal Website Live",
-        "description": "Build your own personal website live!",
-        "moreDescription": "Build your own personal website live!",
-        "completed": true
+        "name": "Intro to HTML/CSS/JS",
+        "description": "Learn the basics of HTML, CSS, and JS/jQuery by building a Custom Website!",
+        "moreDescription": "Learn the basics of HTML, CSS, and JS/jQuery by building a Custom Website!",
+        "completed": true,
+        "customUrl": "https://herseyhacks.notion.site/HSHacks-Intro-to-HTML-CSS-JS-Workshop-03cae45deee644cb9fe68db95a1e2017"
     },
     {
         "id": "personal_website",
