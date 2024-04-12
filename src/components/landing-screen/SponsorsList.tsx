@@ -28,7 +28,6 @@ const SponsorsList: React.FC<{}> = (props) => {
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Desmos_logo.svg/1200px-Desmos_logo.svg.png", // Desmos
     ]
 
-
     return (
         <div className={"mt-10"}>
             <h2 className={"text-zinc-300 font-bold text-xl font-Poppins mb-3"}>Powered By</h2>
