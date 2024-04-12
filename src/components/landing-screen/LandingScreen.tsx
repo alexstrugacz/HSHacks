@@ -32,7 +32,7 @@ const LandingScreen: React.FC<{}> = (props) => {
                         <div className={"flex items-center gap-5 mt-2"}>
                             <HSHacksLogo className={"h-[6rem] -mr-2"} />
                             <h1
-                                className="text-white font-bold text-8xl font-Poppins mt-0">HSHacks
+                                className="text-white font-bold text-8xl font-Poppins mt-0">HSHacks 2024!
                             </h1>
                         </div>
                         <SponsorsList />

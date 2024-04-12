@@ -7,6 +7,7 @@ import { CalendarDaysIcon, CalendarIcon, ChatBubbleLeftIcon, ChatBubbleLeftRight
 import { useParams, useSearchParams } from "react-router-dom";
 import { Controlled as ControlledZoom } from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
+import SponsorDisplay from "./SponsorDisplay";
 
 
 const Homepage: React.FC<{
@@ -28,7 +29,7 @@ const Homepage: React.FC<{
     }, [isZoomed])
 
     return (
-        <div className={"bg-zinc-800 -pb-30 overflow-hidden"}>
+        <div className={"flex flex-col bg-zinc-800 -pb-30 min-h-screen"}>
             <div className={"h-[9rem]"}>
                 <motion.div
                     initial={{ opacity: 0, y: -300 }}
@@ -51,17 +52,15 @@ const Homepage: React.FC<{
                                         />
                                         <b className={"text-white text-xl font-bold"}>HSHacks</b>
                                     </a>
-                                    <h1 className={"font-Poppins text-2xl md:text-4xl font-bold mt-0 md:mt-0"}>HSHacks 2023 Homepage</h1>
-                                    <p className={"font-Poppins font-xl text-zinc-300"}>Archive of last year's hackathon homepage.</p>
+                                    <h1 className={"font-Poppins text-2xl md:text-4xl font-bold mt-0 md:mt-0"}>HSHacks 2024 Homepage</h1>
                                 </div>
                             </div>
                         </div>
                     </AnimatedBg>
                 </motion.div>
             </div>
-            <br />
-            <div className={"min-h-screen"}>
-                <div className={"grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 p-5 md:p-10"}>
+            <div className="flex flex-col flex-1">
+                <div className={"grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 p-5 md:p-10 pb-0"}>
                     <motion.div
                         initial={{ opacity: 0, y: 0, scale: 0.8 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -139,7 +138,17 @@ const Homepage: React.FC<{
                         />
                     </motion.div>
                 </div>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{ delay: props.animated ? 0.8 + 0.5 : 0, duration: props.animated ? 0.5 : 0 }}
+                >
+                    <SponsorDisplay compact speed={20} />
+                </motion.div>
             </div>
+
+
 
             <div className={"h-[0px] overflow-hidden"}>
                 <ControlledZoom isZoomed={isZoomed} onZoomChange={handleZoomChange}>

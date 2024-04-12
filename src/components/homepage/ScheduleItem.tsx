@@ -11,8 +11,8 @@ const ScheduleItem: React.FC<{
         <div id={props.id} onClick={props.handleClick} className={`flex items-center gap-4 justify-start ${props.active ? "bg-zinc-300" : "bg-zinc-500"} p-3 hover:${props.active ? "" : "bg-zinc-400"} transition-all hover:cursor-pointer rounded-lg shadow-xl font-Poppins ${props.active ? "py-6" : "py-4"}`}>
             {props.active ? props.item.emoji : props.item.inactiveEmoji}
             <div>
-                <h3 className={`${props.active ? "text-xl font-bold -mb-1" : "text-md font-semibold"} transition-all`}>{props.item.title}</h3>
-                <p className={`text-md transition-all ${props.active ? "text-zinc-500 text-lg" : "text-black"}`}>{props.item.startTime} - {props.item.endTime}</p>
+                <h3 className={`${props.active ? "text-2xl font-bold -mb-1" : "text-xl font-semibold"} transition-all`}>{props.item.title}</h3>
+                <p className={`text-md transition-all ${props.active ? "text-zinc-500 text-xl" : "text-black text-lg"}`}>{props.item.startTime} - {props.item.endTime}</p>
             </div>
         </div>
     );

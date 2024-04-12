@@ -49,7 +49,7 @@ const ReadyToBuild: React.FC<{}> = () => {
                     </div>
                     <JoinTheDiscord />
                     {/* <div className={"opacity-50 pointer-events-none"}> */}
-                    <RegisterButton />
+                    <RegisterButton disabled />
                     {/* </div> */}
 
                 </div>

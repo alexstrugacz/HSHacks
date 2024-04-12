@@ -1,6 +1,11 @@
 import * as React from "react"
-import SponsorCell from "./SponsorCell";
-const SponsorsList: React.FC<{}> = (props) => {
+import Ticker from "react-ticker"
+import SponsorCell from "../landing-screen/SponsorCell"
+import Marquee from "react-fast-marquee";
+const SponsorDisplay: React.FC<{
+    compact?: boolean;
+    speed?: number;
+}> = (props) => {
 
     const PLAT_SPONSORS = [
         "https://i.ibb.co/YfdgkMF/nav-logo.png"
@@ -29,25 +34,37 @@ const SponsorsList: React.FC<{}> = (props) => {
     ]
 
 
+
+
+
     return (
-        <div className={"mt-10"}>
-            <h2 className={"text-zinc-300 font-bold text-xl font-Poppins mb-3"}>Powered By</h2>
-            <div>
-                <div className={"flex flex-wrap mt-2 gap-2 opacity-90 items-end"}>
-                    {PLAT_SPONSORS.map((sponsor, index) => {
-                        return <SponsorCell src={sponsor} tier={"platinum"} compact hideTopText={index>0} bigScreen />
+        <div className={`bg-zinc-300 ${props.compact ? "p-5" : "p-10"} rounded-lg m-10 mt-5 h-fit overflow-x-hidden`}>
+            <h3 className={`${props.compact ? "text-xl" : "text-3xl"} font-Poppins font-bold`}>HSHacks is Powered By</h3>
+            <Marquee
+                gradient
+                gradientColor="#D4D4D8"
+                gradientWidth={50}
+                speed={props.speed}
+            >
+                <div className="flex gap-2 mt-5 ml-2">
+                    {PLAT_SPONSORS.map((sponsor) => {
+                        return <SponsorCell src={sponsor} tier={"platinum"} compact={props.compact} />
                     })}
-                    {GOLD_SPONSORS.map((sponsor, index) => {
-                        return <SponsorCell src={sponsor} tier={"gold"} compact hideTopText={index>0} bigScreen />
+                    {GOLD_SPONSORS.map((sponsor) => {
+                        return <SponsorCell src={sponsor} tier={"gold"} compact={props.compact} />
+                    })}
+                    {SILVER_SPONSORS.map((sponsor) => {
+                        return <SponsorCell src={sponsor} tier={"silver"} compact={props.compact} />
+                    })}
+                    {PLAT_SPONSORS.map((sponsor) => {
+                        return <SponsorCell src={sponsor} tier={"platinum"} compact={props.compact} />
+                    })} 
+                    {GOLD_SPONSORS.map((sponsor) => {
+                        return <SponsorCell src={sponsor} tier={"gold"} compact={props.compact} />
                     })}
                 </div>
-                <div className={"flex flex-wrap mt-2 gap-2 opacity-90 items-end"}>
-                    {SILVER_SPONSORS.map((sponsor, index) => {
-                        return <SponsorCell src={sponsor} tier={"silver"} compact hideTopText={index>0} bigScreen />
-                    })}
-                </div>
-            </div>
+            </Marquee>
         </div>
     );
 }
-export default SponsorsList
+export default SponsorDisplay
