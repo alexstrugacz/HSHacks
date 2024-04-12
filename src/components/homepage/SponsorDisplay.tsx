@@ -58,7 +58,7 @@ const SponsorDisplay: React.FC<{
                     })}
                     {PLAT_SPONSORS.map((sponsor) => {
                         return <SponsorCell src={sponsor} tier={"platinum"} compact={props.compact} />
-                    })}
+                    })} 
                     {GOLD_SPONSORS.map((sponsor) => {
                         return <SponsorCell src={sponsor} tier={"gold"} compact={props.compact} />
                     })}

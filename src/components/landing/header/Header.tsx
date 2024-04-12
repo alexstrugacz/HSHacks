@@ -64,7 +64,7 @@ const Header: React.FC<{}> = () => {
                                 <div className={"mt-3"}>
                                     <CountDownTimer />
                                 </div>
-                                <RegisterButton />
+                                <RegisterButton disabled />
                                 <JoinTheDiscord />
                                 <div className="mt-5 md:mt-7">
                                     <div onClick={openHerseyLink}
