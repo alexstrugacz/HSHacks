@@ -1,5 +1,4 @@
 import * as React from "react"
-import Ticker from "react-ticker"
 import SponsorCell from "../landing-screen/SponsorCell"
 import Marquee from "react-fast-marquee";
 const SponsorDisplay: React.FC<{

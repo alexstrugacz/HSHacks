@@ -10,7 +10,6 @@ import moment from "moment";
 import HSHacksLogo from "../shared/HSHacksLogo";
 import SponsorCell from "../landing-screen/SponsorCell";
 import './Schedule.css'
-import Ticker from 'react-ticker'
 import SponsorDisplay from "./SponsorDisplay";
 
 const Schedule: React.FC<{ display: boolean }> = (props) => {
