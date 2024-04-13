@@ -32,10 +32,6 @@ const SponsorDisplay: React.FC<{
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Desmos_logo.svg/1200px-Desmos_logo.svg.png", // Desmos
     ]
 
-
-
-
-
     return (
         <div className={`bg-zinc-300 ${props.compact ? "p-5" : "p-10"} rounded-lg m-10 mt-5 h-fit overflow-x-hidden`}>
             <h3 className={`${props.compact ? "text-xl" : "text-3xl"} font-Poppins font-bold`}>HSHacks is Powered By</h3>

@@ -4,6 +4,7 @@ const Schedule2024Item: React.FC<{
     name: string;
     includeStartTime: boolean;
     height?: number;
+    shrinkText?: boolean;
 }> = (props) => {
 
 
@@ -20,7 +21,7 @@ const Schedule2024Item: React.FC<{
                 </>
             )}
             <div className={`bg-zinc-200 rounded-xl p-3 mb-3 w-full hover:bg-zinc-300 md-hover:scale-105 transition-all`}>
-                <p className={"font-Poppins font-bold text-lg"}>{props.name}</p>
+                <p className={`font-Poppins font-bold ${props.shrinkText ? "text-[0.9rem]" : "text-lg"}`}>{props.name}</p>
             </div>
         </div>
     );

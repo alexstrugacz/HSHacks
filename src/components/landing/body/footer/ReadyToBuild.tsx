@@ -34,7 +34,6 @@ const ReadyToBuild: React.FC<{}> = () => {
                     <p className="mt-2 md:mt-8 md:text-xl text-lg font-Poppins text-[#B0C2DC]">Register for HSHacks today for a
                         truly unforgettable experience!</p>
                     <div className="mt-8">
-
                         <GoogleMaps />
                         <div onClick={openHerseyLink} className="group flex gap-2 mr-16 items-center hover:cursor-pointer w-fit">
                             <MapPinIcon className={"w-7 text-white group-hover:text-zinc-400 transition-colors"} />

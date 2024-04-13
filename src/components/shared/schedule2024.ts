@@ -2,7 +2,8 @@ export interface ScheduleItem {
     startTime: string,
     eventName: string,
     height: number,
-    isEmpty?: boolean
+    isEmpty?: boolean,
+    compact?: boolean;
 }
 
 export const SCHEDULE_GROUPINGS_2024: {
@@ -47,8 +48,9 @@ export const SCHEDULE_GROUPINGS_2024: {
             items: [
                 {
                     startTime: "",
-                    eventName: "Big Tech Coding & Interviews Workshop w/ Big Tech Engineer",
-                    height: 1.25
+                    eventName: "The Polymath's Playground: Things You Should Know How to Do in Any Programming Language (Workshop)",
+                    height: 1.25,
+                    compact: true
                 },
             ]
         },
@@ -176,8 +178,9 @@ export const SCHEDULE_2024: ScheduleItem[][] = [
         },
         {
             startTime: "",
-            eventName: "Big Tech Coding & Interviews Workshop w/ Big Tech Engineer",
-            height: 1.25
+            eventName: "The Polymath's Playground: Things You Should Know How to Do in Any Programming Language (Workshop)",
+            height: 1.25,
+            compact: true
         },
         {
             startTime: "",
