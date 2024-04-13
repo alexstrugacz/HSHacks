@@ -56,9 +56,10 @@ const HackathonMap: React.FC<{}> = (props) => {
                 <a href={"https://goo.gl/maps/xNgbLi79DTrfoPZZ6"} target={"_blank"} className={"font-Poppins text-white underline hover:text-gray-400 transition-colors"}>John Hersey High School</a>
                 <p className={"font-Poppins text-white"}>1900 East Thomas Street</p>
                 <p className={"font-Poppins text-white"}>Arlington Heights, IL 60004</p>
-            </div>
-            <div className={"flex items-center justify-center mt-10 mx-5"}>
-                    <img className={"object-cover rounded-xl shadow-xl"} src={"https://i.ibb.co/pPHJS5Q/Copy-of-jhhs-map.jpg"} />
+                <div className={"flex items-start justify-center flex-col mt-10 max-w-5xl"}>
+                    <img className={"object-cover rounded-xl shadow-xl w-full"} src={"https://i.ibb.co/pPHJS5Q/Copy-of-jhhs-map.jpg"} />
+                    <img src="https://i.ibb.co/r7VfCR3/Parking-And-Door-Image.png" className="w-full rounded-xl shadow-xl mt-10" />
+                </div>
             </div>
             <br />
             <br />

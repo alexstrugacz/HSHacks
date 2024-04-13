@@ -86,7 +86,7 @@ const Header: React.FC<{}> = () => {
                                     text={"Register Now (Free)"}
                                     link={REGISTER_LINK}
                                 /> */}
-                                <p onClick={handleOpenSponsorPage} className={"mt-4 text-gray-300 font-Poppins"}>Interested in sponsoring? <a className={"text-[#5FA7ED] hover:text-cyan-200 hover:cursor-pointer transition-colors"}>Click here!</a></p>
+                                {/* <p onClick={handleOpenSponsorPage} className={"mt-4 text-gray-300 font-Poppins"}>Interested in sponsoring? <a className={"text-[#5FA7ED] hover:text-cyan-200 hover:cursor-pointer transition-colors"}>Click here!</a></p> */}
                             </motion.div>
                             {/*<SponsorsList />*/}
                         </div>

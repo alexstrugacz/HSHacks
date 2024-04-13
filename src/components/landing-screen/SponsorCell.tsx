@@ -12,7 +12,7 @@ const SponsorCell: React.FC<{
 }> = (props) => {
     const tierBorderColor: { [key: string]: string } = {
         "diamond": "border-slate-200",
-        "platinum": props.bigScreen ? "border-slate-400" : "border-slate-900",
+        "platinum": props.bigScreen ? "border-slate-400" : "border-slate-800",
         "gold": "border-yellow-700",
         "silver": props.bigScreen ? "border-zinc-500" : "border-zinc-500"
     }
@@ -25,7 +25,7 @@ const SponsorCell: React.FC<{
     return (
         <div>
             {props.tier && !props.hideTopText && (
-                <p className={`pb-1 ${tierTextColor[props.tier]} text-white font-Poppins font-bold w-fit rounded-sm text-sm`}>{props.tier.toUpperCase()}</p>
+                <p className={`pb-1 ${tierTextColor[props.tier]}  font-Poppins font-bold w-fit rounded-sm text-sm`}>{props.tier.toUpperCase()}</p>
             )}
             {props.bigScreen ? (
                 <div className={`${(props.tier === "silver" ? "border-[0.2rem]" : "border-4")} flex flex-col border-solid ${props.tier ? tierBorderColor[props.tier] : ""} justify-center items-start p-4 bg-zinc-200 rounded-md w-fit`}>
