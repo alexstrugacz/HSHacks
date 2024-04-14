@@ -33,15 +33,14 @@ const SponsorDisplay: React.FC<{
     ]
 
     return (
-        <div className={`bg-zinc-300 ${props.compact ? "p-5" : "p-10"} rounded-lg m-10 mt-5 h-fit overflow-x-hidden`}>
-            <h3 className={`${props.compact ? "text-xl" : "text-3xl"} font-Poppins font-bold`}>HSHacks is Powered By</h3>
+        <div className={`bg-zinc-300 ${props.compact ? "p-5" : "p-7"} w-3/5 m-3 rounded-lg h-fit overflow-x-hidden`}>
             <Marquee
                 gradient
                 gradientColor="#D4D4D8"
                 gradientWidth={50}
                 speed={props.speed}
             >
-                <div className="flex gap-2 mt-5 ml-2">
+                <div className="flex gap-2 ml-2">
                     {PLAT_SPONSORS.map((sponsor) => {
                         return <SponsorCell src={sponsor} tier={"platinum"} compact={props.compact} />
                     })}

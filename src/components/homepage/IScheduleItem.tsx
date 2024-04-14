@@ -1,6 +1,7 @@
 import * as React from 'react';
 export interface IScheduleItem {
     i: number;
+    number: number;
     emoji: React.ReactNode;
     inactiveEmoji: React.ReactNode;
     title: string;

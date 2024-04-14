@@ -159,7 +159,7 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                                         id={`schedule-${i}`}
                                         key={`schedule-${i}`}
                                         item={scheduleItem}
-                                        active={currentItem.i === scheduleItem.i}
+                                        active={currentItem.number === scheduleItem.number}
                                         handleClick={() => {
                                             handleClick(scheduleItem);
                                         }}
@@ -171,19 +171,25 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                     <div className="gradient-overlay"></div>
                 </div>
                 <div className={"mobile:hidden flex-[0.6] flex flex-col"}>
-                    <div className={`flex flex-col ${props.display ? "flex-[2]" : "flex-[0.5]"} bg-zinc-300 p-5 rounded-lg pb-10 h-fit mt-10 overflow-hidden`}>
-                        <div className={"xl:flex xl:items-center gap-2 border-b-2 border-b-slate-400 pb-3"}>
-                            {currentItem.emoji}
-                            <div>
-                                <h3 className={"text-3xl font-Poppins font-bold mt-1"}>{currentItem.title}</h3>
-                                <p className={"font-Poppins text-zinc-500 text-xl"}>{currentItem.startTime} - {currentItem.endTime}</p>
+                    <br></br>
+                    {SCHEDULE_ITEMS.map(data => (
+                        data.number == currentItem.number && (
+                            <div className={`flex flex-col ${props.display ? "flex-[2]" : "flex-[0.5]"} bg-zinc-300 p-5 rounded-lg pb-10 mb-5 overflow-hidden`}>
+                            <div className={"xl:flex xl:items-center gap-2 border-b-2 border-b-slate-400 pb-1"}>
+                                {data.emoji}
+                                <div>
+                                    <h3 className={"text-2xl font-Poppins font-bold "}>{data.title}</h3>
+                                    <p className={"font-Poppins text-zinc-500 text-lg"}>{data.startTime} - {data.endTime}</p>
+                                </div>
                             </div>
-                        </div>
-                        <br />
-                        <p className={"font-Poppins text-zinc-600 text-2xl"}>
-                            {currentItem.description}
-                        </p>
-                    </div>
+                            <br />
+                            <p className={"font-Poppins text-zinc-600 text-lg"}>
+                                {data.description}
+                            </p>
+                        </div> 
+                        )
+                        
+                    ))} 
                     {/* {props.display && (
 
                         <div className={"flex flex-col flex-1 bg-zinc-300 p-5 rounded-lg pb-20 h-fit mb-10 overflow-hidden"}>
@@ -205,12 +211,7 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                         </div>
                     )} */}
                 </div>
-            </div>
-
-            {props.display && (
-                <SponsorDisplay />
-            )}
-
+            </div>  
         </div>
     );
 }
