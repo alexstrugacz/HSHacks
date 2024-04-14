@@ -5,10 +5,10 @@ import React from "react";
 import { CalendarIcon } from "@heroicons/react/24/solid";
 import { useNavigate } from "react-router-dom";
 import JoinTheDiscord from "../../../global/JoinTheDiscord";
-import RegisterButton from "../../../global/RegisterButton";
 import Video from "../assets/code.mp4";
 import CountDownTimer from "../body/Countdown";
 import SponsorsList from "../../landing-screen/SponsorsList";
+import HomepageButton from "../../../global/HomepageButton";
 
 const Header: React.FC<{}> = () => {
     const openHerseyLink = () => {
@@ -64,7 +64,7 @@ const Header: React.FC<{}> = () => {
                                 <div className={"mt-3"}>
                                     <CountDownTimer />
                                 </div>
-                                <RegisterButton disabled />
+                                <HomepageButton />
                                 <JoinTheDiscord />
                                 <div className="mt-5 md:mt-7">
                                     <div onClick={openHerseyLink}
