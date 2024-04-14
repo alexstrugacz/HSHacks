@@ -13,7 +13,9 @@ import ScheduleItem from "./ScheduleItem";
 import Sponsors from "./Sponsors";
 
 
-const Body: React.FC<{}> = () => {
+const Body: React.FC<{
+    scheduleScrollRef: React.RefObject<HTMLDivElement>
+}> = (props) => {
     const scrollRef = React.useRef<HTMLDivElement | null>(null);
 
     const handleScroll = () => {
@@ -50,7 +52,7 @@ const Body: React.FC<{}> = () => {
             </div>
 
 
-            <div className={"pt-10 overflow-x-scroll"}>
+            <div ref={props.scheduleScrollRef} className={"pt-10 overflow-x-scroll"}>
                 <div className="flex flex-col items-start p-5 md:px-20 mx-auto max-w-6xl">
                     <br />
                     <h2 className="font-bold font-Poppins text-2xl pb-3 border-b-2 border-b-[#3f6fa650] w-full">Schedule</h2>
