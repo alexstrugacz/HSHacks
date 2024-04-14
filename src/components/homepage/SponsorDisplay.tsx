@@ -32,30 +32,42 @@ const SponsorDisplay: React.FC<{
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Desmos_logo.svg/1200px-Desmos_logo.svg.png", // Desmos
     ]
 
+    // O'Reilly,Axure, Desmos 
+    const SPONSORS_WITH_INCREASED_PADDING = [
+        "https://cdn.oreillystatic.com/images/sitewide-headers/oreilly_logo_mark_red.svg",
+        "https://cdn.worldvectorlogo.com/logos/axure-2.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Desmos_logo.svg/1200px-Desmos_logo.svg.png"
+    ]
+
+    // Normandy
+    const SPONSORS_WITH_REDUCED_PADDING = [
+        "https://i.ibb.co/YfdgkMF/nav-logo.png"
+    ]
+
     return (
-        <div className={`bg-zinc-300 ${props.compact ? "p-5" : "p-10"} rounded-lg m-10 mt-5 h-fit overflow-x-hidden`}>
-            <h3 className={`${props.compact ? "text-xl" : "text-3xl"} font-Poppins font-bold`}>HSHacks is Powered By</h3>
+        <div className={`bg-zinc-300 ${props.compact ? "p-5" : "p-10"} rounded-lg m-5 md:m-10 mt-5 h-fit overflow-x-hidden`}>
+            <h3 className={`${props.compact ? "text-lg xl:text-xl" : "text-3xl"} font-Poppins font-bold`}>HSHacks is Powered By</h3>
             <Marquee
                 gradient
                 gradientColor="#D4D4D8"
                 gradientWidth={50}
                 speed={props.speed}
             >
-                <div className="flex gap-2 mt-5 ml-2">
+                <div className="flex gap-2 mt-5 ml-5">
                     {PLAT_SPONSORS.map((sponsor) => {
-                        return <SponsorCell src={sponsor} tier={"platinum"} compact={props.compact} />
+                        return <SponsorCell src={sponsor} tier={"platinum"} compact={props.compact} increasedPadding={SPONSORS_WITH_INCREASED_PADDING.includes(sponsor)} reducedPadding={SPONSORS_WITH_REDUCED_PADDING.includes(sponsor)} />
                     })}
                     {GOLD_SPONSORS.map((sponsor) => {
-                        return <SponsorCell src={sponsor} tier={"gold"} compact={props.compact} />
+                        return <SponsorCell src={sponsor} tier={"gold"} compact={props.compact} increasedPadding={SPONSORS_WITH_INCREASED_PADDING.includes(sponsor)} reducedPadding={SPONSORS_WITH_REDUCED_PADDING.includes(sponsor)} />
                     })}
                     {SILVER_SPONSORS.map((sponsor) => {
-                        return <SponsorCell src={sponsor} tier={"silver"} compact={props.compact} />
+                        return <SponsorCell src={sponsor} tier={"silver"} compact={props.compact} increasedPadding={SPONSORS_WITH_INCREASED_PADDING.includes(sponsor)} reducedPadding={SPONSORS_WITH_REDUCED_PADDING.includes(sponsor)} />
                     })}
                     {PLAT_SPONSORS.map((sponsor) => {
-                        return <SponsorCell src={sponsor} tier={"platinum"} compact={props.compact} />
-                    })} 
+                        return <SponsorCell src={sponsor} tier={"platinum"} compact={props.compact} increasedPadding={SPONSORS_WITH_INCREASED_PADDING.includes(sponsor)} reducedPadding={SPONSORS_WITH_REDUCED_PADDING.includes(sponsor)} />
+                    })}
                     {GOLD_SPONSORS.map((sponsor) => {
-                        return <SponsorCell src={sponsor} tier={"gold"} compact={props.compact} />
+                        return <SponsorCell src={sponsor} tier={"gold"} compact={props.compact} increasedPadding={SPONSORS_WITH_INCREASED_PADDING.includes(sponsor)} reducedPadding={SPONSORS_WITH_REDUCED_PADDING.includes(sponsor)} />
                     })}
                 </div>
             </Marquee>

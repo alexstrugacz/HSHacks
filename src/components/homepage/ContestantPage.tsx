@@ -30,45 +30,37 @@ const ContestantPage: React.FC<{}> = (props) => {
     ][] = [
             [
                 1,
-                "Volunteering Portal",
-                "https://herseyhacks.notion.site/Project-Request-1-Volunteer-Sign-Up-Portal-f807e2b7bbec40d3b8937b984fc2468b"
+                "NPO Website 1",
+                ""
             ],
             [
                 2,
-                "Veterans' Outreach Signup",
-                "https://herseyhacks.notion.site/Project-Request-2-Veterans-Event-Signup-91020961af924fdd8da629324a6449af"
+                "NPO Website 2",
+                ""
             ],
             [
                 3,
-                "Donor Receipt System",
-                "https://herseyhacks.notion.site/Project-Request-3-Donor-Receipt-System-ccd4fcb70efc449a91c4c2e4dfdbf323"
+                "NPO Website 3",
+                ""
             ]
         ]
 
 
     return (
-        <div className={"flex-1 w-full min-h-full flex flex-col items-center justify-start p-10 pt-0 md:pt-10"}>
-            <div className={"flex flex-col gap-5 w-full max-w-6xl"}>
-                <p className={"text-zinc-200 font-Poppins mt-10 text-xl"}>There are two types of projects you can build at HSHacks: <b className={"text-white"}>🔨 PH&T Project Request</b> or <b className={"text-white"}>💡Original idea.</b></p>
-                <ul>
-                    <li className={"flex items-start text-xl"}>
-                        <p className={"text-zinc-200 font-Poppins w-20 md:w-5 text-xl"}>•</p>
-                        <p className={"font-Poppins text-zinc-300"}>
-                            <b className={"text-white font-regular"}>🔨 PH&T Project Requests</b> address one of three project requests below, and may be further developed to deployment after the hackathon.
-                        </p>
-                    </li>
-                    <li className={"flex items-start text-xl mt-3"}>
-                        <p className={"text-zinc-200 font-Poppins w-20 md:w-5 text-xl"}>•</p>
-                        <p className={"font-Poppins text-zinc-300"}>
-                            <b className={"text-white font-regular"}>💡 Original Ideas</b> address the theme of Mental Health, and are based on unique ideas.
-                        </p>
-                    </li>
-                </ul>
+        <div className={"flex-1 w-full min-h-full flex flex-col items-center justify-start p-10 pt-0"}>
+            <div className={"flex flex-col gap-1 w-full max-w-6xl"}>
+                <p className={"text-zinc-200 font-Poppins mt-10 text-xl p-0"}>HSHacks 2024 Theme:</p>
+                <p className={"text-zinc-200 font-Poppins text-3xl pt-0 font-bold"}>Service to Others</p>
                 <br />
+                <h2 className={"text-2xl font-bold font-Poppins text-white border-b-[2px] border-b-zinc-600 pb-3 mb-3"}>Rules</h2>
+                <p className={"text-xl text-zinc-300 font-Poppins"}>Must be written during HSHacks (can use external libraries)</p>
+                <p className={"text-xl text-zinc-300 font-Poppins"}>Must revolve around the theme</p>
+                <p className={"text-xl text-zinc-300 font-Poppins"}>Max. 5 participants per team</p>
+                <p className={"text-xl text-zinc-300 font-Poppins"}>Can build anything (website, app, game, etc.) using any technology (language, framework, etc.)</p>
+
                 <br />
-                <h2 className={"text-2xl font-bold font-Poppins text-white border-b-[2px] border-b-zinc-600 pb-3"}>🔨 PH&T Project Requests</h2>
-                <p className={"font-Poppins text-zinc-300 text-xl"}>PH&T Project Request Projects must be web-based, and only need to address one Project Request. If you're up for it, try to address multiple Project Requests!</p>
-                <p className={"text-xl text-zinc-300 font-Poppins font-bold"}>Project Requests</p>
+
+                <p className={"text-xl text-zinc-300 font-Poppins font-bold mb-3"}>Example Projects:</p>
                 <div className={"grid gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3"}>
                     {PROJECT_REQUESTS.map((request, index) => {
                         return (
@@ -82,71 +74,11 @@ const ContestantPage: React.FC<{}> = (props) => {
                     })}
 
                 </div>
-
-                <p className={"text-xl text-zinc-300 font-Poppins font-bold"}>Scoring Rubric</p>
-                <div className={"w-full overflow-auto"}>
-                    <table className="table-fixed bg-zinc-100 rounded-lg overflow-hidden shadow-lg">
-                        <thead>
-                            <tr className={"bg-zinc-300 rounded-lg font-Poppins"}>
-                                {PROJECT_REQUEST_RUBRIC[0].map((item, index) => {
-                                    return (
-                                        <th key={`col-${index}`} className={"w-1/5 text-left text-bold p-2"}>{item}</th>
-                                    )
-                                })}
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {PROJECT_REQUEST_RUBRIC.slice(1).map((item, index) => {
-                                return (
-                                    <tr key={`tr-${index}`} className={"border-b-2 border-b-zinc-200"}>
-                                        <td className={"p-2 font-Poppins w-1/5 bg-zinc-200 align-text-top"}>{item[0]}</td>
-                                        {item.slice(1).map((item2, index2) => {
-                                            return (
-                                                <td key={`item-${index2}-${index}`} className={"p-2 font-Poppins w-1/5 bg-zinc-100 align-text-top hover:cursor-pointer hover:bg-zinc-200 transition-all"}>{item2}</td>
-                                            )
-                                        })}
-                                    </tr>
-                                )
-                            })}
-                        </tbody>
-                    </table>
-                </div>
                 <br />
-                <h2 className={"text-2xl font-bold font-Poppins text-white border-b-[2px] border-b-zinc-600 pb-3"}>💡 Original Idea Guidelines</h2>
-                <p className={"font-Poppins text-zinc-300 text-xl"}>Build a website, app, or game that addresses the <b>Mental Health Theme</b> based on an original idea.</p>
-                <p className={"text-xl text-zinc-300 font-Poppins font-bold"}>Scoring Rubric</p>
-                <div className={"w-full overflow-auto"}>
-                    <table className="table-fixed bg-zinc-100 rounded-lg overflow-hidden shadow-lg">
-                        <thead>
-                            <tr className={"bg-zinc-300 rounded-lg font-Poppins"}>
-                                {INDIVIDUAL_RUBRIC[0].map((item, index) => {
-                                    return (
-                                        <th key={`col-${index}`} className={"w-1/5 text-left text-bold p-2"}>{item}</th>
-                                    )
-                                })}
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {INDIVIDUAL_RUBRIC.slice(1).map((item, index) => {
-                                return (
-                                    <tr key={`tr-${index}`} className={"border-b-2 border-b-zinc-200"}>
-                                        <td className={"p-2 font-Poppins w-1/5 bg-zinc-200 align-text-top"}>{item[0]}</td>
-                                        {item.slice(1).map((item2, index2) => {
-                                            return (
-                                                <td key={`item-${index2}-${index}`} className={"p-2 font-Poppins w-1/5 bg-zinc-100 align-text-top hover:cursor-pointer hover:bg-zinc-200 transition-all"}>{item2}</td>
-                                            )
-                                        })}
-                                    </tr>
-                                )
-                            })}
-                        </tbody>
-                    </table>
-                </div>
+                <h2 className={"text-2xl font-bold font-Poppins text-white border-b-[2px] border-b-zinc-600 pb-3"}>Awards & Prizes</h2>
+                <AwardsList projectThemesPage />
                 <br />
-                <h2 className={"text-2xl font-bold font-Poppins text-white border-b-[2px] border-b-zinc-600 pb-3"}>🏆 Awards & Prizes</h2>
-                <AwardsAndPrizes />
-                <br/> 
-                <br/>
+                <br />
 
 
 

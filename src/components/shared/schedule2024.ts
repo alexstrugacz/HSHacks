@@ -236,7 +236,7 @@ export const SCHEDULE_2024: ScheduleItem[][] = [
         },
         {
             startTime: "",
-            eventName: "Intro to React Workshop",
+            eventName: "Intermediate React Workshop",
             height: 1
         },
         {

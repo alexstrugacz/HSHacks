@@ -60,17 +60,17 @@ const Homepage: React.FC<{
                 </motion.div>
             </div>
             <div className="flex flex-col flex-1">
-                <div className={"grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 p-5 md:p-10 pb-0"}>
+                <div className={"grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-5 p-5 md:p-10 pb-0"}>
                     <motion.div
                         initial={{ opacity: 0, y: 0, scale: 0.8 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         transition={{ delay: props.animated ? 0.2 + 0.5 : 0, duration: props.animated ? 0.5 : 0 }}
                     >
                         <Activity
-                            icon={<CommandLineIcon className={"text-cyan-600 w-10 mr-2"} />}
-                            title={"Projects & Themes"}
-                            description={"Rubrics also included"}
-                            intLink={"/pht"}
+                            icon={<CommandLineIcon className={"text-cyan-600 w-6 mr-2"} />}
+                            title={"Project Theme"}
+                            description={""}
+                            intLink={"/project-themes"}
                         />
                     </motion.div>
                     <motion.div
@@ -79,7 +79,7 @@ const Homepage: React.FC<{
                         transition={{ delay: props.animated ? 0.2 + 0.5 : 0, duration: props.animated ? 0.5 : 0 }}
                     >
                         <Activity
-                            icon={<HandThumbUpIcon className={"text-cyan-600 w-10 mr-2"} />}
+                            icon={<HandThumbUpIcon className={"text-cyan-600 w-6 mr-2"} />}
                             title={"Peer Mentorship"}
                             description={"A quick explanation"}
                             extLink={"https://herseyhacks.notion.site/Peer-Mentorship-742f9132b78a4f8a8f45f6954785a68c"}
@@ -91,7 +91,7 @@ const Homepage: React.FC<{
                         transition={{ delay: props.animated ? 0.4 + 0.5 : 0, duration: props.animated ? 0.5 : 0 }}
                     >
                         <Activity
-                            icon={<CalendarDaysIcon className={"text-cyan-600 w-10 mr-2"} />}
+                            icon={<CalendarDaysIcon className={"text-cyan-600 w-6 mr-2"} />}
                             title={"Live Schedule"}
                             description={"HSHacks Schedule"}
                             intLink={"/live-schedule"}
@@ -104,7 +104,7 @@ const Homepage: React.FC<{
                         transition={{ delay: props.animated ? 0.6 + 0.5 : 0, duration: props.animated ? 0.5 : 0 }}
                     >
                         <Activity
-                            icon={<ChatBubbleLeftRightIcon className={"text-cyan-800 w-10 mr-2"} />}
+                            icon={<ChatBubbleLeftRightIcon className={"text-cyan-800 w-6 mr-2"} />}
                             title={"HSHacks Discord"}
                             description={"For support & more!"}
                             extLink={"https://discord.gg/rja2sB9C3q"}
@@ -117,7 +117,7 @@ const Homepage: React.FC<{
                         transition={{ delay: props.animated ? 0.8 + 0.5 : 0, duration: props.animated ? 0.5 : 0 }}
                     >
                         <Activity
-                            icon={<MapIcon className={"text-cyan-800 w-10 mr-2"} />}
+                            icon={<MapIcon className={"text-cyan-800 w-6 mr-2"} />}
                             title={"School Map"}
                             description={"Map of JHHS"}
                             bgImg={"https://i.ibb.co/BLpDYvX/src.png"}
@@ -130,11 +130,49 @@ const Homepage: React.FC<{
                         transition={{ delay: props.animated ? 1 + 0.5 : 0, duration: props.animated ? 0.5 : 0 }}
                     >
                         <Activity
-                            icon={<WrenchScrewdriverIcon className={"text-cyan-800 w-10 mr-2"} />}
-                            title={"Personal Website"}
-                            description={"Resources for Live Workshop #1"}
+                            icon={<WrenchScrewdriverIcon className={"text-cyan-800 w-6 mr-2"} />}
+                            title={"Intro to HTML, CSS, and JS"}
+                            description={"Workshop Resources"}
                             bgImg={"https://i.ibb.co/BLpDYvX/src.png"}
-                            intLink={"/workshops/personal_website_live"}
+                            extLink={"https://herseyhacks.notion.site/HSHacks-Intro-to-HTML-CSS-JS-Workshop-03cae45deee644cb9fe68db95a1e2017?pvs=4"}
+                        />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        transition={{ delay: props.animated ? 1.2 + 0.5 : 0, duration: props.animated ? 0.5 : 0 }}
+                    >
+                        <Activity
+                            icon={<WrenchScrewdriverIcon className={"text-cyan-800 w-6 mr-2"} />}
+                            title={"Intermediate React"}
+                            description={"Workshop Resources"}
+                            bgImg={"https://i.ibb.co/BLpDYvX/src.png"}
+                            extLink={""}
+                        />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        transition={{ delay: props.animated ? 1.4 + 0.5 : 0, duration: props.animated ? 0.5 : 0 }}
+                    >
+                        <Activity
+                            icon={<WrenchScrewdriverIcon className={"text-cyan-800 w-6 mr-2"} />}
+                            title={"Custom APIs & DBs"}
+                            description={"Workshop Resources"}
+                            bgImg={"https://i.ibb.co/BLpDYvX/src.png"}
+                            extLink={"https://www.notion.so/herseyhacks/Building-a-Custom-Twitter-Backend-using-MongoDB-Express-and-NodeJS-6717d93119e04327aaf07371a98af62b?pvs=4"}
+                        />
+                    </motion.div> <motion.div
+                        initial={{ opacity: 0, y: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        transition={{ delay: props.animated ? 1.6 + 0.5 : 0, duration: props.animated ? 0.5 : 0 }}
+                    >
+                        <Activity
+                            icon={<WrenchScrewdriverIcon className={"text-cyan-800 w-6 mr-2"} />}
+                            title={"MNIST AI Digit Recognizer"}
+                            description={"Workshop Resources"}
+                            bgImg={"https://i.ibb.co/BLpDYvX/src.png"}
+                            extLink={""}
                         />
                     </motion.div>
                 </div>

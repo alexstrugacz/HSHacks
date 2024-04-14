@@ -1,4 +1,5 @@
 import React from "react";
+import AwardsList from "./awards/AwardsList";
 import { SCHEDULE_2024, SCHEDULE_GROUPINGS_2024 } from "../../shared/schedule2024";
 import BuildProjects from "./BuildProjects";
 import Description from "./Description";
@@ -49,6 +50,7 @@ const Body: React.FC<{}> = () => {
                 <HowProjectsWork />
             </div>
 
+            <AwardsList />
 
             <div className={"pt-10 overflow-x-scroll"}>
                 <div className="flex flex-col items-start p-5 md:px-20 mx-auto max-w-6xl">

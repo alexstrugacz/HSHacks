@@ -143,7 +143,7 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                                     </a>
 
                                 )}
-                                <h1 className={"font-Poppins text-5xl font-bold mt-53md:mt-0"}>Live Schedule</h1>
+                                <h1 className={"font-Poppins text-3xl md:text-4xl font-bold mt-53 md:mt-0"}>Live Schedule</h1>
                             </div>
                         </div>
                     </div>
@@ -175,12 +175,12 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                         <div className={"xl:flex xl:items-center gap-2 border-b-2 border-b-slate-400 pb-3"}>
                             {currentItem.emoji}
                             <div>
-                                <h3 className={"text-3xl font-Poppins font-bold mt-1"}>{currentItem.title}</h3>
-                                <p className={"font-Poppins text-zinc-500 text-xl"}>{currentItem.startTime} - {currentItem.endTime}</p>
+                                <h3 className={"text-xl lg:text-3xl font-Poppins font-bold mt-1"}>{currentItem.title}</h3>
+                                <p className={"font-Poppins text-zinc-500 text-md lg:text-xl"}>{currentItem.startTime} - {currentItem.endTime}</p>
                             </div>
                         </div>
                         <br />
-                        <p className={"font-Poppins text-zinc-600 text-2xl"}>
+                        <p className={"font-Poppins text-zinc-600 text-lg lg:text-xl"}>
                             {currentItem.description}
                         </p>
                     </div>
@@ -208,7 +208,7 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
             </div>
 
             {props.display && (
-                <SponsorDisplay />
+                <SponsorDisplay speed={50} />
             )}
 
         </div>

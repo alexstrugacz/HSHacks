@@ -34,8 +34,8 @@ const Activity: React.FC<{
                     <div className={"flex items-center gap-1"}>
                         {icon && icon}
                         <div className={"flex flex-col gap-0"}>
-                            <h2 className={"text-black text-left font-Poppins font-bold text-lg"}>{props.title}</h2>
-                            <p className={"text-gray-500 text-left font-Poppins text-md"}>{props.description}</p>
+                            <h2 className={"text-black text-left font-Poppins font-bold text-md xl:text-lg"}>{props.title}</h2>
+                            {/* <p className={"text-gray-500 text-left font-Poppins text-md"}>{props.description}</p> */}
                         </div>
                     </div>
                 </div>
