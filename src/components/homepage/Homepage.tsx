@@ -144,10 +144,10 @@ const Homepage: React.FC<{
                     >
                         <Activity
                             icon={<WrenchScrewdriverIcon className={"text-cyan-800 w-6 mr-2"} />}
-                            title={"Intermediate React"}
+                            title={"Intermediate React - Mini-Calendar"}
                             description={"Workshop Resources"}
                             bgImg={"https://i.ibb.co/BLpDYvX/src.png"}
-                            extLink={""}
+                            extLink={"https://workshops.hackclub.com/react_calendar/"}
                         />
                     </motion.div>
                     <motion.div
@@ -157,7 +157,7 @@ const Homepage: React.FC<{
                     >
                         <Activity
                             icon={<WrenchScrewdriverIcon className={"text-cyan-800 w-6 mr-2"} />}
-                            title={"Custom APIs & DBs"}
+                            title={"Building RESTful APIs w/ Node & MongoDB"}
                             description={"Workshop Resources"}
                             bgImg={"https://i.ibb.co/BLpDYvX/src.png"}
                             extLink={"https://www.notion.so/herseyhacks/Building-a-Custom-Twitter-Backend-using-MongoDB-Express-and-NodeJS-6717d93119e04327aaf07371a98af62b?pvs=4"}
