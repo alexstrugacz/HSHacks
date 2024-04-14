@@ -7,15 +7,18 @@ const EMOJI_INACTIVE_STYLE = "h-8 text-cyan-900 transition-all";
 export const SCHEDULE_ITEMS: IScheduleItem[] = [
     {
         i: 1,
+        number: 1,
         emoji: <BellIcon className={EMOJI_STYLE} />,
         inactiveEmoji: <BellIcon className={EMOJI_INACTIVE_STYLE} />,
         title: "Check-In & Breakfast",
-        startTime: "7:50AM",
+        startTime: "8:00AM",
         endTime: "8:30AM",
-        minutes: 40,
+        minutes: 30,
         description: "Check in, get your HSHacks T-Shirt and Hack Club/HSHacks stickers.\nGrab a donut and coffee while waiting for the Opening Ceremony"
-    }, {
+    }, 
+    {
         i: 2,
+        number: 2,
         emoji: <MicrophoneIcon className={EMOJI_STYLE} />,
         inactiveEmoji: <MicrophoneIcon className={EMOJI_INACTIVE_STYLE} />,
         title: "Opening Ceremony & Keynote",
@@ -23,29 +26,65 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         endTime: "8:45AM",
         minutes: 15,
         description: "Project Headspace and Timing (partnered nonprofit) keynote, theme announcement, and project requests\nOverview of the hackathon and sponsors afterwards"
-    },
+    }, 
     {
         i: 3,
-        emoji: <ChatBubbleLeftRightIcon className={EMOJI_STYLE} />,
-        inactiveEmoji: <ChatBubbleLeftRightIcon className={EMOJI_INACTIVE_STYLE} />,
-        title: "Team Formation",
+        number: 3,
+        emoji: <WrenchScrewdriverIcon className={EMOJI_STYLE} />,
+        inactiveEmoji: <WrenchScrewdriverIcon className={EMOJI_INACTIVE_STYLE} />,
+        title: "Beginner HTML + CSS Workshop",
         startTime: "8:45AM",
         endTime: "9:00AM",
         minutes: 15,
-        description: "Meet up with your team or team up with new hackathon members!"
+        description: "Explore the fundementals of HTML and CSS and get introduced to new concepts that help you get started in coding! This is hosted in the presentation room."
     },
     {
         i: 4,
-        emoji: <CommandLineIcon className={EMOJI_STYLE} />,
-        inactiveEmoji: <CommandLineIcon className={EMOJI_INACTIVE_STYLE} />,
-        title: "Personal Website Workshop",
-        startTime: "9:00AM",
-        endTime: "10:00AM",
-        minutes: 60,
-        description: "Build your own personal website using HTML and CSS at the live Personal Website workshop! No prior experience needed."
+        number: 3,
+        emoji: <WrenchScrewdriverIcon className={EMOJI_STYLE} />,
+        inactiveEmoji: <WrenchScrewdriverIcon className={EMOJI_INACTIVE_STYLE} />,
+        title: "Intro to React Workshop",
+        startTime: "8:45AM",
+        endTime: "9:00AM",
+        minutes: 15,
+        description: "Explore the framework being used by many companies to make website. This is hosted in the presentation room."
     },
     {
         i: 5,
+        number: 4,
+        emoji: <CodeBracketIcon className={EMOJI_STYLE} />,
+        inactiveEmoji: <CodeBracketIcon className={EMOJI_INACTIVE_STYLE} />,
+        title: "Open Coding Time",
+        startTime: "9:00AM",
+        endTime: "9:30AM",
+        minutes: 30,
+        description: "Free time to code! There are no workshops or events currently happening."
+    },
+    {
+        i: 6,
+        number: 5,
+        emoji: <ChatBubbleLeftRightIcon className={EMOJI_STYLE} />,
+        inactiveEmoji: <ChatBubbleLeftRightIcon className={EMOJI_INACTIVE_STYLE} />,
+        title: "Team Formation",
+        startTime: "9:30AM",
+        endTime: "9:45AM",
+        minutes: 15,
+        description: "Meet up with your team or team up with new hackathon members!"
+    }, 
+    {
+        i: 7,
+        number: 6,
+        emoji: <CodeBracketIcon className={EMOJI_STYLE} />,
+        inactiveEmoji: <CodeBracketIcon className={EMOJI_INACTIVE_STYLE} />,
+        title: "Open Coding Time & Optional Setup Session.",
+        startTime: "9:45AM",
+        endTime: "10:00AM",
+        minutes: 15,
+        description: "Free time to code! There are no workshops or events currently happening. You can also go to a setup session."
+    },
+    {
+        i: 8,
+        number: 7,
         emoji: <WrenchScrewdriverIcon className={EMOJI_STYLE} />,
         inactiveEmoji: <WrenchScrewdriverIcon className={EMOJI_INACTIVE_STYLE} />,
         title: "Postman APIs Workshop",
@@ -55,18 +94,42 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         description: "Learn the basics of REST APIs at this workshop, hosted by our sponsor Postman!"
     },
     {
-        i: 6,
-        emoji: <CodeBracketIcon className={EMOJI_STYLE} />,
-        inactiveEmoji: <CodeBracketIcon className={EMOJI_INACTIVE_STYLE} />,
-        italic: true,
-        title: "Open Coding Time",
-        startTime: "11:00AM",
-        endTime: "12:00PM",
+        i: 9,
+        number: 7,
+        emoji: <WrenchScrewdriverIcon className={EMOJI_STYLE} />,
+        inactiveEmoji: <WrenchScrewdriverIcon className={EMOJI_INACTIVE_STYLE} />,
+        title: "NodeJS/MongoDB Backend Workshop",
+        startTime: "10:00AM",
+        endTime: "11:00AM",
         minutes: 60,
-        description: "Your time to code! Call over a mentor if you need any support."
+        description: "Build a project while learning NodeJS and MongoDB. This is hosted in the presentation room."
     },
     {
-        i: 7,
+        i: 10,
+        number: 8,
+        emoji: <CodeBracketIcon className={EMOJI_STYLE} />,
+        inactiveEmoji: <CodeBracketIcon className={EMOJI_INACTIVE_STYLE} />,
+        title: "Open Coding Time",
+        startTime: "11:00AM",
+        endTime: "11:15AM",
+        minutes: 15,
+        description: "Free time to code! There are no workshops or events currently happening."
+    },
+    {
+        i: 11,
+        number: 9,
+        emoji: <MicrophoneIcon className={EMOJI_STYLE} />,
+        inactiveEmoji: <MicrophoneIcon className={EMOJI_INACTIVE_STYLE} />,
+        italic: true,
+        title: "Presentation by Larry Shrof",
+        startTime: "11:15AM",
+        endTime: "12:00PM",
+        minutes: 45,
+        description: "Larry Shrof will be giving presentation in the presentation room."
+    },
+    {
+        i: 12,
+        number: 10,
         emoji: <Battery100Icon className={EMOJI_STYLE} />,
         inactiveEmoji: <Battery100Icon className={EMOJI_INACTIVE_STYLE} />,
         title: "Lunch",
@@ -76,90 +139,119 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         description: "Grab some food in the eating area of the ARC"
     },
     {
-        i: 8,
-        emoji: <CodeBracketIcon className={EMOJI_STYLE} />,
-        inactiveEmoji: <CodeBracketIcon className={EMOJI_INACTIVE_STYLE} />,
-        italic: true,
-        title: "Open Coding Time",
-        startTime: "12:45PM",
-        endTime: "1:45PM",
-        minutes: 60,
-        description: "Your time to code! Call over a mentor if you need any support."
-    },
-    {
-        i: 9,
+        i: 13,
+        number: 10,
         emoji: <MicrophoneIcon className={EMOJI_STYLE} />,
         inactiveEmoji: <MicrophoneIcon className={EMOJI_INACTIVE_STYLE} />,
-        title: "Jimmy McDermott AMA",
-        startTime: "1:45PM",
-        endTime: "2:15PM",
-        minutes: 30,
-        description: "Jimmy McDermott, Forbes 30 Under 30 member and CTO of Transeo, an edtech company, will join via Zoom to hold an AMA & share his experiences with coding, hackathons, and more!"
-    },
-    {
-        i: 10,
-        emoji: <CodeBracketIcon className={EMOJI_STYLE} />,
-        inactiveEmoji: <CodeBracketIcon className={EMOJI_INACTIVE_STYLE} />,
         italic: true,
-        title: "Open Coding Time",
-        startTime: "2:15PM",
-        endTime: "3:45PM",
-        minutes: 90,
-        description: "Your time to code! Call over a mentor if you need any support."
-    },
-    {
-        i: 11,
-        emoji: <PuzzlePieceIcon className={EMOJI_STYLE} />,
-        inactiveEmoji: <PuzzlePieceIcon className={EMOJI_INACTIVE_STYLE} />,
-        title: "Minigame/Breaktime",
-        startTime: "3:45PM",
-        endTime: "4:15PM",
-        minutes: 30,
-        description: "Let's take a break from coding and play a minigame!."
-    }, // add another open coding time
-    {
-        i: 12,
-        emoji: <CodeBracketIcon className={EMOJI_STYLE} />,
-        inactiveEmoji: <CodeBracketIcon className={EMOJI_INACTIVE_STYLE} />,
-        italic: true,
-        title: "Open Coding Time",
-        startTime: "4:15PM",
-        endTime: "5:45PM",
-        description: "Your time to code! Call over a mentor if you need any support.",
-        minutes: 90
-    },
-    {
-        i: 13,
-        emoji: <ComputerDesktopIcon className={EMOJI_STYLE} />,
-        inactiveEmoji: <ComputerDesktopIcon className={EMOJI_INACTIVE_STYLE} />,
-        title: "Project Demos",
-        startTime: "5:45PM",
-        endTime: "6:45PM",
-        minutes: 60,
-        description: "Coding will halt at 5:45PM, and we’ll show off the awesome projects built at the hackathon to the judges and other participants!"
+        title: "Larry Shrof AMA",
+        startTime: "12:10PM",
+        endTime: "12:55PM",
+        minutes: 45,
+        description: "Larry Shrof will be giving presentation in the presentation room."
     },
     {
         i: 14,
-        emoji: <Battery100Icon className={EMOJI_STYLE} />,
-        inactiveEmoji: <Battery100Icon className={EMOJI_INACTIVE_STYLE} />,
-        title: "Dinner",
-        startTime: "6:45PM",
-        endTime: "7:30PM",
-        minutes: 45,
-        description: "We’ll hang out and eat some pizza while the judges determine awards"
+        number: 11,
+        emoji: <CodeBracketIcon className={EMOJI_STYLE} />,
+        inactiveEmoji: <CodeBracketIcon className={EMOJI_INACTIVE_STYLE} />,
+        title: "Open Coding Time",
+        startTime: "12:55PM",
+        endTime: "1:30PM",
+        minutes: 35,
+        description: "Free time to code! There are no workshops or events currently happening."
     },
     {
         i: 15,
-        emoji: <GiftIcon className={EMOJI_STYLE} />,
-        inactiveEmoji: <GiftIcon className={EMOJI_INACTIVE_STYLE} />,
-        title: "Awards Ceremony",
-        startTime: "7:30PM",
-        endTime: "7:45PM",
-        minutes: 15,
-        description: "Here we’ll announce project awards and prizes!"
+        number: 12,
+        emoji: <WrenchScrewdriverIcon className={EMOJI_STYLE} />,
+        inactiveEmoji: <WrenchScrewdriverIcon className={EMOJI_INACTIVE_STYLE} />, 
+        title: "MNIST Digit Classification AI Workshop",
+        startTime: "1:30PM",
+        endTime: "2:15PM",
+        minutes: 45,
+        description: "This is a workshop about creating an AI using Python and Tensorflow. It will be held in the presentation room."
     },
     {
         i: 16,
+        number: 12,
+        emoji: <WrenchScrewdriverIcon className={EMOJI_STYLE} />,
+        inactiveEmoji: <WrenchScrewdriverIcon className={EMOJI_INACTIVE_STYLE} />, 
+        title: "Project Presentation Workshop",
+        startTime: "1:30PM",
+        endTime: "2:15PM",
+        minutes: 45,
+        description: "This workshop focuses on project presentation and will be held in the presentation room."
+    },
+    {
+        i: 17,
+        number: 13,
+        emoji: <PuzzlePieceIcon className={EMOJI_STYLE} />,
+        inactiveEmoji: <PuzzlePieceIcon className={EMOJI_INACTIVE_STYLE} />,
+        title: "Pictionary",
+        startTime: "2:15PM",
+        endTime: "3:15PM",
+        minutes: 60,
+        description: "Let's take a break from coding and play a minigame!"
+    },  
+    {
+        i: 18,
+        number: 14,
+        emoji: <PuzzlePieceIcon className={EMOJI_STYLE} />,
+        inactiveEmoji: <PuzzlePieceIcon className={EMOJI_INACTIVE_STYLE} />,
+        title: "TypeRacer Competition",
+        startTime: "3:15PM",
+        endTime: "3:30PM",
+        minutes: 15,
+        description: "Let's take a break from coding and play a minigame! $45 Desmos gift card reward to the winner!"
+    }, 
+    {
+        i: 19,
+        number: 15,
+        emoji: <CodeBracketIcon className={EMOJI_STYLE} />,
+        inactiveEmoji: <CodeBracketIcon className={EMOJI_INACTIVE_STYLE} />,
+        title: "Open Coding Time",
+        startTime: "3:30PM",
+        endTime: "5:30PM",
+        minutes: 120,
+        description: "Free time to code! There are no workshops or events currently happening."
+    },
+    {
+        i: 20,
+        number: 16,
+        emoji: <Battery100Icon className={EMOJI_STYLE} />,
+        inactiveEmoji: <Battery100Icon className={EMOJI_INACTIVE_STYLE} />,
+        title: "Dinner + Project Desmos",
+        startTime: "5:30PM",
+        endTime: "7:00PM",
+        minutes: 150,
+        description: "We’ll hang out and eat some pizza while the judges determine awards."
+    }, 
+    {
+        i: 21,
+        number: 17,
+        emoji: <Battery100Icon className={EMOJI_STYLE} />,
+        inactiveEmoji: <Battery100Icon className={EMOJI_INACTIVE_STYLE} />,
+        title: "Dinner + Slides",
+        startTime: "7:00PM",
+        endTime: "7:45PM",
+        minutes: 45,
+        description: "We’ll hang out and eat some pizza while the judges determine awards."
+    },
+    {
+        i: 22,
+        number: 17,
+        emoji: <PuzzlePieceIcon className={EMOJI_STYLE} />,
+        inactiveEmoji: <PuzzlePieceIcon className={EMOJI_INACTIVE_STYLE} />,
+        title: "Minigame",
+        startTime: "7:30PM",
+        endTime: "7:45PM",
+        minutes: 15,
+        description: "Let's take a break from coding and play a minigame!"
+    },
+    {
+        i: 23,
+        number: 18,
         emoji: <MicrophoneIcon className={EMOJI_STYLE} />,
         inactiveEmoji: <MicrophoneIcon className={EMOJI_INACTIVE_STYLE} />,
         title: "Closing Ceremony",
