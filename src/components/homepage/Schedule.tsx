@@ -149,7 +149,7 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                     </div>
                 </AnimatedBg>
             </div>
-            <div className={"flex-1 flex px-10 gap-3 overflow-y-clip"}>
+            <div className={"flex-1 flex md:px-10 px-2 lg:px-10 xl:px-10 2xl:px-10 gap-3 overflow-y-clip"}>
                 <div className={"relative flex-1 flex flex-col h-full max-h-full pt-10"} style={{ scrollbarWidth: "none" }}>
                     <div className="custom-scrollbar overflow-y-scroll flex flex-col gap-3">
                         {

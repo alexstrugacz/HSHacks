@@ -33,7 +33,7 @@ const SponsorDisplay: React.FC<{
     ]
 
     return (
-        <div className={`bg-zinc-300 ${props.compact ? "p-5" : "p-7"} w-3/5 m-3 rounded-lg h-fit overflow-x-hidden`}>
+        <div className={`bg-zinc-300 ${props.compact ? "p-5" : "p-7"} w-full md:w-3/5 lg:w-3/5 xl:w-3/5 2xl:w-3/5 m-3 rounded-lg h-fit overflow-x-hidden`}>
             <Marquee
                 gradient
                 gradientColor="#D4D4D8"
