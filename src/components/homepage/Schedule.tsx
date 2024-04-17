@@ -170,20 +170,19 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                     </div>
                     <div className="gradient-overlay"></div>
                 </div>
-                <div className={"mobile:hidden flex-[0.6] flex flex-col"}>
+                <div className={"mobile:hidden flex-[0.9] flex flex-col"}>
                     <br></br>
                     {SCHEDULE_ITEMS.map(data => (
                         data.number == currentItem.number && (
                             <div className={`flex flex-col ${props.display ? "flex-[2]" : "flex-[0.5]"} bg-zinc-300 p-5 rounded-lg pb-10 mb-5 overflow-hidden`}>
-                            <div className={"xl:flex xl:items-center gap-2 border-b-2 border-b-slate-400 pb-1"}>
+                            <div className={"xl:flex xl:items-center gap-2 border-b-2 border-b-slate-400 pb-2"}>
                                 {data.emoji}
                                 <div>
-                                    <h3 className={"text-2xl font-Poppins font-bold "}>{data.title}</h3>
+                                    <h3 className={"text-2xl font-Poppins font-bold"}>{data.title}</h3>
                                     <p className={"font-Poppins text-zinc-500 text-lg"}>{data.startTime} - {data.endTime}</p>
                                 </div>
-                            </div>
-                            <br />
-                            <p className={"font-Poppins text-zinc-600 text-lg"}>
+                            </div> 
+                            <p className={"font-Poppins text-zinc-600 text-lg mt-2"}>
                                 {data.description}
                             </p>
                         </div> 
