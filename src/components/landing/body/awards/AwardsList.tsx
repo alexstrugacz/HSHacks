@@ -19,35 +19,49 @@ const AwardsList: React.FC<{
                     <Award
                         icon={<TrophyIcon className={ICON_STYLE} />}
                         name={"First Place"}
-                        prizes={["Amazon Gift Card ($200)", "AWS Credits from CodeCrafters", "6 months of Draftbit Pro ($360 valuation)", "1 Year of Wolfram|One & Wolfram|Alpha Pro ($375 Valuation)", "1 Month of Echo3D Premium ($99 Valuation)", "1 Month of O'Reilly Learning Platform ($49 Valuation)", "InterviewCake Interview Prep Course", "HSHacks First Place Certificate", "Axure RP Team Edition", "Sponsored Swag"]}
+                        prizes={["Amazon Gift Card ($200)", "AWS Credits from CodeCrafters", "6 months of Draftbit Pro ($360 valuation)", "1 Year of Wolfram|One & Wolfram|Alpha Pro ($375 Valuation)", "6 Months of Balsamiq Cloud", "1 Month of Echo3D Premium ($99 Valuation)", "1 Month of O'Reilly Learning Platform ($49 Valuation)", "InterviewCake Interview Prep Course", "HSHacks First Place Certificate", "Axure RP Team Edition", "Sponsored Swag"]}
                         description={"The highest scoring project out of any category."}
                         dark={props.projectThemesPage}
                     />
                     <Award
                         icon={<TrophyIcon className={ICON_STYLE} />}
                         name={"Second Place"}
-                        prizes={["Amazon Gift Card ($150)", "AWS Credits from CodeCrafters", "6 months of Draftbit Pro ($360 valuation)", "1 Year of Wolfram|One & Wolfram|Alpha Pro ($375 Valuation)", "1 Month of Echo3D Premium ($99 Valuation)", "1 Month of O'Reilly Learning Platform ($49 Valuation)", "InterviewCake Interview Prep Course", "HSHacks Second Place Certificate", "Sponsored Swag"]}
+                        prizes={["Amazon Gift Card ($150)", "AWS Credits from CodeCrafters", "6 months of Draftbit Pro ($360 valuation)", "1 Year of Wolfram|One & Wolfram|Alpha Pro ($375 Valuation)", "6 Months of Balsamiq Cloud", "1 Month of Echo3D Premium ($99 Valuation)", "1 Month of O'Reilly Learning Platform ($49 Valuation)", "InterviewCake Interview Prep Course", "HSHacks Second Place Certificate", "Sponsored Swag"]}
                         description={"The highest scoring project out of any category."}
                         dark={props.projectThemesPage}
                     />
                     <Award
                         icon={<TrophyIcon className={ICON_STYLE} />}
                         name={"Third Place"}
-                        prizes={["Amazon Gift Card ($100)", "AWS Credits from CodeCrafters", "6 months of Draftbit Pro ($360 valuation)", "1 Year of Wolfram|One & Wolfram|Alpha Pro ($375 Valuation)", "1 Month of Echo3D Premium ($99 Valuation)", "1 Month of O'Reilly Learning Platform ($49 Valuation)", "InterviewCake Interview Prep Course", "HSHacks Third Place Certificate", "Sponsored Swag"]}
+                        prizes={["Amazon Gift Card ($100)", "AWS Credits from CodeCrafters", "6 months of Draftbit Pro ($360 valuation)", "1 Year of Wolfram|One & Wolfram|Alpha Pro ($375 Valuation)", "6 Months of Balsamiq Cloud", "1 Month of Echo3D Premium ($99 Valuation)", "1 Month of O'Reilly Learning Platform ($49 Valuation)", "InterviewCake Interview Prep Course", "HSHacks Third Place Certificate", "Sponsored Swag"]}
                         description={"The highest scoring project out of any category."}
                         dark={props.projectThemesPage}
                     />
                     <Award
                         icon={<LightBulbIcon className={ICON_STYLE} />}
                         name={"Best Beginner Project"}
-                        prizes={["Amazon Gift Card ($100)", "AWS Credits from CodeCrafters", "6 months of Draftbit Pro ($360 valuation)", "1 Year of Wolfram|One & Wolfram|Alpha Pro ($375 Valuation)", "1 Month of Echo3D Premium ($99 Valuation)", "1 Month of O'Reilly Learning Platform ($49 Valuation)", "InterviewCake Interview Prep Course", "HSHacks Best Beginner Project Certificate", "Sponsored Swag"]}
+                        prizes={["Amazon Gift Card ($100)", "AWS Credits from CodeCrafters", "6 months of Draftbit Pro ($360 valuation)", "1 Year of Wolfram|One & Wolfram|Alpha Pro ($375 Valuation)", "6 Months of Balsamiq Cloud", "1 Month of Echo3D Premium ($99 Valuation)", "1 Month of O'Reilly Learning Platform ($49 Valuation)", "InterviewCake Interview Prep Course", "HSHacks Best Beginner Project Certificate", "Sponsored Swag"]}
+                        description={"The highest scoring project out of any category."}
+                        dark={props.projectThemesPage}
+                    />
+                    <Award
+                        icon={<LightBulbIcon className={ICON_STYLE} />}
+                        name={"Runner-Up Project #1"}
+                        prizes={["Amazon Gift Card ($75)", "6 months of Draftbit Pro ($360 valuation)", "6 Months of Balsamiq Cloud", "1 Month of Echo3D Premium ($99 Valuation)", "1 Month of O'Reilly Learning Platform ($49 Valuation)", "InterviewCake Interview Prep Course", "HSHacks Runner-Up Certificate"]}
+                        description={"The highest scoring project out of any category."}
+                        dark={props.projectThemesPage}
+                    />
+                    <Award
+                        icon={<LightBulbIcon className={ICON_STYLE} />}
+                        name={"Runner-Up Project #2"}
+                        prizes={["Amazon Gift Card ($75)", "6 months of Draftbit Pro ($360 valuation)", "6 Months of Balsamiq Cloud", "1 Month of Echo3D Premium ($99 Valuation)", "1 Month of O'Reilly Learning Platform ($49 Valuation)", "InterviewCake Interview Prep Course", "HSHacks Runner-Up Certificate"]}
                         description={"The highest scoring project out of any category."}
                         dark={props.projectThemesPage}
                     />
                     <Award
                         icon={<WrenchScrewdriverIcon className={ICON_STYLE} />}
                         name={"All Projects"}
-                        prizes={["6 months of Draftbit Pro ($360 valuation)", "1 Year of Wolfram|One", "1 Month of Echo3D Premium ($99 Valuation)", "1 Month of O'Reilly Learning Platform ($49 Valuation)", "HSHacks Certificate"]}
+                        prizes={["6 months of Draftbit Pro ($360 valuation)", "6 Months of Balsamiq Cloud", "1 Month of Echo3D Premium ($99 Valuation)", "1 Month of O'Reilly Learning Platform ($49 Valuation)", "HSHacks Certificate"]}
                         description={""}
                         dark={props.projectThemesPage}
                     />

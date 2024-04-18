@@ -48,9 +48,8 @@ export const SCHEDULE_GROUPINGS_2024: {
             items: [
                 {
                     startTime: "",
-                    eventName: "The Polymath's Playground: Things You Should Know How to Do in Any Programming Language (Workshop)",
+                    eventName: "Build Your Programming Toolbox: Workshop",
                     height: 1.25,
-                    compact: true
                 },
             ]
         },
@@ -178,9 +177,8 @@ export const SCHEDULE_2024: ScheduleItem[][] = [
         },
         {
             startTime: "",
-            eventName: "The Polymath's Playground: Things You Should Know How to Do in Any Programming Language (Workshop)",
+            eventName: "Build Your Programming Toolbox: Workshop",
             height: 1.25,
-            compact: true
         },
         {
             startTime: "",

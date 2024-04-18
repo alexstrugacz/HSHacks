@@ -8,6 +8,7 @@ const Activity: React.FC<{
     intLink?: string;
     extLink?: string;
     onClick?: () => void;
+    slightDark?: boolean;
 }> = (props) => {
     const icon = props.icon;
 
@@ -30,7 +31,7 @@ const Activity: React.FC<{
                 {/* <div className={"relative h-40 bg-transparent z-0"}>
                     <img className={"w-full h-[107%] object-cover brightness-50 group-hover:brightness-75 transition-all"} src={props.bgImg} />
                 </div> */}
-                <div className={"relative p-4 bg-zinc-200 rounded-lg z-10"}>
+                <div className={`relative p-4 ${props.slightDark ? "bg-zinc-200 border-[4px] border-cyan-800" : "bg-zinc-300 border-[4px] border-zinc-300"} rounded-lg z-10`}>
                     <div className={"flex items-center gap-1"}>
                         {icon && icon}
                         <div className={"flex flex-col gap-0"}>
