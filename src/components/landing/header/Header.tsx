@@ -5,23 +5,26 @@ import React from "react";
 import { CalendarIcon } from "@heroicons/react/24/solid";
 import { useNavigate } from "react-router-dom";
 import JoinTheDiscord from "../../../global/JoinTheDiscord";
-import RegisterButton from "../../../global/RegisterButton";
 import Video from "../assets/code.mp4";
 import CountDownTimer from "../body/Countdown";
 import SponsorsList from "../../landing-screen/SponsorsList";
 import HomepageButton from "../body/HomepageButton";
 
-const Header: React.FC<{}> = () => {
-    const openHerseyLink = () => {
-        const url = "https://www.google.com/maps/place/John+Hersey+High+School/@42.0896973,-87.9250359,15z/data=!4m5!3m4!1s0x880fbbad9a8cbbcd:0xbc3eb41efde43b5f!8m2!3d42.1038234!4d-87.9590565";
-        window.open(url, "_blank");
-    }
+const Header: React.FC<{
+    scrollToSchedule: () => void;
+}> = (
+    props
+) => {
+        const openHerseyLink = () => {
+            const url = "https://www.google.com/maps/place/John+Hersey+High+School/@42.0896973,-87.9250359,15z/data=!4m5!3m4!1s0x880fbbad9a8cbbcd:0xbc3eb41efde43b5f!8m2!3d42.1038234!4d-87.9590565";
+            window.open(url, "_blank");
+        }
 
-    const navigate = useNavigate();
+        const navigate = useNavigate();
 
-    const handleOpenSponsorPage = () => {
-        navigate("/sponsors");
-    }
+        const handleOpenSponsorPage = () => {
+            navigate("/sponsors");
+        }
 
     return (
         <div className={"bg-neutral-900"}>
@@ -80,23 +83,35 @@ const Header: React.FC<{}> = () => {
                                         <h2 className="font-bold text-white font-Poppins group-hover:text-zinc-400 transition-colors text-md md:text-xl mb-0">John
                                             Hersey High School ARC</h2>
                                     </div>
-                                    <div className="flex mt-2 md:mt-3 gap-1 items-center">
-                                        <CalendarIcon className={"w-6 text-white"} />
-                                        <h2 className="font-bold text-white font-Poppins text-md md:text-xl mr-2">April
-                                            20, 2024</h2>
+                                    <HomepageButton
+                                        onClick={props.scrollToSchedule}
+                                    />
+                                    <JoinTheDiscord />
+                                    <div className="mt-5 md:mt-7">
+                                        <div onClick={openHerseyLink}
+                                            className="group flex gap-1 mr-16 items-center hover:cursor-pointer w-fit">
+                                            <MapPinIcon
+                                                className={"w-6 text-white group-hover:text-zinc-400 transition-colors"} />
+                                            <h2 className="font-bold text-white font-Poppins group-hover:text-zinc-400 transition-colors text-md md:text-xl mb-0">John
+                                                Hersey High School ARC</h2>
+                                        </div>
+                                        <div className="flex mt-2 md:mt-3 gap-1 items-center">
+                                            <CalendarIcon className={"w-6 text-white"} />
+                                            <h2 className="font-bold text-white font-Poppins text-md md:text-xl mr-2">April
+                                                20, 2024</h2>
+                                        </div>
                                     </div>
                                 </div>
                                 {/* <p onClick={handleOpenSponsorPage} className={"mt-4 text-gray-300 font-Poppins"}>Interested in sponsoring? <a className={"text-[#5FA7ED] hover:text-cyan-200 hover:cursor-pointer transition-colors"}>Click here!</a></p> */}
                             </motion.div>
                             {/*<SponsorsList />*/}
                         </div>
-
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    )
-}
+        )
+    }
 
 export default Header;

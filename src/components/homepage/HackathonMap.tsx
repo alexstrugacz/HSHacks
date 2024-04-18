@@ -30,7 +30,7 @@ const HackathonMap: React.FC<{}> = (props) => {
 
     return (
         <div className={"bg-zinc-800 min-h-screen"}>
-            <div className={"h-[9rem]"}>
+            <div>
                 <AnimatedBg className={"rounded-b-xl"}>
                     <div className={"p-5 md:p-10"}>
                         <div className={"flex flex-col"}>

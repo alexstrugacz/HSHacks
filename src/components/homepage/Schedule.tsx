@@ -149,7 +149,7 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                     </div>
                 </AnimatedBg>
             </div>
-            <div className={"flex-1 flex px-10 gap-3 overflow-y-clip"}>
+            <div className={"flex-1 flex md:px-10 px-2 lg:px-10 xl:px-10 2xl:px-10 gap-3 overflow-y-clip"}>
                 <div className={"relative flex-1 flex flex-col h-full max-h-full pt-10"} style={{ scrollbarWidth: "none" }}>
                     <div className="custom-scrollbar overflow-y-scroll flex flex-col gap-3">
                         {
@@ -159,7 +159,7 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                                         id={`schedule-${i}`}
                                         key={`schedule-${i}`}
                                         item={scheduleItem}
-                                        active={currentItem.i === scheduleItem.i}
+                                        active={currentItem.number === scheduleItem.number}
                                         handleClick={() => {
                                             handleClick(scheduleItem);
                                         }}
@@ -184,6 +184,7 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                             {currentItem.description}
                         </p>
                     </div>
+
                     {/* {props.display && (
 
                         <div className={"flex flex-col flex-1 bg-zinc-300 p-5 rounded-lg pb-20 h-fit mb-10 overflow-hidden"}>
@@ -210,7 +211,7 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
             {props.display && (
                 <SponsorDisplay speed={50} />
             )}
-
+            </div>  
         </div>
     );
 }
