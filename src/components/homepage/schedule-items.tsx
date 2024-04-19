@@ -15,7 +15,7 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         endTime: "8:30AM",
         minutes: 30,
         description: "Check in, get your HSHacks T-Shirt and Hack Club/HSHacks stickers.\nGrab a donut and coffee while waiting for the Opening Ceremony"
-    }, 
+    },
     {
         i: 2,
         number: 2,
@@ -26,39 +26,28 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         endTime: "8:45AM",
         minutes: 15,
         description: "Project Headspace and Timing (partnered nonprofit) keynote, theme announcement, and project requests\nOverview of the hackathon and sponsors afterwards"
-    }, 
+    },
     {
         i: 3,
         number: 3,
         emoji: <WrenchScrewdriverIcon className={EMOJI_STYLE} />,
         inactiveEmoji: <WrenchScrewdriverIcon className={EMOJI_INACTIVE_STYLE} />,
-        title: "Beginner HTML + CSS Workshop",
+        title: "Intro to HTML, CSS, JS",
         startTime: "8:45AM",
-        endTime: "9:00AM",
+        endTime: "9:30AM",
         minutes: 15,
-        description: "Explore the fundementals of HTML and CSS and get introduced to new concepts that help you get started in coding! This is hosted in the presentation room."
+        description: "Explore the fundementals of HTML and CSS and get introduced to new concepts that help you get started in coding! This workshop is hosted by software engineer and consultant Husein Kareem!"
     },
     {
         i: 4,
         number: 3,
         emoji: <WrenchScrewdriverIcon className={EMOJI_STYLE} />,
         inactiveEmoji: <WrenchScrewdriverIcon className={EMOJI_INACTIVE_STYLE} />,
-        title: "Intro to React Workshop",
+        title: "Build a Mini-Calendar w/ React",
         startTime: "8:45AM",
-        endTime: "9:00AM",
-        minutes: 15,
-        description: "Explore the framework being used by many companies to make website. This is hosted in the presentation room."
-    },
-    {
-        i: 5,
-        number: 4,
-        emoji: <CodeBracketIcon className={EMOJI_STYLE} />,
-        inactiveEmoji: <CodeBracketIcon className={EMOJI_INACTIVE_STYLE} />,
-        title: "Open Coding Time",
-        startTime: "9:00AM",
         endTime: "9:30AM",
-        minutes: 30,
-        description: "Free time to code! There are no workshops or events currently happening."
+        minutes: 15,
+        description: "Explore the industry-standard framework being used by top tech companies to build websites."
     },
     {
         i: 6,
@@ -69,18 +58,18 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "9:30AM",
         endTime: "9:45AM",
         minutes: 15,
-        description: "Meet up with your team or team up with new hackathon members!"
-    }, 
+        description: "Meet other HSHackers and form a new group!"
+    },
     {
         i: 7,
         number: 6,
         emoji: <CodeBracketIcon className={EMOJI_STYLE} />,
         inactiveEmoji: <CodeBracketIcon className={EMOJI_INACTIVE_STYLE} />,
-        title: "Open Coding Time & Optional Setup Session.",
+        title: "Open Coding Time",
         startTime: "9:45AM",
         endTime: "10:00AM",
         minutes: 15,
-        description: "Free time to code! There are no workshops or events currently happening. You can also go to a setup session."
+        description: "Free time to code! There are no workshops or events currently happening."
     },
     {
         i: 8,
@@ -121,11 +110,11 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         emoji: <MicrophoneIcon className={EMOJI_STYLE} />,
         inactiveEmoji: <MicrophoneIcon className={EMOJI_INACTIVE_STYLE} />,
         italic: true,
-        title: "Presentation by Larry Shrof",
+        title: "Build Your Programming Toolbox: Workshop",
         startTime: "11:15AM",
         endTime: "12:00PM",
         minutes: 45,
-        description: "Larry Shrof will be giving presentation in the presentation room."
+        description: "Larry Schrof, former software engineer at Meta and Shopify, will go over the tools, languages, and methodologies you need to know to be a successful software engineer!"
     },
     {
         i: 12,
@@ -136,7 +125,7 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "12:00PM",
         endTime: "12:45PM",
         minutes: 45,
-        description: "Grab some food in the eating area of the ARC"
+        description: "Grab some food in the eating area of the ARC!"
     },
     {
         i: 13,
@@ -148,7 +137,7 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "12:10PM",
         endTime: "12:55PM",
         minutes: 45,
-        description: "Larry Shrof will be giving presentation in the presentation room."
+        description: "Larry Schrof, former software engineer at Meta and Shopify, will host an AMA where you can ask him anything about his career, software engineering, or anything else you're curious about!"
     },
     {
         i: 14,
@@ -165,23 +154,23 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         i: 15,
         number: 12,
         emoji: <WrenchScrewdriverIcon className={EMOJI_STYLE} />,
-        inactiveEmoji: <WrenchScrewdriverIcon className={EMOJI_INACTIVE_STYLE} />, 
-        title: "MNIST Digit Classification AI Workshop",
+        inactiveEmoji: <WrenchScrewdriverIcon className={EMOJI_INACTIVE_STYLE} />,
+        title: "AI MNIST Digit Recognition Workshop",
         startTime: "1:30PM",
         endTime: "2:15PM",
         minutes: 45,
-        description: "This is a workshop about creating an AI using Python and Tensorflow. It will be held in the presentation room."
+        description: "This is a workshop about creating an AI using Python and Tensorflow to recognize MNIST Handwritten Digits! This workshop is a great way to get started with AI and Machine Learning!"
     },
     {
         i: 16,
         number: 12,
         emoji: <WrenchScrewdriverIcon className={EMOJI_STYLE} />,
-        inactiveEmoji: <WrenchScrewdriverIcon className={EMOJI_INACTIVE_STYLE} />, 
+        inactiveEmoji: <WrenchScrewdriverIcon className={EMOJI_INACTIVE_STYLE} />,
         title: "Project Presentation Workshop",
         startTime: "1:30PM",
         endTime: "2:15PM",
         minutes: 45,
-        description: "This workshop focuses on project presentation and will be held in the presentation room."
+        description: "In this workshop, you'll learn how to present your project to the judges effectively! This is a great way to learn how to communicate your ideas, pitch concepts, and more!"
     },
     {
         i: 17,
@@ -193,7 +182,7 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         endTime: "3:15PM",
         minutes: 60,
         description: "Let's take a break from coding and play a minigame!"
-    },  
+    },
     {
         i: 18,
         number: 14,
@@ -204,7 +193,7 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         endTime: "3:30PM",
         minutes: 15,
         description: "Let's take a break from coding and play a minigame! $45 Desmos gift card reward to the winner!"
-    }, 
+    },
     {
         i: 19,
         number: 15,
@@ -226,7 +215,7 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         endTime: "7:00PM",
         minutes: 150,
         description: "We’ll hang out and eat some pizza while the judges determine awards."
-    }, 
+    },
     {
         i: 21,
         number: 17,
@@ -243,9 +232,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         number: 17,
         emoji: <PuzzlePieceIcon className={EMOJI_STYLE} />,
         inactiveEmoji: <PuzzlePieceIcon className={EMOJI_INACTIVE_STYLE} />,
-        title: "Minigame",
-        startTime: "7:30PM",
-        endTime: "7:45PM",
+        title: "Paper.io Minigame",
+        startTime: "7:00PM",
+        endTime: "7:30PM",
         minutes: 15,
         description: "Let's take a break from coding and play a minigame!"
     },

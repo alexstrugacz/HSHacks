@@ -47,6 +47,9 @@ const Navbar: React.FC<{
       </div>
 
       <div className={`flex flex-col md:flex-row mt-5 md:mt-0 ${((opened)) ? "mobile:visible" : "mobile:hidden"} md:visible transition-all`}>
+        <div className={"flex mr-8 items-end"}>
+          <NavItem link={"/homepage"} text={"Homepage"} transparent={(props.transparent && !opened)} />
+        </div>
         <div className={"flex mr-8 md:mt-0 items-end"}>
           <NavItem link={"/"} text={"Overview"} transparent={(props.transparent && !opened)} />
         </div>

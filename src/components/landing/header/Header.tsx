@@ -8,7 +8,7 @@ import JoinTheDiscord from "../../../global/JoinTheDiscord";
 import Video from "../assets/code.mp4";
 import CountDownTimer from "../body/Countdown";
 import SponsorsList from "../../landing-screen/SponsorsList";
-import HomepageButton from "../../../global/HomepageButton";
+import HomepageButton from "../body/HomepageButton";
 
 const Header: React.FC<{
     scrollToSchedule: () => void;
@@ -69,8 +69,11 @@ const Header: React.FC<{
                                         <CountDownTimer />
                                     </div>
                                     <HomepageButton
-                                        onClick={props.scrollToSchedule}
+                                        onClick={() => {
+                                            navigate("/homepage");
+                                        }}
                                     />
+
                                     <JoinTheDiscord />
                                     <div className="mt-5 md:mt-7">
                                         <div onClick={openHerseyLink}
@@ -86,17 +89,10 @@ const Header: React.FC<{
                                                 20, 2024</h2>
                                         </div>
                                     </div>
-                                    {/* <FullButton
-                                    startColor={"#E96C2Eff".toLowerCase()}
-                                    endColor={"#CF424Eff".toLowerCase()}
-                                    text={"Register Now (Free)"}
-                                    link={REGISTER_LINK}
-                                /> */}
                                     {/* <p onClick={handleOpenSponsorPage} className={"mt-4 text-gray-300 font-Poppins"}>Interested in sponsoring? <a className={"text-[#5FA7ED] hover:text-cyan-200 hover:cursor-pointer transition-colors"}>Click here!</a></p> */}
                                 </motion.div>
                                 {/*<SponsorsList />*/}
                             </div>
-
                         </div>
                     </div>
                 </div>

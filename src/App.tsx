@@ -25,7 +25,7 @@ function App() {
         <Route path="/live-schedule" element={<Schedule display={false} />} />
         <Route path="/live-schedule-screen" element={<Schedule display={true} />} />
         <Route path="/workshops/:workshopId" element={<Workshop />} />
-        <Route path="/pht" element={<ProjectsThemes />} />
+        <Route path="/project-themes" element={<ProjectsThemes />} />
       </Routes>
     </div>
   );
