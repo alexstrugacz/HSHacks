@@ -190,7 +190,7 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         inactiveEmoji: <PuzzlePieceIcon className={EMOJI_INACTIVE_STYLE} />,
         title: "TypeRacer Competition",
         startTime: "3:15PM",
-        endTime: "3:30PM",
+        endTime: "4:00PM",
         minutes: 15,
         description: "Let's take a break from coding and play a minigame! $45 Desmos gift card reward to the winner!"
     },
@@ -210,7 +210,7 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         number: 16,
         emoji: <Battery100Icon className={EMOJI_STYLE} />,
         inactiveEmoji: <Battery100Icon className={EMOJI_INACTIVE_STYLE} />,
-        title: "Dinner + Project Desmos",
+        title: "Dinner + Project Demos",
         startTime: "5:30PM",
         endTime: "7:00PM",
         minutes: 150,
