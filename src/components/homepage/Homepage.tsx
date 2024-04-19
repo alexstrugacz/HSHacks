@@ -60,7 +60,7 @@ const Homepage: React.FC<{
                 </motion.div>
             </div>
             <div className="flex flex-col flex-1">
-                <div className={"grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-5 p-5 md:p-10 pb-0"}>
+                <div className={"grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 lg:gap-5 p-5 md:p-10 pb-0"}>
                     <motion.div
                         initial={{ opacity: 0, y: 0, scale: 0.8 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -213,9 +213,12 @@ const Homepage: React.FC<{
                     initial={{ opacity: 0, y: 0, scale: 0.8 }}
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     transition={{ delay: props.animated ? 0.8 + 0.5 : 0, duration: props.animated ? 0.5 : 0 }}
-                > 
+                >
+                    <SponsorDisplay compact speed={20} />
                 </motion.div>
             </div>
+
+
 
 
 

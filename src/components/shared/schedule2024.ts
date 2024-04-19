@@ -26,21 +26,21 @@ export const SCHEDULE_GROUPINGS_2024: {
         {
             time: "8:45AM",
             items: [
-                { startTime: "", eventName: "HTML/CSS Workshop", height: 1 },
-                { startTime: "", eventName: "React Workshop", height: 1 }
+                { startTime: "", eventName: "Intro to HTML, CSS, JS", height: 1 },
+                { startTime: "", eventName: "Build a Mini-Calendar w/ React", height: 1 }
             ]
         },
         {
             time: "9:30AM",
             items: [
-                { startTime: "8:45AM", eventName: "Group Formation (If you need it)", height: 1 }
+                { startTime: "8:45AM", eventName: "Group Formation (Optional)", height: 1 }
             ]
         },
         {
             time: "10:00AM",
             items: [
-                { startTime: "", eventName: "Postman APIs Workshop", height: 1 },
-                { startTime: "", eventName: "MongoDB/NodeJS Workshop", height: 1 }
+                { startTime: "", eventName: "APIs w/ Postman", height: 1 },
+                { startTime: "", eventName: "Build a RESTful API w/ Node.js & MongoDB", height: 1 }
             ]
         },
         {
@@ -59,7 +59,7 @@ export const SCHEDULE_GROUPINGS_2024: {
                 { startTime: "12:00PM", eventName: "Lunch Available", height: 1 },
                 {
                     startTime: "",
-                    eventName: "AMA w/ Big Tech Engineer",
+                    eventName: "AMA w/ Larry Schrof",
                     height: 1
                 },
             ]
@@ -75,7 +75,7 @@ export const SCHEDULE_GROUPINGS_2024: {
             items: [
                 {
                     startTime: "",
-                    eventName: "AI w/ Tensorflow and Python Workshop",
+                    eventName: "AI MNIST Digit Recognition Workshop",
                     height: 1
                 },
                 {
@@ -162,7 +162,7 @@ export const SCHEDULE_2024: ScheduleItem[][] = [
         },
         {
             startTime: "",
-            eventName: "HTML/CSS Workshop",
+            eventName: "Intro to HTML, CSS, JS",
             height: 1
         },
         {
@@ -172,7 +172,7 @@ export const SCHEDULE_2024: ScheduleItem[][] = [
         },
         {
             startTime: "",
-            eventName: "Postman APIs Workshop",
+            eventName: "APIs w/ Postman",
             height: 1
         },
         {
@@ -182,7 +182,7 @@ export const SCHEDULE_2024: ScheduleItem[][] = [
         },
         {
             startTime: "",
-            eventName: "AMA w/ Big Tech Engineer",
+            eventName: "AMA w/ Larry Schrof",
             height: 1
         },
         {
@@ -193,7 +193,7 @@ export const SCHEDULE_2024: ScheduleItem[][] = [
         },
         {
             startTime: "",
-            eventName: "AI w/ Tensorflow and Python Workshop",
+            eventName: "AI MNIST Digit Recognition Workshop",
             height: 1
         },
         {
@@ -234,7 +234,7 @@ export const SCHEDULE_2024: ScheduleItem[][] = [
         },
         {
             startTime: "",
-            eventName: "Intermediate React Workshop",
+            eventName: "Build a Mini-Calendar w/ React",
             height: 1
         },
         {
@@ -245,7 +245,7 @@ export const SCHEDULE_2024: ScheduleItem[][] = [
         },
         {
             startTime: "",
-            eventName: "MongoDB/NodeJS Workshop",
+            eventName: "Build a RESTful API w/ Node.js & MongoDB",
             height: 1
         },
         {

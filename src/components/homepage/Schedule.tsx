@@ -113,7 +113,7 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
     return (
         <div className={"flex flex-col bg-zinc-800 h-screen max-h-screen"}>
             <div className={"h-fit"}>
-                <AnimatedBg className={"rounded-b-xl"}>
+                <AnimatedBg className={"rounded-b-xl"} sponsorDisplay>
                     <div className={"p-5 md:p-10"}>
                         <div className={"flex flex-col"}>
                             <div>
@@ -150,8 +150,8 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                 </AnimatedBg>
             </div>
             <div className={"flex-1 flex md:px-10 px-2 lg:px-10 xl:px-10 2xl:px-10 gap-3 overflow-y-clip"}>
-                <div className={"relative flex-1 flex flex-col h-full max-h-full pt-10"} style={{ scrollbarWidth: "none" }}>
-                    <div className="custom-scrollbar overflow-y-scroll flex flex-col gap-3">
+                <div className={"relative flex-1 flex flex-col h-full max-h-full pt-7"} style={{ scrollbarWidth: "none" }}>
+                    <div className="custom-scrollbar overflow-y-scroll flex flex-col gap-3 pb-32">
                         {
                             SCHEDULE_ITEMS.map((scheduleItem: IScheduleItem, i: number) => {
                                 return (
@@ -170,20 +170,24 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                     </div>
                     <div className="gradient-overlay"></div>
                 </div>
-                <div className={"mobile:hidden flex-[0.6] flex flex-col"}>
-                    <div className={`flex flex-col ${props.display ? "flex-[2]" : "flex-[0.5]"} bg-zinc-300 p-5 rounded-lg pb-10 h-fit mt-10 overflow-hidden`}>
-                        <div className={"xl:flex xl:items-center gap-2 border-b-2 border-b-slate-400 pb-3"}>
-                            {currentItem.emoji}
-                            <div>
-                                <h3 className={"text-xl lg:text-3xl font-Poppins font-bold mt-1"}>{currentItem.title}</h3>
-                                <p className={"font-Poppins text-zinc-500 text-md lg:text-xl"}>{currentItem.startTime} - {currentItem.endTime}</p>
+                <div className={"mobile:hidden flex-[0.6] flex flex-col mt-7"}>
+                    {SCHEDULE_ITEMS.map(data => (
+                        data.number == currentItem.number && (
+                            <div className={`flex flex-col ${props.display ? "flex-[2]" : "flex-[0.5]"} bg-zinc-300 p-5 rounded-lg pb-10 mb-5 overflow-hidden`}>
+                                <div className={"xl:flex xl:items-center gap-2 border-0 lg:border-b-2 h-fit  border-b-slate-400 pb-2"}>
+                                    {data.emoji}
+                                    <div>
+                                        <h3 className={"text-2xl font-Poppins font-bold"}>{data.title}</h3>
+                                        <p className={"font-Poppins text-zinc-500 text-lg"}>{data.startTime} - {data.endTime}</p>
+                                    </div>
+                                </div>
+                                <p className={"font-Poppins text-zinc-600 text-lg mt-2 hidden lg:block"}>
+                                    {data.description}
+                                </p>
                             </div>
-                        </div>
-                        <br />
-                        <p className={"font-Poppins text-zinc-600 text-lg lg:text-xl"}>
-                            {currentItem.description}
-                        </p>
-                    </div>
+                        )
+
+                    ))}
 
                     {/* {props.display && (
 
@@ -208,11 +212,13 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
                 </div>
             </div>
 
-            {props.display && (
-                <SponsorDisplay speed={50} />
-            )}
-            </div>  
+            {/* {props.display && (
+                <div className="mobile:hidden">
+                    <SponsorDisplay speed={50} />
+                </div>
+            )} */}
         </div>
+
     );
 }
 export default Schedule

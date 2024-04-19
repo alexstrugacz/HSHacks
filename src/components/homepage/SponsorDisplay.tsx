@@ -4,6 +4,7 @@ import Marquee from "react-fast-marquee";
 const SponsorDisplay: React.FC<{
     compact?: boolean;
     speed?: number;
+    disableTop?: boolean;
 }> = (props) => {
 
     const PLAT_SPONSORS = [
@@ -44,12 +45,16 @@ const SponsorDisplay: React.FC<{
         "https://i.ibb.co/YfdgkMF/nav-logo.png"
     ]
 
+    const topDisabledStyle = `bg-zinc-300 ${props.compact ? "p-5" : "p-7"} pt-0 pb-3 w-full md:w-full lg:w-full xl:w-3/5 2xl:w-3/5 m-3 md:m-10 mt-0 md:mt-0 xl:mt-5 xl:mb-5 mb-3 rounded-lg h-fit overflow-x-hidden mobile:hidden`
+
     return (
-        <div className={`bg-zinc-300 ${props.compact ? "p-5" : "p-10"} rounded-lg m-5 md:m-10 mt-5 h-fit overflow-x-hidden`}>
-            <h3 className={`${props.compact ? "text-lg xl:text-xl" : "text-3xl"} font-Poppins font-bold`}>HSHacks is Powered By</h3>
-<!-- =======
+        <div className={props.disableTop ? topDisabledStyle : `bg-zinc-300 ${props.compact ? "p-5" : "p-10"} rounded-lg m-5 md:m-10 mt-5 h-fit overflow-x-hidden`}>
+            {!props.disableTop && (
+                <h3 className={`${props.compact ? "text-lg xl:text-xl" : "text-3xl"} font-Poppins font-bold`}>HSHacks is Powered By</h3>
+            )}
+            {/* <!-- =======
         <div className={`bg-zinc-300 ${props.compact ? "p-5" : "p-7"} w-full md:w-full lg:w-full xl:w-3/5 2xl:w-3/5 m-3 rounded-lg h-fit overflow-x-hidden`}>
->>>>>>> main -->
+>>>>>>> main --> */}
             <Marquee
                 gradient
                 gradientColor="#D4D4D8"
@@ -57,7 +62,7 @@ const SponsorDisplay: React.FC<{
                 speed={props.speed}
             >
                 <div className="flex gap-2 mt-5 ml-5">
-<!--                 <div className="flex gap-2 ml-2"> -->
+                    {/* <!--                 <div className="flex gap-2 ml-2"> --> */}
                     {PLAT_SPONSORS.map((sponsor) => {
                         return <SponsorCell src={sponsor} tier={"platinum"} compact={props.compact} increasedPadding={SPONSORS_WITH_INCREASED_PADDING.includes(sponsor)} reducedPadding={SPONSORS_WITH_REDUCED_PADDING.includes(sponsor)} />
                     })}
@@ -75,6 +80,7 @@ const SponsorDisplay: React.FC<{
                     })}
                 </div>
             </Marquee>
+
         </div>
     );
 }
