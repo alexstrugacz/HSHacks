@@ -35,31 +35,53 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
     }
 
     const findActiveItem = () => {
-        const currentTime = moment();
-        let newActiveItem: IScheduleItem | undefined = undefined;
+        const currentTime = moment().tz("America/Chicago");
 
-        let cumMinutes = 0;
-        let startTime = moment(START_EARLY);
+        console.log('currentTime', currentTime);
+        console.log('SCHEDULE_ITEMS', SCHEDULE_ITEMS);
 
-        console.log("Current Time", currentTime.format("HH:mm"));
+        let newActiveItem: IScheduleItem | undefined;
 
-        for (let i = 0; i < SCHEDULE_ITEMS.length; i++) {
-            const numMinutes = SCHEDULE_ITEMS[i].minutes;
-            console.log("Start Time", startTime.format("HH:mm"), "num minutes", numMinutes);
-            const diff = currentTime.diff(startTime, "minutes");
-            if (diff >= 0 && diff <= numMinutes) {
-                newActiveItem = SCHEDULE_ITEMS[i];
-                console.log("====")
-                break;
+        const itemsThatStarted = SCHEDULE_ITEMS.filter(item => currentTime.isAfter(item.startDatetime));
+
+        console.log('itemsThatStarted', itemsThatStarted);
+
+        for (let i = 0; i < itemsThatStarted.length; i++) {
+            const item = itemsThatStarted[i];
+            if (!newActiveItem) {
+                newActiveItem = item;
+            } else {
+                if (currentTime.isBefore(item.endDatetime) && newActiveItem.startDatetime.isBefore(item.startDatetime)) {
+                    // Current Time is before the end date
+                    // Current Time is after the start date of the new active item; it occurred later but is still valid
+                    newActiveItem = item;
+                }
             }
-            startTime = startTime.add(numMinutes, "minutes");
-
-            // cumMinutes += numMinutes;
-
-            // console.log(currentTime.format("HH:mm"))
-            // console.log("diff", startTime.format("HH:mm"), diff, numMinutes);
         }
         setActiveItem(newActiveItem);
+
+
+
+        // let cumMinutes = 0;
+        // let startTime = moment(START_EARLY);
+
+        // for (let i = 0; i < SCHEDULE_ITEMS.length; i++) {
+        //     const numMinutes = SCHEDULE_ITEMS[i].minutes;
+        //     console.log("Start Time", startTime.format("HH:mm"), "num minutes", numMinutes);
+        //     const diff = currentTime.diff(startTime, "minutes");
+        //     if (diff >= 0 && diff <= numMinutes) {
+        //         newActiveItem = SCHEDULE_ITEMS[i];
+        //         console.log("====")
+        //         break;
+        //     }
+        //     startTime = startTime.add(numMinutes, "minutes");
+
+        //     cumMinutes += numMinutes;
+
+        //     console.log(currentTime.format("HH:mm"))
+        //     console.log("diff", startTime.format("HH:mm"), diff, numMinutes);
+        // }
+        // setActiveItem(newActiveItem);
     }
 
     const PLAT_SPONSORS = [
@@ -95,7 +117,7 @@ const Schedule: React.FC<{ display: boolean }> = (props) => {
         findActiveItem();
         const interval = setInterval(() => {
             findActiveItem();
-        }, 10000);
+        }, 1000);
         return () => clearInterval(interval);
     }, [])
 

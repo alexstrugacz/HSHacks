@@ -1,5 +1,6 @@
 import { Battery100Icon, Battery50Icon, BellIcon, ChatBubbleLeftRightIcon, CodeBracketIcon, CommandLineIcon, ComputerDesktopIcon, GiftIcon, MicrophoneIcon, PuzzlePieceIcon, WrenchScrewdriverIcon } from "@heroicons/react/24/solid";
 import { IScheduleItem } from "./IScheduleItem"
+import moment from "moment-timezone";
 
 const EMOJI_STYLE = "h-8 text-cyan-700 transition-all";
 const EMOJI_INACTIVE_STYLE = "h-8 text-cyan-900 transition-all";
@@ -12,7 +13,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         inactiveEmoji: <BellIcon className={EMOJI_INACTIVE_STYLE} />,
         title: "Check-In & Breakfast",
         startTime: "8:00AM",
+        startDatetime: moment("2024-04-20T08:00:00"),
         endTime: "8:30AM",
+        endDatetime: moment("2024-04-20T08:30:00"),
         minutes: 30,
         description: "Check in, get your HSHacks T-Shirt and Hack Club/HSHacks stickers.\nGrab a donut and coffee while waiting for the Opening Ceremony"
     },
@@ -23,7 +26,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         inactiveEmoji: <MicrophoneIcon className={EMOJI_INACTIVE_STYLE} />,
         title: "Opening Ceremony & Keynote",
         startTime: "8:30AM",
+        startDatetime: moment("2024-04-20T08:30:00"),
         endTime: "8:45AM",
+        endDatetime: moment("2024-04-20T08:45:00"),
         minutes: 15,
         description: "Project Headspace and Timing (partnered nonprofit) keynote, theme announcement, and project requests\nOverview of the hackathon and sponsors afterwards"
     },
@@ -34,9 +39,11 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         inactiveEmoji: <WrenchScrewdriverIcon className={EMOJI_INACTIVE_STYLE} />,
         title: "Intro to HTML, CSS, JS",
         startTime: "8:45AM",
+        startDatetime: moment("2024-04-20T08:45:00"),
         endTime: "9:30AM",
-        minutes: 15,
-        description: "Explore the fundementals of HTML and CSS and get introduced to new concepts that help you get started in coding! This workshop is hosted by software engineer and consultant Husein Kareem!"
+        endDatetime: moment("2024-04-20T09:30:00"),
+        minutes: 45,
+        description: "Explore the fundamentals of HTML, CSS, and JS and get introduced to new concepts that help you get started in coding! This workshop is hosted by software engineer and consultant Husein Kareem!"
     },
     {
         i: 4,
@@ -45,8 +52,10 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         inactiveEmoji: <WrenchScrewdriverIcon className={EMOJI_INACTIVE_STYLE} />,
         title: "Build a Mini-Calendar w/ React",
         startTime: "8:45AM",
+        startDatetime: moment("2024-04-20T08:45:00"),
         endTime: "9:30AM",
-        minutes: 15,
+        endDatetime: moment("2024-04-20T09:30:00"),
+        minutes: 45,
         description: "Explore the industry-standard framework being used by top tech companies to build websites."
     },
     {
@@ -56,7 +65,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         inactiveEmoji: <ChatBubbleLeftRightIcon className={EMOJI_INACTIVE_STYLE} />,
         title: "Team Formation",
         startTime: "9:30AM",
+        startDatetime: moment("2024-04-20T09:30:00"),
         endTime: "9:45AM",
+        endDatetime: moment("2024-04-20T09:45:00"),
         minutes: 15,
         description: "Meet other HSHackers and form a new group!"
     },
@@ -67,7 +78,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         inactiveEmoji: <CodeBracketIcon className={EMOJI_INACTIVE_STYLE} />,
         title: "Open Coding Time",
         startTime: "9:45AM",
+        startDatetime: moment("2024-04-20T09:45:00"),
         endTime: "10:00AM",
+        endDatetime: moment("2024-04-20T10:00:00"),
         minutes: 15,
         description: "Free time to code! There are no workshops or events currently happening."
     },
@@ -80,7 +93,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "10:00AM",
         endTime: "11:00AM",
         minutes: 60,
-        description: "Learn the basics of REST APIs at this workshop, hosted by our sponsor Postman!"
+        description: "Learn the basics of REST APIs at this workshop, hosted by our sponsor Postman!",
+        startDatetime: moment("2024-04-20T10:00:00"),
+        endDatetime: moment("2024-04-20T11:00:00")
     },
     {
         i: 9,
@@ -91,7 +106,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "10:00AM",
         endTime: "11:00AM",
         minutes: 60,
-        description: "Build a project while learning NodeJS and MongoDB. This is hosted in the presentation room."
+        description: "Build a project while learning NodeJS and MongoDB. This is hosted in the presentation room.",
+        startDatetime: moment("2024-04-20T10:00:00"),
+        endDatetime: moment("2024-04-20T11:00:00")
     },
     {
         i: 10,
@@ -102,7 +119,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "11:00AM",
         endTime: "11:15AM",
         minutes: 15,
-        description: "Free time to code! There are no workshops or events currently happening."
+        description: "Free time to code! There are no workshops or events currently happening.",
+        startDatetime: moment("2024-04-20T11:00:00"),
+        endDatetime: moment("2024-04-20T11:15:00")
     },
     {
         i: 11,
@@ -114,7 +133,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "11:15AM",
         endTime: "12:00PM",
         minutes: 45,
-        description: "Larry Schrof, former software engineer at Meta and Shopify, will go over the tools, languages, and methodologies you need to know to be a successful software engineer!"
+        description: "Larry Schrof, former software engineer at Meta and Shopify, will go over the tools, languages, and methodologies you need to know to be a successful software engineer!",
+        startDatetime: moment("2024-04-20T11:15:00"),
+        endDatetime: moment("2024-04-20T12:00:00")
     },
     {
         i: 12,
@@ -125,7 +146,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "12:00PM",
         endTime: "12:45PM",
         minutes: 45,
-        description: "Grab some food in the eating area of the ARC!"
+        description: "Grab some food in the eating area of the ARC!",
+        startDatetime: moment("2024-04-20T12:00:00"),
+        endDatetime: moment("2024-04-20T12:45:00")
     },
     {
         i: 13,
@@ -137,7 +160,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "12:10PM",
         endTime: "12:55PM",
         minutes: 45,
-        description: "Larry Schrof, former software engineer at Meta and Shopify, will host an AMA where you can ask him anything about his career, software engineering, or anything else you're curious about!"
+        description: "Larry Schrof, former software engineer at Meta and Shopify, will host an AMA where you can ask him anything about his career, software engineering, or anything else you're curious about!",
+        startDatetime: moment("2024-04-20T12:10:00"),
+        endDatetime: moment("2024-04-20T12:55:00")
     },
     {
         i: 14,
@@ -148,7 +173,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "12:55PM",
         endTime: "1:30PM",
         minutes: 35,
-        description: "Free time to code! There are no workshops or events currently happening."
+        description: "Free time to code! There are no workshops or events currently happening.",
+        startDatetime: moment("2024-04-20T12:55:00"),
+        endDatetime: moment("2024-04-20T13:30:00")
     },
     {
         i: 15,
@@ -159,7 +186,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "1:30PM",
         endTime: "2:15PM",
         minutes: 45,
-        description: "This is a workshop about creating an AI using Python and Tensorflow to recognize MNIST Handwritten Digits! This workshop is a great way to get started with AI and Machine Learning!"
+        description: "This is a workshop about creating an AI using Python and Tensorflow to recognize MNIST Handwritten Digits! This workshop is a great way to get started with AI and Machine Learning!",
+        startDatetime: moment("2024-04-20T13:30:00"),
+        endDatetime: moment("2024-04-20T14:15:00")
     },
     {
         i: 16,
@@ -170,7 +199,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "1:30PM",
         endTime: "2:15PM",
         minutes: 45,
-        description: "In this workshop, you'll learn how to present your project to the judges effectively! This is a great way to learn how to communicate your ideas, pitch concepts, and more!"
+        description: "In this workshop, you'll learn how to present your project to the judges effectively! This is a great way to learn how to communicate your ideas, pitch concepts, and more!",
+        startDatetime: moment("2024-04-20T13:30:00"),
+        endDatetime: moment("2024-04-20T14:15:00")
     },
     {
         i: 17,
@@ -181,7 +212,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "2:15PM",
         endTime: "3:15PM",
         minutes: 60,
-        description: "Let's take a break from coding and play a minigame!"
+        description: "Let's take a break from coding and play a minigame!",
+        startDatetime: moment("2024-04-20T14:15:00"),
+        endDatetime: moment("2024-04-20T15:15:00")
     },
     {
         i: 18,
@@ -192,7 +225,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "3:15PM",
         endTime: "4:00PM",
         minutes: 15,
-        description: "Let's take a break from coding and play a minigame! $45 Desmos gift card reward to the winner!"
+        description: "Let's take a break from coding and play a minigame! $45 Desmos gift card reward to the winner!",
+        startDatetime: moment("2024-04-20T15:15:00"),
+        endDatetime: moment("2024-04-20T16:00:00")
     },
     {
         i: 19,
@@ -203,7 +238,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "3:30PM",
         endTime: "5:30PM",
         minutes: 120,
-        description: "Free time to code! There are no workshops or events currently happening."
+        description: "Free time to code! There are no workshops or events currently happening.",
+        startDatetime: moment("2024-04-20T15:30:00"),
+        endDatetime: moment("2024-04-20T17:30:00")
     },
     {
         i: 20,
@@ -214,7 +251,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "5:30PM",
         endTime: "7:00PM",
         minutes: 150,
-        description: "We’ll hang out and eat some pizza while the judges determine awards."
+        description: "We’ll hang out and eat some pizza while the judges determine awards.",
+        startDatetime: moment("2024-04-20T17:30:00"),
+        endDatetime: moment("2024-04-20T19:00:00")
     },
     {
         i: 21,
@@ -225,7 +264,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "7:00PM",
         endTime: "7:45PM",
         minutes: 45,
-        description: "We’ll hang out and eat some pizza while the judges determine awards."
+        description: "We’ll hang out and eat some pizza while the judges determine awards.",
+        startDatetime: moment("2024-04-20T19:00:00"),
+        endDatetime: moment("2024-04-20T19:45:00")
     },
     {
         i: 22,
@@ -236,7 +277,9 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "7:00PM",
         endTime: "7:30PM",
         minutes: 15,
-        description: "Let's take a break from coding and play a minigame!"
+        description: "Let's take a break from coding and play a minigame!",
+        startDatetime: moment("2024-04-20T19:00:00"),
+        endDatetime: moment("2024-04-20T19:30:00")
     },
     {
         i: 23,
@@ -247,6 +290,8 @@ export const SCHEDULE_ITEMS: IScheduleItem[] = [
         startTime: "7:45PM",
         endTime: "8:00PM",
         minutes: 15,
-        description: "We’ll wrap up the hackathon and thank our sponsors and volunteers"
+        description: "We’ll wrap up the hackathon and thank our sponsors and volunteers",
+        startDatetime: moment("2024-04-20T19:45:00"),
+        endDatetime: moment("2024-04-20T20:00:00")
     }
 ]
