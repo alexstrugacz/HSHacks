@@ -11,7 +11,6 @@ const useCountdown = (targetDate: Date) => {
         const interval = setInterval(() => {
             setCountDown(countDownDate - new Date().getTime());
         }, 1000);
-
         return () => clearInterval(interval);
     }, [countDownDate]);
 
