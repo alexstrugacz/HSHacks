@@ -11,8 +11,9 @@ const ProjectsThemes: React.FC<{}> = (props) => {
 
     const navigate = useNavigate();
 
-    const TEST_DATE = moment("04/18/2024 22:50").toDate();
+    const TEST_DATE = moment("04/20/2024 08:30").toDate();
 
+    // const TEST_DATE = moment("04/19/2024 22:04").toDate();
     const countdownHook = useCountdown(TEST_DATE);
 
     const goToHomepage = () => {
@@ -45,7 +46,8 @@ const ProjectsThemes: React.FC<{}> = (props) => {
             {countdownHook.countDown > 0 ? ( // TODO: Fix
                 <div className={"flex-1 w-full h-full flex items-center justify-center"}>
                     <div className={"flex flex-col items-center px-5"}>
-                        <h3 className={"text-2xl text-center text-white font-Poppins font-bold mb-5"}>Project Theme will be announced on 4/20/2024 at 8:45am CT</h3>
+                        <h3 className={"text-2xl text-center text-white font-Poppins font-bold mb-5"}>Project Theme to be announced after the Opening Ceremony</h3>
+                        {/* <CountdownLarge /> */}
                     </div>
                 </div>
 
